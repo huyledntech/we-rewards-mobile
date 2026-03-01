@@ -1,0 +1,25 @@
+{
+  "nav.home":              "Trang chủ",
+  "nav.features":          "Tính năng",
+  "nav.about":             "Giới thiệu",
+  "nav.contact":           "Liên hệ",
+
+  "hero.title":            "Xây dựng giao diện đẹp mắt",
+  "hero.subtitle":         "Bộ khởi động frontend hiện đại với Tailwind CSS, daisyUI và jQuery.",
+  "hero.cta":              "Bắt đầu ngay",
+
+  "features.title":        "Tính năng nổi bật",
+  "features.tailwind":     "Tailwind CSS",
+  "features.tailwindDesc": "Framework CSS utility-first giúp phát triển UI nhanh chóng.",
+  "features.daisy":        "daisyUI",
+  "features.daisyDesc":    "Thư viện thành phần Tailwind đẹp mắt với nhiều chủ đề.",
+  "features.jquery":       "jQuery",
+  "features.jqueryDesc":   "Thao tác DOM quen thuộc và xử lý sự kiện dễ dàng.",
+
+  "card.learnMore":        "Tìm hiểu thêm",
+
+  "i18n.title":            "Hỗ trợ đa ngôn ngữ",
+  "i18n.subtitle":         "Chuyển ngôn ngữ bằng các nút trên thanh điều hướng. Lựa chọn được lưu tự động.",
+
+  "footer.copy":           "© 2025 FrontendKit. Xây dựng với Tailwind CSS, daisyUI & jQuery."
+}

@@ -1,0 +1,99 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+// ── Global Resets ─────────────────────────────────────────────────────────────
+
+*, *::before, *::after {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-base;
+  background-color: $desktop-bg-color;
+  color: $color-text-primary;
+  overflow-x: hidden;
+  
+  // Center the mobile frame on desktop
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+// ── Mobile App Container (.mobile-app) ───────────────────────────────────────
+// Hard-locked container for mobile/tablet view.
+.mobile-app {
+  width: 100%;
+  max-width: $mobile-app-width; // 768px
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: $color-bg-main; // Dark Gray #3C3C3C
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  
+  // Frame shadow on desktop
+  box-shadow: 0 0 100px rgba(0,0,0,0.5);
+
+  // Safe area insets
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+// ── Fixed Navigation Layout Lock ──────────────────────────────────────────────
+// Ensures fixed header/footer items also respect the $mobile-app-width and 
+// stay centered on desktop browsers.
+
+header.fixed,
+footer.fixed {
+  width: 100%;
+  max-width: $mobile-app-width;
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+// ── Main Content Area ─────────────────────────────────────────────────────────
+main {
+  flex: 1;
+  padding-top: 60px;    // Account for fixed top header
+  padding-bottom: 70px; // Account for fixed bottom footer
+  width: 100%;
+  
+  // Additional bottom padding for content that might be obscured by floating elements
+  padding-bottom: calc(70px + env(safe-area-inset-bottom) + 20px);
+}
+
+// ── UI Components ─────────────────────────────────────────────────────────────
+
+.btn-primary {
+  background-color: $color-brand-yellow;
+  color: $color-brand-dark;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  
+  &:hover, &:active {
+    background-color: color.adjust($color-brand-yellow, $lightness: -10%);
+    color: $color-brand-dark;
+  }
+}
+
+.card-reward {
+  background-color: $color-brand-dark;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid $color-brand-light;
+  margin-bottom: 16px;
+}
+
+// utility for text colors using the locked palette
+.text-brand-yellow { color: $color-brand-yellow; }
+.text-brand-light { color: $color-brand-light; }
+.bg-brand-yellow { background-color: $color-brand-yellow; }
+.bg-brand-dark { background-color: $color-brand-dark; }

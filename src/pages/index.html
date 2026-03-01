@@ -1,0 +1,36 @@
+{{#> layout pageTitle="Home" subPage=false activePage="home"}}
+
+<div class="px-4 py-8">
+
+  <!-- Hero Section -->
+  <section class="text-center py-10">
+    <div class="text-6xl mb-6 text-[#FFD800]">
+      <i class="fa-solid fa-crown"></i>
+    </div>
+    <h1 class="text-4xl font-extrabold mb-3 text-white" data-i18n="hero.title">Premium Rewards</h1>
+    <p class="text-[#E3E4E580] text-base mb-8" data-i18n="hero.subtitle">
+      A mobile-first frontend experience for the next generation of gamers.
+    </p>
+    <a href="we-rewards.html" class="btn btn-primary btn-lg w-full">
+      <i class="fa-solid fa-rocket mr-2"></i>
+      <span data-i18n="hero.cta">Explore Rewards</span>
+    </a>
+  </section>
+
+  <!-- Demo Content to test scrolling -->
+  <section class="space-y-4 pb-10">
+    {{#each (range 1 5)}}
+    <div class="bg-[#3C3C3C] border border-[#E3E4E580] rounded-xl p-6 shadow-lg">
+      <div class="flex justify-between items-start mb-4">
+        <div class="text-[#FFD800] text-2xl"><i class="fa-solid fa-gift"></i></div>
+        <span class="badge badge-outline border-[#FFD800] text-[#FFD800]">Featured</span>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Campaign #{{this}}</h3>
+      <p class="text-[#E3E4E580] text-sm">Experience the best-in-class performance and design with our locked mobile-only framework.</p>
+    </div>
+    {{/each}}
+  </section>
+
+</div>
+
+{{/layout}}

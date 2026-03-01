@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+
+  <!-- Mobile browser chrome hints -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#FFD800" />
+
+  <title>Home</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles -->
+
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="module" crossorigin src="/assets/main.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main.css">
+</head>
+
+<body class="desktop-stage">
+
+  <div class="mobile-app">
+
+    <!-- Header logic: Default to home header, use sub-header if specified -->
+      <header class="fixed top-0 left-0 right-0 z-50 h-[60px] bg-[#FFD800] flex items-center justify-center px-4 shadow-sm">
+        <h1 class="text-[#3C3C3C] font-bold text-xl uppercase tracking-wider">WE Rewards</h1>
+      </header>
+
+    <main>
+      
+      <div class="px-4 py-8">
+      
+        <!-- Hero Section -->
+        <section class="text-center py-10">
+          <div class="text-6xl mb-6 text-[#FFD800]">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h1 class="text-4xl font-extrabold mb-3 text-white" data-i18n="hero.title">Premium Rewards</h1>
+          <p class="text-[#E3E4E580] text-base mb-8" data-i18n="hero.subtitle">
+            A mobile-first frontend experience for the next generation of gamers.
+          </p>
+          <a href="we-rewards.html" class="btn btn-primary btn-lg w-full">
+            <i class="fa-solid fa-rocket mr-2"></i>
+            <span data-i18n="hero.cta">Explore Rewards</span>
+          </a>
+        </section>
+      
+        <!-- Demo Content to test scrolling -->
+        <section class="space-y-4 pb-10">
+          <div class="bg-[#3C3C3C] border border-[#E3E4E580] rounded-xl p-6 shadow-lg">
+            <div class="flex justify-between items-start mb-4">
+              <div class="text-[#FFD800] text-2xl"><i class="fa-solid fa-gift"></i></div>
+              <span class="badge badge-outline border-[#FFD800] text-[#FFD800]">Featured</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Campaign #1</h3>
+            <p class="text-[#E3E4E580] text-sm">Experience the best-in-class performance and design with our locked mobile-only framework.</p>
+          </div>
+          <div class="bg-[#3C3C3C] border border-[#E3E4E580] rounded-xl p-6 shadow-lg">
+            <div class="flex justify-between items-start mb-4">
+              <div class="text-[#FFD800] text-2xl"><i class="fa-solid fa-gift"></i></div>
+              <span class="badge badge-outline border-[#FFD800] text-[#FFD800]">Featured</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Campaign #2</h3>
+            <p class="text-[#E3E4E580] text-sm">Experience the best-in-class performance and design with our locked mobile-only framework.</p>
+          </div>
+          <div class="bg-[#3C3C3C] border border-[#E3E4E580] rounded-xl p-6 shadow-lg">
+            <div class="flex justify-between items-start mb-4">
+              <div class="text-[#FFD800] text-2xl"><i class="fa-solid fa-gift"></i></div>
+              <span class="badge badge-outline border-[#FFD800] text-[#FFD800]">Featured</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Campaign #3</h3>
+            <p class="text-[#E3E4E580] text-sm">Experience the best-in-class performance and design with our locked mobile-only framework.</p>
+          </div>
+          <div class="bg-[#3C3C3C] border border-[#E3E4E580] rounded-xl p-6 shadow-lg">
+            <div class="flex justify-between items-start mb-4">
+              <div class="text-[#FFD800] text-2xl"><i class="fa-solid fa-gift"></i></div>
+              <span class="badge badge-outline border-[#FFD800] text-[#FFD800]">Featured</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Campaign #4</h3>
+            <p class="text-[#E3E4E580] text-sm">Experience the best-in-class performance and design with our locked mobile-only framework.</p>
+          </div>
+          <div class="bg-[#3C3C3C] border border-[#E3E4E580] rounded-xl p-6 shadow-lg">
+            <div class="flex justify-between items-start mb-4">
+              <div class="text-[#FFD800] text-2xl"><i class="fa-solid fa-gift"></i></div>
+              <span class="badge badge-outline border-[#FFD800] text-[#FFD800]">Featured</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Campaign #5</h3>
+            <p class="text-[#E3E4E580] text-sm">Experience the best-in-class performance and design with our locked mobile-only framework.</p>
+          </div>
+        </section>
+      
+      </div>
+      
+    </main>
+
+    <footer class="fixed bottom-0 left-0 right-0 z-50 h-[70px] bg-[#3C3C3C] border-t border-[#E3E4E580] flex items-center justify-around px-2">
+      
+      <a href="index.html" class="flex flex-col items-center gap-1 group">
+        <div class="text-2xl transition-colors text-[#FFD800] group-active:scale-95">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <span class="text-[10px] font-medium text-[#FFD800] uppercase">Home</span>
+      </a>
+    
+      <a href="#" class="flex flex-col items-center gap-1 group">
+        <div class="text-2xl transition-colors text-[#E3E4E580] group-active:scale-95">
+          <i class="fa-solid fa-wallet"></i>
+        </div>
+        <span class="text-[10px] font-medium text-[#E3E4E580] uppercase">eWallet</span>
+      </a>
+    
+      <!-- Special floating/center icon as seen in screenshot -->
+      <a href="we-rewards.html" class="flex flex-col items-center gap-1 group -translate-y-2">
+        <div class="w-12 h-12 rounded-full border-4 border-[#3C3C3C] bg-white flex items-center justify-center shadow-lg transition-transform group-active:scale-90 overflow-hidden">
+          <img src="https://placehold.co/40x40/FFD800/3C3C3C?text=WE" alt="WE" class="w-full h-full object-cover">
+        </div>
+        <span class="text-[10px] font-bold text-[#FFD800] uppercase mt-1">WE Predict</span>
+      </a>
+    
+      <a href="#" class="flex flex-col items-center gap-1 group">
+        <div class="text-2xl transition-colors text-[#E3E4E580] group-active:scale-95">
+          <i class="fa-solid fa-percent"></i>
+        </div>
+        <span class="text-[10px] font-medium text-[#E3E4E580] uppercase">Promos</span>
+      </a>
+    
+      <a href="#" class="flex flex-col items-center gap-1 group">
+        <div class="text-2xl transition-colors text-[#E3E4E580] group-active:scale-95 relative">
+          <i class="fa-solid fa-comment-dots"></i>
+          <!-- Unread indicator example -->
+          <span class="absolute -top-1 -right-1 w-2 h-2 bg-[#FFD800] rounded-full"></span>
+        </div>
+        <span class="text-[10px] font-medium text-[#E3E4E580] uppercase">Live Chat</span>
+      </a>
+    
+    </footer>
+
+  </div>
+
+  <!-- Main JS entry -->
+
+</body>
+</html>

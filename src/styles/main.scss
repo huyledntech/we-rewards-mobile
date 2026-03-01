@@ -1,0 +1,25 @@
+// =============================================================================
+// main.scss — Entry point for SCSS processing
+// =============================================================================
+
+// 1. All @use rules first (required by Sass for custom modules)
+@use 'variables' as *;
+@use 'components';
+
+// 2. Vendor Dependencies (Font Awesome)
+// Note: Ensure @fortawesome/fontawesome-free is installed via npm
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+// 3. Tailwind CSS directives
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// =============================================================================
+// Custom Global Utilities
+// =============================================================================
+
+.desktop-stage {
+  // Ensure the body has the neutral backdrop color from variables
+  background-color: $desktop-bg-color !important;
+}

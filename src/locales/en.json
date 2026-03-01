@@ -1,0 +1,25 @@
+{
+  "nav.home":              "Home",
+  "nav.features":          "Features",
+  "nav.about":             "About",
+  "nav.contact":           "Contact",
+
+  "hero.title":            "Build Beautiful Interfaces",
+  "hero.subtitle":         "A modern frontend boilerplate powered by Tailwind CSS, daisyUI, and jQuery.",
+  "hero.cta":              "Get Started",
+
+  "features.title":        "What's Included",
+  "features.tailwind":     "Tailwind CSS",
+  "features.tailwindDesc": "Utility-first CSS framework for rapid UI development.",
+  "features.daisy":        "daisyUI",
+  "features.daisyDesc":    "Beautiful Tailwind CSS component library with themes.",
+  "features.jquery":       "jQuery",
+  "features.jqueryDesc":   "Familiar DOM manipulation and event handling.",
+
+  "card.learnMore":        "Learn more",
+
+  "i18n.title":            "Multi-language Support",
+  "i18n.subtitle":         "Switch languages using the buttons in the header. Language preference is saved automatically.",
+
+  "footer.copy":           "© 2025 FrontendKit. Built with Tailwind CSS, daisyUI & jQuery."
+}

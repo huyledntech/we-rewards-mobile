@@ -1,0 +1,64 @@
+// ── Brand Colors (LOCKED PALETTE) ─────────────────────────────────────────────
+$color-brand-yellow:   #FFD800;   // Header bg, Active nav, Primary highlights
+$color-brand-dark:     #3C3C3C;   // Main bg, Card bg, Primary text
+$color-brand-light:    rgba(227, 228, 229, 0.5); // #E3E4E580 - Muted text, Inactive
+
+// Mapping to semantic names
+$color-primary:        $color-brand-yellow;
+$color-bg-main:        $color-brand-dark;
+$color-bg-card:        $color-brand-dark;
+$color-text-primary:   #ffffff; // Added white for contrast on dark bg, as Dark Gray text on Dark Gray bg is unreadable
+$color-text-muted:     $color-brand-light;
+$color-border:         $color-brand-light;
+
+// ── Typography ────────────────────────────────────────────────────────────────
+$font-base:            'Inter', ui-sans-serif, system-ui, sans-serif;
+$font-size-xs:         0.75rem;   //  12px
+$font-size-sm:         0.875rem;  //  14px
+$font-size-base:       1rem;      //  16px
+$font-size-lg:         1.125rem;  //  18px
+$font-size-xl:         1.25rem;   //  20px
+$font-size-2xl:        1.5rem;    //  24px
+$font-size-3xl:        1.875rem;  //  30px
+$font-size-4xl:        2.25rem;   //  36px
+$font-weight-normal:   400;
+$font-weight-medium:   500;
+$font-weight-semibold: 600;
+$font-weight-bold:     700;
+$font-weight-extrabold:800;
+
+// ── Spacing ───────────────────────────────────────────────────────────────────
+$spacing-unit:  0.25rem;   // 4px base unit
+$spacing-xs:    $spacing-unit * 1;    //  4px
+$spacing-sm:    $spacing-unit * 2;    //  8px
+$spacing-md:    $spacing-unit * 4;    // 16px
+$spacing-lg:    $spacing-unit * 6;    // 24px
+$spacing-xl:    $spacing-unit * 8;    // 32px
+$spacing-2xl:   $spacing-unit * 12;   // 48px
+$spacing-3xl:   $spacing-unit * 16;   // 64px
+
+// ── Border Radius ─────────────────────────────────────────────────────────────
+$radius-sm:   0.25rem;
+$radius-md:   0.375rem;
+$radius-lg:   0.5rem;
+$radius-xl:   0.75rem;
+$radius-full: 9999px;
+
+// ── Shadows ───────────────────────────────────────────────────────────────────
+$shadow-sm:  0 1px 2px 0 rgb(0 0 0 / 0.05);
+$shadow-md:  0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+$shadow-lg:  0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+// ── Transitions ───────────────────────────────────────────────────────────────
+$transition-fast:   all 0.15s ease;
+$transition-base:   all 0.2s ease;
+$transition-slow:   all 0.35s ease;
+
+// ── Layout ────────────────────────────────────────────────────────────────────
+$header-height:      64px;
+
+// ── Mobile Viewport Lock ──────────────────────────────────────────────────────
+// All content is constrained to this width. Desktop shows a neutral backdrop.
+// Change $mobile-app-width to 375px (iPhone SE) or 414px (iPhone XR) as needed.
+$mobile-app-width:   768px;   // iPhone 14 / 15 / tablet logical width — the default
+$desktop-bg-color:   #0f0f14; // Dark neutral backdrop visible on desktop browsers
