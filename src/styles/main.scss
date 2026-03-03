@@ -5,10 +5,13 @@
 // 1. All @use rules first (required by Sass for custom modules)
 @use 'variables' as *;
 @use 'components';
+@use 'base';
 
 // 2. Vendor Dependencies (Font Awesome)
 // Note: Ensure @fortawesome/fontawesome-free is installed via npm
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 // 3. Tailwind CSS directives
 @tailwind base;
@@ -22,4 +25,22 @@
 .desktop-stage {
   // Ensure the body has the neutral backdrop color from variables
   background-color: $desktop-bg-color !important;
+}
+
+@layer utilities {
+
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* IE and Edge */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+  }
+
+  /* Firefox */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
 }

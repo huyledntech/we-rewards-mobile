@@ -1,0 +1,33 @@
+<div class="card bg-base-100 shadow-sm border-l-4 border-l-primary">
+  <div class="card-body p-4">
+    <div class="flex justify-between items-center mb-2">
+      <span class="badge badge-sm badge-ghost">{{type}}</span>
+      <span class="text-xs text-gray-400"><i class="fa-regular fa-calendar mr-1"></i> {{date}}</span>
+    </div>
+    <h3 class="font-bold text-lg leading-tight mb-1">{{title}}</h3>
+    <div class="flex items-center text-sm text-gray-500 mb-4">
+      <i class="fa-solid fa-trophy text-warning mr-2"></i>
+      <span>Prize Pool: {{prizePool}}</span>
+    </div>
+    <div class="flex justify-between items-center">
+      <div class="avatar-group -space-x-3 rtl:space-x-reverse">
+        <div class="avatar border-none">
+          <div class="w-8">
+            <img src="https://i.pravatar.cc/100?u=1" />
+          </div>
+        </div>
+        <div class="avatar border-none">
+          <div class="w-8">
+            <img src="https://i.pravatar.cc/100?u=2" />
+          </div>
+        </div>
+        <div class="avatar placeholder border-none">
+          <div class="w-8 bg-neutral text-neutral-content">
+            <span class="text-xs">+{{participantsCount}}</span>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-sm">Join Now</button>
+    </div>
+  </div>
+</div>

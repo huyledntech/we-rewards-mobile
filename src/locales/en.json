@@ -1,8 +1,10 @@
 {
   "nav.home":              "Home",
-  "nav.features":          "Features",
-  "nav.about":             "About",
-  "nav.contact":           "Contact",
+  "nav.ewallet":           "eWallet",
+  "nav.we":                "WE",
+  "nav.predict":           "Predict",
+  "nav.promos":            "Promos",
+  "nav.livechat":          "Live Chat",
 
   "hero.title":            "Build Beautiful Interfaces",
   "hero.subtitle":         "A modern frontend boilerplate powered by Tailwind CSS, daisyUI, and jQuery.",

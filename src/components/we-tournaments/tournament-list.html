@@ -1,0 +1,15 @@
+<div class="space-y-6">
+  <div class="flex justify-between items-center">
+    <h2 class="text-xl font-bold" data-i18n="tournaments.active">Active Tournaments</h2>
+    <div class="join">
+      <button class="btn btn-sm join-item btn-active">All</button>
+      <button class="btn btn-sm join-item">Ongoing</button>
+      <button class="btn btn-sm join-item">Coming Soon</button>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 gap-4">
+    {{#each tournaments}}
+      {{> we-tournaments/tournament-card this}}
+    {{/each}}
+  </div>
+</div>

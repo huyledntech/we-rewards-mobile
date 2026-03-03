@@ -1,41 +1,41 @@
-<footer class="fixed bottom-0 left-0 right-0 z-50 h-[70px] bg-[#3C3C3C] border-t border-[#E3E4E580] flex items-center justify-around px-2">
+<footer class="fixed bottom-0 left-0 right-0 z-50 h-[70px] bg-black flex items-center justify-around px-2">
   
   <a href="index.html" class="flex flex-col items-center gap-1 group">
-    <div class="text-2xl transition-colors {{#if (eq activePage 'home')}}text-[#FFD800]{{else}}text-[#E3E4E580]{{/if}} group-active:scale-95">
-      <i class="fa-solid fa-house"></i>
+    <div class="text-2xl transition-colors text-primary group-active:scale-95">
+      <img src="/assets/icons/home-icon.png" alt="Home" width="30px" />
     </div>
-    <span class="text-[10px] font-medium {{#if (eq activePage 'home')}}text-[#FFD800]{{else}}text-[#E3E4E580]{{/if}} uppercase">Home</span>
+    <span class="{{#if (eq activePage 'home')}}text-primary{{else}}text-white{{/if}}" data-i18n="nav.home">Home</span>
   </a>
 
   <a href="#" class="flex flex-col items-center gap-1 group">
-    <div class="text-2xl transition-colors {{#if (eq activePage 'ewallet')}}text-[#FFD800]{{else}}text-[#E3E4E580]{{/if}} group-active:scale-95">
-      <i class="fa-solid fa-wallet"></i>
+    <div class="text-2xl transition-colors text-primary group-active:scale-95">
+      <img src="/assets/icons/ewallet-icon.png" alt="Home" width="30px" />
     </div>
-    <span class="text-[10px] font-medium {{#if (eq activePage 'ewallet')}}text-[#FFD800]{{else}}text-[#E3E4E580]{{/if}} uppercase">eWallet</span>
+    <span class="{{#if (eq activePage 'ewallet')}}text-primary{{else}}text-white{{/if}}" data-i18n="nav.ewallet">eWallet</span>
   </a>
 
   <!-- Special floating/center icon as seen in screenshot -->
   <a href="we-rewards.html" class="flex flex-col items-center gap-1 group -translate-y-2">
-    <div class="w-12 h-12 rounded-full border-4 border-[#3C3C3C] bg-white flex items-center justify-center shadow-lg transition-transform group-active:scale-90 overflow-hidden">
-      <img src="https://placehold.co/40x40/FFD800/3C3C3C?text=WE" alt="WE" class="w-full h-full object-cover">
+    <div class="text-2xl transition-colors text-primary group-active:scale-95 relative -mt-4">
+      <img src="/assets/icons/we-predict-icon.png" alt="Home" width="60px" />
     </div>
-    <span class="text-[10px] font-bold text-[#FFD800] uppercase mt-1">WE Predict</span>
+    <span>
+      <span class="mt-1 text-primary" data-i18n="nav.we">WE</span> <span class="text-white" data-i18n="nav.predict">Predict</span>
+    </span>
   </a>
 
   <a href="#" class="flex flex-col items-center gap-1 group">
-    <div class="text-2xl transition-colors {{#if (eq activePage 'promos')}}text-[#FFD800]{{else}}text-[#E3E4E580]{{/if}} group-active:scale-95">
-      <i class="fa-solid fa-percent"></i>
+    <div class="text-2xl transition-colors text-primary group-active:scale-95">
+      <img src="/assets/icons/promo-icon.png" alt="Home" width="30px" />
     </div>
-    <span class="text-[10px] font-medium {{#if (eq activePage 'promos')}}text-[#FFD800]{{else}}text-[#E3E4E580]{{/if}} uppercase">Promos</span>
+    <span class="{{#if (eq activePage 'promos')}}text-primary{{else}}text-white{{/if}}">Promos</span>
   </a>
 
   <a href="#" class="flex flex-col items-center gap-1 group">
-    <div class="text-2xl transition-colors {{#if (eq activePage 'chat')}}text-[#FFD800]{{else}}text-[#E3E4E580]{{/if}} group-active:scale-95 relative">
-      <i class="fa-solid fa-comment-dots"></i>
-      <!-- Unread indicator example -->
-      <span class="absolute -top-1 -right-1 w-2 h-2 bg-[#FFD800] rounded-full"></span>
+    <div class="text-2xl transition-colors text-primary group-active:scale-95 relative -mt-4">
+      <img src="/assets/icons/live-chat-icon.png" alt="Home" width="50px" class="" />
     </div>
-    <span class="text-[10px] font-medium {{#if (eq activePage 'chat')}}text-[#FFD800]{{else}}text-[#E3E4E580]{{/if}} uppercase">Live Chat</span>
+    <span class="{{#if (eq activePage 'chat')}}text-primary{{else}}text-white{{/if}}">Live Chat</span>
   </a>
 
 </footer>

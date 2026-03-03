@@ -16,6 +16,8 @@
 
 import './i18n.js';
 
+import './we-rewards.js';
+
 $(document).ready(function () {
 
     console.log('✅ FrontendKit ready.');
@@ -82,3 +84,4 @@ $(document).ready(function () {
     // });
 
 });
+

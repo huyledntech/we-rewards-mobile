@@ -1,0 +1,204 @@
+/* ─── _base.scss ───────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+/* ─── _scrollbar.scss ──────────────────── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── _daisy-tabs.scss ─────────────────────
+       Override DaisyUI .tabs to match design:
+       - bg #3C3C3C container
+       - yellow underline on active
+       - white active text, gray inactive
+    ─────────────────────────────────────────── */
+.we-tabs {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 12px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  flex-wrap: nowrap;
+  gap: 0;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.we-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.we-tabs .tab {
+  font-weight: 300;
+  color: #9ca3af;
+  border-bottom: 2px solid transparent;
+  padding: 5px 15px !important;
+  white-space: nowrap;
+  border-radius: 0;
+  transition: color .2s, border-color .2s;
+  /* reset DaisyUI defaults */
+  background: transparent !important;
+  height: auto;
+  min-height: unset;
+  flex-wrap: nowrap;
+}
+
+.we-tabs .tab:hover {
+  color: #d1d5db;
+}
+
+.we-tabs .tab.tab-active,
+.we-tabs .tab[aria-selected="true"] {
+  color: #000 !important;
+  font-weight: bold !important;
+  border-bottom-color: #facc15 !important;
+  background: transparent !important;
+}
+
+/* ─── _membership-card.scss ────────────── */
+#card-expanded {
+  display: none;
+}
+
+/* ─── _predict-subtabs.scss ────────────────── */
+.ptab {
+  transition: background .18s, color .18s;
+}
+
+.ptab-active {
+  background: #facc15 !important;
+  color: #000 !important;
+  border-color: #facc15 !important;
+  font-weight: 700 !important;
+}
+
+.ppanel {
+  animation: fadeInUp .22s ease both;
+}
+
+/* ─── _day-filter.scss ─────────────────────── */
+.day-btn {
+  transition: background .18s, color .18s;
+}
+
+.day-active {
+  background: #facc15 !important;
+  color: #000 !important;
+  border: none !important;
+  font-weight: 700 !important;
+}
+
+/* ─── _faq.scss ────────────────────────────── */
+.faq-body {
+  transition: none;
+}
+
+/* ─── _tournament-filter.scss ──────────────── */
+.tfilter {
+  transition: background .18s, color .18s;
+}
+
+.tfilter-active {
+  background: #facc15 !important;
+  color: #000 !important;
+  border: none !important;
+  font-weight: 700 !important;
+}
+
+/* ─── _we-spin.scss ────────────────────────── */
+.spin-filter {
+  transition: background .18s, color .18s;
+}
+
+.spin-filter-active {
+  background: #facc15 !important;
+  color: #000 !important;
+  border: none !important;
+  font-weight: 700 !important;
+}
+
+.spin-ppanel {
+  animation: fadeInUp .22s ease both;
+}
+
+/* ─── _mission-filter.scss ─────────────────── */
+.mission-filter {
+  transition: background .18s, color .18s, border-color .18s;
+}
+
+.mission-filter-active {
+  background: #facc15 !important;
+  color: #000 !important;
+  border: none !important;
+}
+
+/* ─── _free-filter.scss ────────────────────── */
+.free-filter {
+  transition: background .18s, color .18s, border-color .18s;
+}
+
+.free-filter-active {
+  background: #facc15 !important;
+  color: #000 !important;
+  border-color: #facc15 !important;
+}
+
+/* ─── _animations.scss ─────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(250, 204, 21, .3);
+  }
+
+  50% {
+    box-shadow: 0 0 22px rgba(250, 204, 21, .6);
+  }
+}
+
+.fade-up-1 {
+  animation: fadeInUp .35s ease both 0s;
+}
+
+.fade-up-2 {
+  animation: fadeInUp .35s ease both .06s;
+}
+
+.tab-panel {
+  animation: fadeInUp .22s ease both;
+}
+
+.glow-hover:hover {
+  animation: pulseGlow 1.4s infinite;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

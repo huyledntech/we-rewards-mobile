@@ -1,0 +1,95 @@
+<div class="bg-black pt-8">
+  <div class="overflow-hidden fade-up-2 bg-[#3C3C3C]">
+
+    <!-- ── COLLAPSED ── -->
+    <div id="card-collapsed" class="p-4 !pb-2 flex flex-col gap-2">
+      <div class="flex items-center gap-2.5">
+        <!-- mini WE logo -->
+        <div
+          class="shrink-0 w-14 h-11 rounded-lg flex items-center justify-center font-heading font-black text-2xl text-white tracking-tighter"
+          style="background:linear-gradient(135deg,#7f0000,#cc2200)">
+          <img src="/assets/images/red-member.png" alt="Membership Card" class="!h-[44px]" />
+        </div>
+        <!-- progress info -->
+        <div class="flex-1 min-w-0">
+          <div class="text-white flex items-start justify-between">
+            <div><span>Ends in:</span> <span>85D 13:08:42</span></div>
+            <button class="text-gray-500 text-lg self-start ml-0.5">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="flex-1 h-4 bg-gray-200 rounded-full relative">
+              <div class="h-full rounded-full bg-yellow-400" style="width:50%"></div>
+              <div class="text-[9px] text-gray-900 absolute inset-0 flex items-center justify-center">
+                MYR 500.25 / 100,000 (0.50%)
+              </div>
+            </div>
+            <!-- silver -->
+            <div class="flex items-center gap-1 text-[11px] text-gray-300 shrink-0">
+              Silver
+              <span class=" text-gray-300">
+                <i class="fa-solid fa-circle-info"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="btn-show-more"
+        class="flex items-center justify-center gap-1 text-[13px] text-gray-300 pt-1">
+        Show More
+        <i class="fa-solid fa-circle-chevron-down"></i>
+      </button>
+    </div>
+
+    <!-- ── EXPANDED ── -->
+    <div id="card-expanded" class="flex-col hidden">
+      <!-- privilege card + user info -->
+      <div class="flex items-start gap-3 p-3">
+        <div class="privilege-card">
+          <img src="/assets/images/red-member.png" alt="Membership Card" class="!h-[100px]" />
+        </div>
+
+        <div class="flex-1 h-full min-w-0 pt-0.5">
+          <p class="text-[15px] font-bold text-white mb-5">Brown2388</p>
+          <p class="text-[12px] text-gray-300 font-medium mb-0.5">1st Jan - 31st Mar 2026</p>
+          <p class="text-[11px] text-gray-400 flex items-center gap-1">
+            <span>⏱</span> Ends in: <strong class="text-white">85D 13:08:42</strong>
+          </p>
+        </div>
+        <button class="text-gray-500 text-lg self-start shrink-0">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+      </div>
+
+      <!-- tier row -->
+      <div class="flex items-center justify-between px-3 pb-1.5">
+        <span class="text-sm font-bold text-primary">Red</span>
+        <div class="flex items-center gap-1 text-[13px] font-bold text-gray-300">
+          Silver
+          <span class=" text-gray-300">
+            <i class="fa-solid fa-circle-info"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- progress bar with label -->
+      <div class="px-3">
+        <div class="flex-1 h-4 bg-gray-200 rounded-full relative">
+          <div class="h-full rounded-full bg-yellow-400" style="width:50%"></div>
+          <div class="text-[9px] text-gray-900 absolute inset-0 flex items-center justify-center">
+            MYR 500.25 / 100,000 (0.50%)
+          </div>
+        </div>
+      </div>
+
+      <!-- show less -->
+      <button id="btn-show-less"
+        class="flex items-center justify-center gap-1 text-[13px] text-gray-300 py-2.5">
+        Show Less
+        <i class="fa-solid fa-circle-chevron-up"></i>
+      </button>
+    </div>
+
+  </div>
+</div>

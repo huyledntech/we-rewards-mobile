@@ -12,8 +12,8 @@ const __dirname = dirname(__filename);
 const OUT_DIR = 'dist';
 
 // ── Auto-discovery for HTML pages ───────────────────────────────────────────
-const input = fg.sync('src/pages/**/*.html').reduce((acc, file) => {
-  const name = relative('src/pages', file).replace(/\.html$/, '');
+const input = fg.sync('src/*.html').reduce((acc, file) => {
+  const name = relative('src', file).replace(/\.html$/, '');
   acc[name] = resolve(__dirname, file);
   return acc;
 }, {});

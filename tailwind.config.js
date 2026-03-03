@@ -13,7 +13,16 @@ export default {
     // Desktop layouts are explicitly forbidden in this project.
     screens: {},
 
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Overpass', 'sans-serif'],
+      },
+      colors: {
+        primary: '#FFD800',
+        secondary: '#3C3C3C',
+        accent: '#E3E4E580',
+      },
+    },
   },
   plugins: [daisyui],
   daisyui: {

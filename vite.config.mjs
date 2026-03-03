@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // ── Auto-discovery for HTML pages ───────────────────────────────────────────
-const input = fg.sync('src/pages/**/*.html').reduce((acc, file) => {
+const input = fg.sync(['src/*.html']).reduce((acc, file) => {
   const name = relative('src/pages', file).replace(/\.html$/, '');
   acc[name] = resolve(__dirname, file);
   return acc;
@@ -53,7 +53,9 @@ export default defineConfig({
           const result = [];
           for (let i = from; i <= to; i++) result.push(i);
           return result;
-        }
+        },
+        list: (...args) => args.slice(0, -1),
+        object: ({ hash }) => hash
       }
     }),
     copyAssets()
