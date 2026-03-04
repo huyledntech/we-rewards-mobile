@@ -1,0 +1,193 @@
+<!-- user ranking bar -->
+<div class="mx-3 mb-3 bg-[#E3E4E5] rounded-xl p-3">
+  <div class="flex items-center gap-3 text-xs text-gray-600 justify-between">
+    <div class="flex items-center gap-1">
+      <span>My Ranking:</span>
+      <span><strong>13</strong>/500</span>
+      <i class="fa-solid fa-circle-chevron-right"></i>
+    </div>
+    <div>
+      <button class="bg-gray-800 text-white text-[11px] font-bold px-3 py-1 rounded-full">Records</button>
+      <button class="bg-gray-500 text-white text-[11px] font-bold px-3 py-1 rounded-full whitespace-nowrap">
+        Share to Friend <i class="fa-regular fa-share-from-square"></i>
+      </button>
+    </div>
+  </div>
+  <div>
+    <span class="font-bold text-gray-900 text-sm">Brown23</span>
+  </div>
+  <div class="flex items-center gap-3 mt-1.5 text-[12px] text-gray-400">
+    <span>W/L Points: <strong class="text-black">5,300</strong></span>
+    <span>Prizes (USD): <strong class="text-black">88.00</strong></span>
+    <span>Booster: <strong class="text-black">0</strong></span>
+  </div>
+</div>
+
+<!-- promo banner -->
+<div class="mx-3 mb-3 rounded-xl overflow-hidden h-28 relative flex items-center">
+  <img src="/assets/images/we-rewards/we-predict-slide-1.png" class="w-full h-full object-contain" />
+</div>
+<!-- banner dots -->
+<div class="flex justify-center gap-1.5 mb-3">
+  <span class="w-2 h-2 rounded-full bg-gray-800"></span>
+  <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+  <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+  <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+</div>
+
+<!-- records date filter -->
+<div class="flex items-center justify-between px-3 mb-2">
+  <span class="text-[13px] font-semibold text-gray-700">Records</span>
+  <button
+    class="flex items-center gap-1.5 border border-gray-200 rounded-lg px-3 py-1.5 text-[12px] text-gray-700 font-medium">
+    29 Sept 2026 <span class="text-gray-400">▼</span>
+  </button>
+</div>
+
+<!-- leaderboard table -->
+<div class="mx-3 mb-4 rounded-xl overflow-hidden border border-gray-100">
+  <!-- header -->
+  <div class="grid text-[11px] font-bold text-yellow-500 bg-white px-3 py-2 border-b border-gray-100"
+    style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+    <span>Rank</span><span>Tipster</span><span>W/L Point</span><span>Prize</span><span>Pool Share</span><span
+      class="text-right">Action</span>
+  </div>
+
+  <!-- highlighted user row -->
+  <div class="grid items-center px-3 py-2 text-[11px] bg-yellow-50 border-b border-yellow-100"
+    style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+    <span class="font-bold text-gray-900">12</span>
+    <div class="flex items-center gap-1.5">
+      <span class="text-base">🇲🇾</span>
+      <span class="font-bold text-gray-900">Stevie G</span>
+    </div>
+    <span class="font-bold text-gray-900">8,300</span>
+    <span class="font-bold text-gray-900">168</span>
+    <span class="font-bold text-gray-900">1%</span>
+    <span class="text-right text-yellow-600 font-semibold underline cursor-pointer">View Tips</span>
+  </div>
+
+  <!-- rows 1-10 -->
+  <div id="lb-rows">
+    <!-- row template repeated -->
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">1</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">21,500</span><span class="text-gray-700">2,188</span><span
+        class="text-gray-700">8%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">2</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇹🇭</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">21,500</span><span class="text-gray-700">1,688</span><span
+        class="text-gray-700">5%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">3</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇺🇸</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">20,000</span><span class="text-gray-700">1,088</span><span
+        class="text-gray-700">3%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">4</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">19,500</span><span class="text-gray-700">688</span><span
+        class="text-gray-700">2%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">5</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇻🇳</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">19,500</span><span class="text-gray-700">688</span><span
+        class="text-gray-700">2%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">6</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">15,500</span><span class="text-gray-700">388</span><span
+        class="text-gray-700">1%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">7</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇻🇳</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">15,100</span><span class="text-gray-700">388</span><span
+        class="text-gray-700">1%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">8</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">14,500</span><span class="text-gray-700">388</span><span
+        class="text-gray-700">1%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">9</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇺🇸</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">13,100</span><span class="text-gray-700">388</span><span
+        class="text-gray-700">1%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="text-gray-900">10</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
+          class="text-gray-700">***o84</span></div>
+      <span class="text-gray-700">9,500</span><span class="text-gray-700">388</span><span
+        class="text-gray-700">1%</span>
+      <span class="text-right text-yellow-600 underline cursor-pointer">View Tips</span>
+    </div>
+    <!-- current user pinned -->
+    <div class="grid items-center px-3 py-2 text-[11px] bg-yellow-50"
+      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
+      <span class="font-bold text-gray-900">13</span>
+      <div class="flex items-center gap-1.5"><span class="text-base">🇺🇸</span><span
+          class="font-bold text-gray-900">Brown23</span></div>
+      <span class="font-bold text-gray-900">5,300</span><span class="font-bold text-gray-900">88</span><span
+        class="font-bold text-gray-900">1%</span>
+      <span class="text-right text-yellow-600 font-semibold underline cursor-pointer">View Tips</span>
+    </div>
+  </div>
+</div>
+
+<!-- pagination -->
+<div class="flex items-center justify-between px-3 pb-4">
+  <div class="flex items-center gap-2 text-[12px] text-gray-600">
+    <span>Show Rows</span>
+    <select class="border border-gray-200 rounded-lg px-2 py-1 text-[12px]">
+      <option>10</option>
+      <option>25</option>
+      <option>50</option>
+    </select>
+  </div>
+  <div class="flex items-center gap-2 text-[12px] text-gray-500">
+    <span>1-10 of 500</span>
+    <button
+      class="w-7 h-7 rounded-full border border-gray-200 flex items-center justify-center text-gray-400">‹</button>
+    <button
+      class="w-7 h-7 rounded-full border border-gray-200 flex items-center justify-center text-gray-700">›</button>
+  </div>
+</div>

@@ -1,12 +1,14 @@
+const tabActive = ['bg-white', 'text-gray-500', 'border', 'border-gray-200'];
+
 // ── WE Predict sub-tabs ───────────────────────────
 document.querySelectorAll('[data-ptab]').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('[data-ptab]').forEach(b => {
       b.classList.remove('ptab-active');
-      b.classList.add('border-gray-200', 'text-gray-600', 'bg-white');
+      b.classList.add(tabActive);
     });
     btn.classList.add('ptab-active');
-    btn.classList.remove('border-gray-200', 'text-gray-600', 'bg-white');
+    btn.classList.remove(tabActive);
 
     document.querySelectorAll('.ppanel').forEach(p => p.classList.add('hidden'));
     const target = document.getElementById('ppanel-' + btn.dataset.ptab);
@@ -21,11 +23,11 @@ document.querySelectorAll('[data-ptab]').forEach(btn => {
 document.querySelectorAll('[data-day]').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('[data-day]').forEach(b => {
-      b.classList.remove('day-active');
-      b.classList.add('border', 'border-gray-200', 'text-gray-500', 'bg-white');
+      b.classList.remove('tfilter-active');
+      b.classList.add(tabActive);
     });
-    btn.classList.add('day-active');
-    btn.classList.remove('border', 'border-gray-200', 'text-gray-500', 'bg-white');
+    btn.classList.add('tfilter-active');
+    btn.classList.remove(tabActive);
   });
 });
 
@@ -37,7 +39,7 @@ document.querySelectorAll('.faq-toggle').forEach(btn => {
     const icon = item.querySelector('.faq-icon');
     const isOpen = !body.classList.contains('hidden');
     body.classList.toggle('hidden', isOpen);
-    icon.textContent = isOpen ? '∨' : '∧';
+    icon.innerHTML = isOpen ? '<i class="fa-solid fa-angle-up"></i>' : '<i class="fa-solid fa-angle-down"></i>';
   });
 });
 
@@ -58,10 +60,10 @@ document.querySelectorAll('[data-tfilter]').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('[data-tfilter]').forEach(b => {
       b.classList.remove('tfilter-active');
-      b.classList.add('bg-white', 'text-gray-500', 'border', 'border-gray-200');
+      b.classList.add(tabActive);
     });
     btn.classList.add('tfilter-active');
-    btn.classList.remove('bg-white', 'text-gray-500', 'border', 'border-gray-200');
+    btn.classList.remove(tabActive);
   });
 });
 
@@ -70,10 +72,10 @@ document.querySelectorAll('[data-spintab]').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('[data-spintab]').forEach(b => {
       b.classList.remove('spin-filter-active');
-      b.classList.add('bg-white', 'text-gray-500', 'border', 'border-gray-200');
+      b.classList.add(tabActive);
     });
     btn.classList.add('spin-filter-active');
-    btn.classList.remove('bg-white', 'text-gray-500', 'border', 'border-gray-200');
+    btn.classList.remove(tabActive);
     document.querySelectorAll('.spin-ppanel').forEach(p => p.classList.add('hidden'));
     const t = document.getElementById('spanel-' + btn.dataset.spintab);
     if (t) { t.classList.remove('hidden'); t.style.animation = 'none'; t.offsetHeight; t.style.animation = ''; }
@@ -84,11 +86,11 @@ document.querySelectorAll('[data-spintab]').forEach(btn => {
 document.querySelectorAll('.mission-filter').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.mission-filter').forEach(b => {
-      b.classList.remove('mission-filter-active');
-      b.classList.add('bg-white', 'text-gray-500', 'border', 'border-gray-200');
+      b.classList.remove('tfilter-active');
+      b.classList.add(tabActive);
     });
-    btn.classList.add('mission-filter-active');
-    btn.classList.remove('bg-white', 'text-gray-500', 'border', 'border-gray-200');
+    btn.classList.add('tfilter-active');
+    btn.classList.remove(tabActive);
   });
 });
 
@@ -96,11 +98,11 @@ document.querySelectorAll('.mission-filter').forEach(btn => {
 document.querySelectorAll('.free-filter').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.free-filter').forEach(b => {
-      b.classList.remove('free-filter-active', 'bg-yellow-400', 'text-black');
-      b.classList.add('bg-white', 'text-gray-500');
+      b.classList.remove('tfilter-active');
+      b.classList.add(tabActive);
     });
-    btn.classList.add('free-filter-active');
-    btn.classList.remove('bg-white', 'text-gray-500');
+    btn.classList.add('tfilter-active');
+    btn.classList.remove(tabActive);
   });
 });
 
