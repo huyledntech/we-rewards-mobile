@@ -1,303 +1,266 @@
 <div id="panel-missions" class="tab-panel hidden bg-gray-50 min-h-screen">
 
-    <!-- ── missions-filter.html ── -->
-    <div class="flex gap-2 px-3 pt-4 pb-3">
-      <button data-mfilter="all"
-        class="mission-filter mission-filter-active shrink-0 flex-1 p-1 rounded-md">All</button>
-      <button data-mfilter="available"
-        class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Available</button>
-      <button data-mfilter="claimed"
-        class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Claimed</button>
-      <button data-mfilter="expired"
-        class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Expired</button>
-    </div>
-
-    <!-- ── missions-live-casino.html ── -->
-    <section class="mb-4">
-      <h2 class="font-heading font-bold text-[17px] text-gray-900 px-3 mb-2">Live Casino</h2>
-      <div class="grid grid-cols-2 gap-2.5 px-3">
-
-        <!-- Casino Free Credit – Completed -->
-        <div class="bg-[#1c1c1c] rounded-xl overflow-hidden flex flex-col">
-          <div class="relative h-28 flex items-end p-2.5 overflow-hidden"
-            style="background:linear-gradient(145deg,#0d0020,#3b0080,#7c3aed,#c026d3)">
-            <span class="absolute inset-0 flex items-center justify-center text-6xl opacity-20">🎰</span>
-            <span
-              class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Completed</span>
-            <button
-              class="absolute top-2 right-2 w-5 h-5 rounded-full border border-white/40 flex items-center justify-center text-[10px] text-white/60">i</button>
-            <p class="font-heading font-bold text-white text-[15px] leading-tight relative z-10">Casino Free Credit</p>
-          </div>
-          <div class="p-2.5 flex flex-col flex-1">
-            <span
-              class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded self-start mb-2">
-              <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              Ends in: 23:24:12
-            </span>
-            <div class="flex gap-3 mb-3 flex-1">
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Missions:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Reach turnover MYR 1,500 on any evolution casino</p>
-              </div>
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Rewards:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Free MYR 88</p>
-              </div>
-            </div>
-            <button
-              class="w-full bg-yellow-400 text-black font-heading font-bold text-[14px] py-2 rounded-lg glow-hover">Claim
-              Now</button>
-          </div>
-        </div>
-
-        <!-- Weekly Baccarat Quest – Opt In -->
-        <div class="bg-[#1c1c1c] rounded-xl overflow-hidden flex flex-col">
-          <div class="relative h-28 flex items-end p-2.5 overflow-hidden"
-            style="background:linear-gradient(145deg,#1a0000,#7f0000,#c0000a,#ff1a1a)">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="w-14 h-14 rounded-full border-2 border-red-300 flex flex-col items-center justify-center"
-                style="background:linear-gradient(135deg,#ef4444,#991b1b)">
-                <span class="text-[8px] font-bold text-white">FRESH</span>
-                <span class="text-[10px] font-extrabold text-white">START</span>
-              </div>
-            </div>
-            <button
-              class="absolute top-2 right-2 w-5 h-5 rounded-full border border-white/40 flex items-center justify-center text-[10px] text-white/60">i</button>
-            <p class="font-heading font-bold text-white text-[15px] leading-tight relative z-10">Weekly Baccarat Quest
-            </p>
-          </div>
-          <div class="p-2.5 flex flex-col flex-1">
-            <span
-              class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded self-start mb-2">
-              <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              Ends in: 3D 23:24:12
-            </span>
-            <div class="flex gap-3 mb-3 flex-1">
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Missions:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Wager MYR 5,000 on any Evolution Live.</p>
-              </div>
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Rewards:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Free MYR 38</p>
-              </div>
-            </div>
-            <button
-              class="w-full border-2 border-yellow-400 text-yellow-400 font-heading font-bold text-[14px] py-1.5 rounded-lg flex items-center justify-center gap-1">Opt
-              In ›</button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── missions-slots.html ── -->
-    <section class="mb-4">
-      <h2 class="font-heading font-bold text-[17px] text-gray-900 px-3 mb-2">Slots</h2>
-      <div class="grid grid-cols-2 gap-2.5 px-3">
-
-        <!-- Daily Slots Quest – Completed -->
-        <div class="bg-[#1c1c1c] rounded-xl overflow-hidden flex flex-col">
-          <div class="relative h-28 flex items-end p-2.5 overflow-hidden"
-            style="background:linear-gradient(145deg,#0a1f00,#1a5200,#2e7d00,#5ca300)">
-            <span class="absolute inset-0 flex items-center justify-center text-6xl opacity-25">🐉</span>
-            <span
-              class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Completed</span>
-            <button
-              class="absolute top-2 right-2 w-5 h-5 rounded-full border border-white/40 flex items-center justify-center text-[10px] text-white/60">i</button>
-            <p class="font-heading font-bold text-white text-[15px] leading-tight relative z-10">Daily Slots Quest</p>
-          </div>
-          <div class="p-2.5 flex flex-col flex-1">
-            <span
-              class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded self-start mb-2">
-              <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              Ends in: 23:24:12
-            </span>
-            <div class="flex gap-3 mb-3 flex-1">
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Missions:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Wager MYR 1,500 on any Slots.</p>
-              </div>
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Rewards:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Free MYR 8</p>
-              </div>
-            </div>
-            <button
-              class="w-full bg-yellow-400 text-black font-heading font-bold text-[14px] py-2 rounded-lg glow-hover">Claim</button>
-          </div>
-        </div>
-
-        <!-- Daily Scatter Quest – Coming Soon -->
-        <div class="bg-[#1c1c1c] rounded-xl overflow-hidden flex flex-col">
-          <div class="relative h-28 flex items-end p-2.5 overflow-hidden"
-            style="background:linear-gradient(145deg,#1a0050,#4a00b0,#9b2de0,#e0a800)">
-            <span class="absolute inset-0 flex items-center justify-center text-6xl opacity-20">⚡</span>
-            <span
-              class="absolute top-2 right-2 bg-gray-600/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Coming
-              Soon</span>
-            <button
-              class="absolute top-2 left-2 w-5 h-5 rounded-full border border-white/40 flex items-center justify-center text-[10px] text-white/60">i</button>
-            <p class="font-heading font-bold text-white text-[15px] leading-tight relative z-10">Daily Scatter Quest</p>
-          </div>
-          <div class="p-2.5 flex flex-col flex-1">
-            <span
-              class="inline-flex items-center gap-1 bg-gray-600 text-gray-300 text-[10px] font-bold px-2 py-0.5 rounded self-start mb-2">
-              <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              Start in: 05:24:12
-            </span>
-            <div class="flex gap-3 mb-3 flex-1">
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Missions:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Hits scatter & win additional prizes</p>
-              </div>
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Rewards:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">3 get MYR18<br>4 get MYR38<br>5 get MYR88</p>
-              </div>
-            </div>
-            <button
-              class="w-full bg-gray-600 text-gray-400 font-heading font-bold text-[14px] py-2 rounded-lg cursor-not-allowed">Coming
-              Soon</button>
-          </div>
-        </div>
-
-        <!-- Weekly Turnover Quest – In Progress -->
-        <div class="bg-[#1c1c1c] rounded-xl overflow-hidden flex flex-col">
-          <div class="relative h-28 flex items-end p-2.5 overflow-hidden"
-            style="background:linear-gradient(145deg,#2a0000,#7a1000,#c04000,#e07000)">
-            <span class="absolute inset-0 flex items-center justify-center text-6xl opacity-20">🎲</span>
-            <button
-              class="absolute top-2 right-2 w-5 h-5 rounded-full border border-white/40 flex items-center justify-center text-[10px] text-white/60">i</button>
-            <p class="font-heading font-bold text-white text-[15px] leading-tight relative z-10">Weekly Turnover Quest
-            </p>
-          </div>
-          <div class="p-2.5 flex flex-col flex-1">
-            <span
-              class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded self-start mb-2">
-              <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              Ends in: 5D 23:24:12
-            </span>
-            <div class="flex gap-3 mb-2 flex-1">
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Missions:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Play & reach weekly turnover target to unlock rewards
-                </p>
-              </div>
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Rewards:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">138 Free Spin on pragmaticplay</p>
-              </div>
-            </div>
-            <!-- progress bar -->
-            <div class="mb-2">
-              <div class="h-1.5 bg-gray-700 rounded-full overflow-hidden">
-                <div class="h-full bg-yellow-400 rounded-full" style="width:0.33%"></div>
-              </div>
-              <p class="text-[9px] text-gray-500 mt-0.5">MYR 100.35 / 30,000.00 (0.33%)</p>
-            </div>
-            <button
-              class="w-full border-2 border-yellow-400 text-yellow-400 font-heading font-bold text-[14px] py-1.5 rounded-lg flex items-center justify-center gap-1">Opt
-              In ›</button>
-          </div>
-        </div>
-
-        <!-- Weekly Slots Quest – Coming Soon -->
-        <div class="bg-[#1c1c1c] rounded-xl overflow-hidden flex flex-col">
-          <div class="relative h-28 flex items-end p-2.5 overflow-hidden"
-            style="background:linear-gradient(145deg,#1a0050,#4a00aa,#7c1fcf,#c8a000)">
-            <span class="absolute inset-0 flex items-center justify-center text-6xl opacity-20">👑</span>
-            <span
-              class="absolute top-2 right-2 bg-gray-600/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Coming
-              Soon</span>
-            <button
-              class="absolute top-2 left-2 w-5 h-5 rounded-full border border-white/40 flex items-center justify-center text-[10px] text-white/60">i</button>
-            <p class="font-heading font-bold text-white text-[15px] leading-tight relative z-10">Weekly Slots Quest</p>
-          </div>
-          <div class="p-2.5 flex flex-col flex-1">
-            <span
-              class="inline-flex items-center gap-1 bg-gray-600 text-gray-300 text-[10px] font-bold px-2 py-0.5 rounded self-start mb-2">
-              <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              Starts in: 05:24:12
-            </span>
-            <div class="flex gap-3 mb-3 flex-1">
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Missions:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Play & reach weekly turnover target to unlock rewards
-                </p>
-              </div>
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Rewards:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">138 Free Spin on pragmaticplay</p>
-              </div>
-            </div>
-            <button
-              class="w-full bg-gray-600 text-gray-400 font-heading font-bold text-[14px] py-2 rounded-lg cursor-not-allowed">Coming
-              Soon</button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── missions-sportsbook.html ── -->
-    <section class="mb-4">
-      <h2 class="font-heading font-bold text-[17px] text-gray-900 px-3 mb-2">Sportsbook</h2>
-      <div class="grid grid-cols-2 gap-2.5 px-3">
-
-        <!-- Sport Weekly Quest -->
-        <div class="bg-[#1c1c1c] rounded-xl overflow-hidden flex flex-col">
-          <div class="relative h-28 flex items-end p-2.5 overflow-hidden"
-            style="background:linear-gradient(145deg,#001a40,#003380,#0055cc,#0080ff)">
-            <span class="absolute inset-0 flex items-center justify-center text-6xl opacity-20">⚽</span>
-            <button
-              class="absolute top-2 right-2 w-5 h-5 rounded-full border border-white/40 flex items-center justify-center text-[10px] text-white/60">i</button>
-            <p class="font-heading font-bold text-white text-[15px] leading-tight relative z-10">Sport Weekly Quest</p>
-          </div>
-          <div class="p-2.5 flex flex-col flex-1">
-            <span
-              class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded self-start mb-2">
-              <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              Ends in: 23:24:12
-            </span>
-            <div class="flex gap-3 mb-3 flex-1">
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Missions:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Reach turnover MYR 5,000 in saba sports</p>
-              </div>
-              <div class="flex-1">
-                <p class="text-[10px] text-gray-400 font-semibold mb-0.5">Rewards:</p>
-                <p class="text-[10px] text-gray-300 leading-snug">Free MYR 38 bonus</p>
-              </div>
-            </div>
-            <button
-              class="w-full border-2 border-yellow-400 text-yellow-400 font-heading font-bold text-[14px] py-1.5 rounded-lg flex items-center justify-center gap-1">Opt
-              In ›</button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
+  <!-- ── missions-filter.html ── -->
+  <div class="flex gap-2 px-3 pt-4 pb-3">
+    <button data-mfilter="all" class="mission-filter mission-filter-active shrink-0 flex-1 p-1 rounded-md">All</button>
+    <button data-mfilter="available"
+      class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Available</button>
+    <button data-mfilter="claimed"
+      class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Claimed</button>
+    <button data-mfilter="expired"
+      class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Expired</button>
   </div>
+
+  <!-- ── missions-live-casino.html ── -->
+  <section class="mb-4">
+    <h2 class="font-heading font-bold text-base text-gray-900 px-3 mb-2">Live Casino</h2>
+    <div class="grid grid-cols-2 gap-2.5 px-3">
+
+      <!-- Casino Free Credit – Completed -->
+      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/live-casino-2.png" class="w-full h-full object-cover" />
+          <span
+            class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Completed</span>
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Casino Free Credit
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            Ends in: 23:24:12
+          </span>
+          <div class="flex gap-2 mb-2.5">
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Rewards:</p>
+              <p class="text-gray-500 italic leading-3">MYR 188.00 Free bonus</p>
+              <p class="text-gray-500 italic leading-3">Exclusive bonus for select members.</p>
+            </div>
+          </div>
+          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover">Claim Now</button>
+        </div>
+      </div>
+
+      <!-- Weekly Baccarat Quest – Opt In -->
+      <div class="shrink-0 w-48 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/live-casino-3.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Weekly Baccarat Quest
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            Ends in: 23:24:12
+          </span>
+          <div class="flex gap-2 mb-2.5">
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Missions:</p>
+              <p class="text-gray-500 italic leading-3">Wager MYR 5,000 on any Evolution Live.</p>
+            </div>
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Rewards:</p>
+              <p class="text-gray-500 italic leading-3">Free MYR 38</p>
+            </div>
+          </div>
+          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover">Opt In ></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── missions-slots.html ── -->
+  <section class="mb-4">
+    <h2 class="font-heading font-bold text-base text-gray-900 px-3 mb-2">Slots</h2>
+    <div class="grid grid-cols-2 gap-2.5 px-3">
+
+      <!-- Daily Slots Quest – Completed -->
+      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/slots-2.png" class="w-full h-full object-cover" />
+          <span
+            class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">Completed</span>
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Daily Slots Quest
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            Ends in: 23:24:12
+          </span>
+          <div class="flex gap-2 mb-2.5">
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Missions:</p>
+              <p class="text-gray-500 italic leading-3">Wager MYR 5,000 on any Evolution Live.</p>
+            </div>
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Rewards:</p>
+              <p class="text-gray-500 italic leading-3">Free MYR 38</p>
+            </div>
+          </div>
+          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover">Claim Now</button>
+        </div>
+      </div>
+
+      <!-- Daily Slots Quest – Completed -->
+      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/slots-3.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Daily Scatter Quest
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-gray-200 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            Ends in: 23:24:12
+          </span>
+          <div class="flex gap-2 mb-2.5">
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Missions:</p>
+              <p class="text-gray-500 italic leading-3">Hits scatter & win additional prizes</p>
+            </div>
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Rewards:</p>
+              <p class="text-gray-500 italic leading-3">3 get MYR18</p>
+              <p class="text-gray-500 italic leading-3">4 get MYR38</p>
+              <p class="text-gray-500 italic leading-3">5 get MYR88</p>
+            </div>
+          </div>
+          <button class="w-full bg-gray-600 text-gray-300 py-1 font-bold rounded-lg glow-hover" disabled>Coming Soon</button>
+        </div>
+      </div>
+
+      <!-- Daily Slots Quest – Completed -->
+      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/slots-3.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Weekly Turnover Quest
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            Ends in: 23:24:12
+          </span>
+          <div class="flex gap-2 mb-2.5">
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Missions:</p>
+              <p class="text-gray-500 italic leading-3">Play & reach weekly turnover target to unlock rewards</p>
+            </div>
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Rewards:</p>
+              <p class="text-gray-500 italic leading-3">138 Free Spin on pragmaticplay</p>
+            </div>
+          </div>
+          <div class="mb-2">
+            <div class="h-2 bg-[#FFFFFF26] rounded-full overflow-hidden">
+              <div class="h-full bg-yellow-400 rounded-full" style="width:10%"></div>
+            </div>
+            <p class="text-[9px] text-gray-500 mt-1 text-center">
+              <span class="text-primary">MYR 100.35</span> / 30,000.00 (0.33%)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daily Scatter Quest – Coming Soon -->
+      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/slots-4.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Weekly Slots Quest
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-gray-200 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            Ends in: 23:24:12
+          </span>
+          <div class="flex gap-2 mb-2.5">
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Missions:</p>
+              <p class="text-gray-500 italic leading-3">Play & reach weekly turnover target to unlock rewards</p>
+            </div>
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Rewards:</p>
+              <p class="text-gray-500 italic leading-3">138 Free Spin on pragmaticplay</p>
+            </div>
+          </div>
+          <button class="w-full bg-gray-600 text-gray-300 py-1 font-bold rounded-lg glow-hover" disabled>Coming Soon</button>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ── missions-sportsbook.html ── -->
+  <section class="mb-4">
+    <h2 class="font-heading font-bold text-base text-gray-900 px-3 mb-2">Sportsbook</h2>
+    <div class="grid grid-cols-2 gap-2.5 px-3">
+
+      <!-- Sport Weekly Quest -->
+      <div class="shrink-0 w-48 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/sportbook1.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Sport Weekly Quest
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            Ends in: 23:24:12
+          </span>
+          <div class="flex gap-2 mb-2.5">
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Missions:</p>
+              <p class="text-gray-500 italic leading-3">Reach turnover MYR 5,000 in saba sports.</p>
+            </div>
+            <div class="flex-1 text-[10px]">
+              <p class="text-gray-100 mb-1">Rewards:</p>
+              <p class="text-gray-500 italic leading-3">Free MYR 38 bonus</p>
+            </div>
+          </div>
+          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover">Opt In ></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
