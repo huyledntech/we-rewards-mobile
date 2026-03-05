@@ -202,3 +202,92 @@
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* scrollbar hide */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* DaisyUI tabs override – yellow underline active */
+.tabs-we {
+  --tab-border-color: transparent;
+  background: #fff;
+  border-bottom: 1.5px solid #e5e7eb;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  flex-wrap: nowrap;
+}
+
+.tabs-we::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs-we .tab {
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #9ca3af;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  padding: 10px 18px;
+  height: auto;
+  min-height: unset;
+  border-radius: 0;
+  background: transparent !important;
+}
+
+.tabs-we .tab-active,
+.tabs-we .tab[aria-selected="true"] {
+  color: #111827 !important;
+  border-bottom-color: #facc15 !important;
+}
+
+/* game thumb */
+.game-thumb {
+  aspect-ratio: 1;
+  overflow: hidden;
+  // border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.game-thumb .game-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  padding: 14px 4px 5px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 1.25;
+}
+
+/* animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+.fade-in {
+  animation: fadeInUp .25s ease both;
+}
+
+.table :where(thead tr, tbody tr:not(:last-child), tbody tr:first-child:last-child) {
+  border-bottom-color: transparent !important;
+}

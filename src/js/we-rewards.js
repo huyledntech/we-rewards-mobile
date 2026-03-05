@@ -109,13 +109,16 @@ document.querySelectorAll('.free-filter').forEach(btn => {
 // ── Show More / Show Less ─────────────────────────
 const collapsed = document.getElementById('card-collapsed');
 const expanded = document.getElementById('card-expanded');
+const showMoreBtn = document.getElementById('btn-show-more');
+const showLessBtn = document.getElementById('btn-show-less');
 
-document.getElementById('btn-show-more').addEventListener('click', () => {
+showMoreBtn && showMoreBtn.addEventListener('click', () => {
   collapsed.style.display = 'none';
   expanded.style.display = 'flex';
   expanded.style.flexDirection = 'column';
 });
-document.getElementById('btn-show-less').addEventListener('click', () => {
+
+showLessBtn && showLessBtn.addEventListener('click', () => {
   expanded.style.display = 'none';
   collapsed.style.display = 'flex';
   collapsed.style.flexDirection = 'column';

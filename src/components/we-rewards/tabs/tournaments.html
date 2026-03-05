@@ -2,13 +2,13 @@
 
   <!-- ── tournament-filter.html ── -->
   <div class="flex gap-2 px-3 pt-4 pb-3">
-    <button data-tfilter="all" class="tfilter tfilter-active shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">All</button>
+    <button data-tfilter="all" class="tfilter tfilter-active shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500" data-i18n="global.filter_all"></button>
     <button data-tfilter="available"
-      class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Available</button>
+      class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500" data-i18n="global.filter_available"></button>
     <button data-tfilter="upcoming"
-      class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Upcoming</button>
+      class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500" data-i18n="global.filter_upcoming"></button>
     <button data-tfilter="finished"
-      class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Finished</button>
+      class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500" data-i18n="global.filter_finished"></button>
   </div>
 
   <!-- ── tournament-cards.html ── -->
@@ -21,7 +21,7 @@
         <img src="/assets/images/we-rewards/tournaments-1.png" class="w-full h-full object-cover" />
         <!-- Started badge -->
         <span
-          class="absolute top-3 right-3 bg-yellow-400 text-black text-[12px] font-extrabold px-3 py-1 rounded-full">Started</span>
+          class="absolute top-3 right-3 bg-yellow-400 text-black text-[12px] font-extrabold px-3 py-1 rounded-full" data-i18n="we_rewards.started"></span>
       </div>
 
       <!-- card body -->
@@ -42,13 +42,13 @@
         <!-- timer -->
         <span
           class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-3">
-          Time Remaining: 23:24:12
+          <span data-i18n="we_rewards.time_remaining"></span> <span>23:24:12</span>
         </span>
 
         <div class="flex gap-4 mb-3">
           <!-- how to join -->
           <div class="flex-1">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1">How to Join</p>
+            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.how_to_join"></p>
             <p class="text-[11px] text-gray-500 leading-snug">
               Play and stake
               <span class="text-yellow-400 underline cursor-pointer">Selective Slots Game</span>
@@ -57,7 +57,7 @@
           </div>
           <!-- participant -->
           <div class="shrink-0 text-right">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1">Participant</p>
+            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.participant"></p>
             <div class="flex items-center justify-end gap-1 text-[12px] text-gray-500">
               <i class="fa-solid fa-user"></i>
               <span class="font-bold">25</span>
@@ -66,14 +66,12 @@
         </div>
 
         <div class="mb-4">
-          <p class="text-[11px] text-gray-200 font-semibold mb-0.5">Rewards:</p>
+          <p class="text-[11px] text-gray-200 font-semibold mb-0.5" data-i18n="we_rewards.rewards_label"></p>
           <p class="text-[11px] text-gray-500">Share prize pool start from USD $ 1,888</p>
         </div>
 
         <button
-          class="w-full bg-yellow-400 text-black font-heading font-bold text-[16px] py-3 rounded-xl glow-hover flex items-center justify-center gap-1">
-          Read More ›
-        </button>
+          class="w-full bg-yellow-400 text-black font-heading font-bold text-[16px] py-3 rounded-xl glow-hover flex items-center justify-center gap-1" data-i18n="we_rewards.read_more"></button>
       </div>
     </div>
 
@@ -83,7 +81,7 @@
         <img src="/assets/images/we-rewards/tournaments-2.png" class="w-full h-full object-cover" />
         <!-- Upcoming badge -->
         <span
-          class="absolute top-3 right-3 bg-green-500 text-white text-[12px] font-extrabold px-3 py-1 rounded-full">Upcoming</span>
+          class="absolute top-3 right-3 bg-green-500 text-white text-[12px] font-extrabold px-3 py-1 rounded-full" data-i18n="we_rewards.upcoming"></span>
       </div>
 
       <div class="p-4">
@@ -102,12 +100,12 @@
         </div>
         <span
           class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-3">
-          Time Remaining: 23:24:12
+          <span data-i18n="we_rewards.time_remaining"></span> <span>23:24:12</span>
         </span>
 
         <div class="flex gap-4 mb-3">
           <div class="flex-1">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1">How to Join</p>
+            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.how_to_join"></p>
             <p class="text-[11px] text-gray-500 leading-snug">
               Play and stake
               <span class="text-yellow-400 underline cursor-pointer">CMD368</span> |
@@ -117,7 +115,7 @@
             </p>
           </div>
           <div class="shrink-0 text-right">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1">Participant</p>
+            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.participant"></p>
             <div class="flex items-center justify-end gap-1 text-[12px] text-gray-500">
               <i class="fa-solid fa-user"></i>
               <span class="font-bold">N/A</span>
@@ -126,14 +124,12 @@
         </div>
 
         <div class="mb-4">
-          <p class="text-[11px] text-gray-200 font-semibold mb-0.5">Rewards:</p>
+          <p class="text-[11px] text-gray-200 font-semibold mb-0.5" data-i18n="we_rewards.rewards_label"></p>
           <p class="text-[11px] text-gray-500">Share prize pool start from USD $ 8,888</p>
         </div>
 
         <button
-          class="w-full bg-yellow-400 text-black font-heading font-bold text-[16px] py-3 rounded-xl glow-hover flex items-center justify-center gap-1">
-          Read More ›
-        </button>
+          class="w-full bg-yellow-400 text-black font-heading font-bold text-[16px] py-3 rounded-xl glow-hover flex items-center justify-center gap-1" data-i18n="we_rewards.read_more"></button>
       </div>
     </div>
 

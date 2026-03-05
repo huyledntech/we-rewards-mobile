@@ -17,6 +17,7 @@
 import './i18n.js';
 
 import './we-rewards.js';
+import './we-tournaments.js';
 
 $(document).ready(function () {
 

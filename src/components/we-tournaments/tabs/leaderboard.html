@@ -1,0 +1,117 @@
+<!-- ══════════════════ PANEL: Leaderboard ══════════════════ -->
+<div id="tpanel-leaderboard" class="fade-in pb-24">
+
+  <!-- records row -->
+  {{> we-tournaments/records-row}}
+
+  <!-- records date filter -->
+  <div class="flex items-center justify-end px-3 mb-2 gap-2">
+    <span class="text-[13px] font-semibold text-gray-700">Records</span>
+    <button
+      class="flex items-center gap-1.5 border border-gray-200 rounded-full px-3 py-1.5 text-[12px] text-black bg-gray-300 font-medium">
+      29 Sept 2026 <span class="text-gray-400">▼</span>
+    </button>
+  </div>
+
+  <!-- DaisyUI table -->
+  <div class="mb-4">
+    <table class="table table-sm w-full ">
+      <thead>
+        <tr class="bg-yellow-400 text-gray-900">
+          <th class="font-heading font-extrabold text-[13px] py-2.5">Rank</th>
+          <th class="font-heading font-extrabold text-[13px] py-2.5">User</th>
+          <th class="font-heading font-extrabold text-[13px] py-2.5">Total Score</th>
+          <th class="font-heading font-extrabold text-[13px] py-2.5">Prize (USD $)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hover:bg-gray-50">
+          <td>1</td>
+          <td><span class="mr-1">🇲🇾</span>***o84</td>
+          <td>21,117,051</td>
+          <td>2,188</td>
+        </tr>
+        <tr class="hover:bg-gray-50 bg-gray-50">
+          <td>2</td>
+          <td><span class="mr-1">🇯🇵</span>***998</td>
+          <td>20,117,051</td>
+          <td>1,688</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td>3</td>
+          <td><span class="mr-1">🇹🇭</span>***3d3</td>
+          <td>19,117,051</td>
+          <td>1,088</td>
+        </tr>
+        <tr class="hover:bg-gray-50 bg-gray-50">
+          <td>4</td>
+          <td><span class="mr-1">🇲🇾</span>***ee8</td>
+          <td>18,117,051</td>
+          <td>688</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td>5</td>
+          <td><span class="mr-1">🇲🇾</span>***ing</td>
+          <td>18,117,051</td>
+          <td>688</td>
+        </tr>
+        <tr class="hover:bg-gray-50 bg-gray-50">
+          <td>6</td>
+          <td><span class="mr-1">🇻🇳</span>***man</td>
+          <td>17,117,051</td>
+          <td>388</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td>7</td>
+          <td><span class="mr-1">🇯🇵</span>***ana</td>
+          <td>15,117,051</td>
+          <td>388</td>
+        </tr>
+        <tr class="hover:bg-gray-50 bg-gray-50">
+          <td>8</td>
+          <td><span class="mr-1">🇻🇳</span>***999</td>
+          <td>14,117,051</td>
+          <td>388</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td>9</td>
+          <td><span class="mr-1">🇯🇵</span>***088</td>
+          <td>10,117,051</td>
+          <td>388</td>
+        </tr>
+        <tr class="hover:bg-gray-50 bg-gray-50">
+          <td>10</td>
+          <td><span class="mr-1">🇹🇭</span>***n8n</td>
+          <td>9,117,051</td>
+          <td>388</td>
+        </tr>
+        <!-- current user highlight -->
+        <tr class="bg-yellow-50 font-bold text-gray-900">
+          <td>35</td>
+          <td><span class="mr-1">🇲🇾</span>Brown23</td>
+          <td>5,117,051</td>
+          <td>8</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- pagination -->
+  <div class="flex items-center justify-between px-4 pb-4">
+    <div class="flex items-center gap-2">
+      <span class="text-[12px] text-gray-600">Show Rows</span>
+      <select
+        class="select select-sm select-bordered bg-gray-300 rounded-full text-[12px] h-8 min-h-0 pr-6 pl-3 border-gray-200 focus:outline-none">
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+      </select>
+    </div>
+    <div class="join items-center gap-1">
+      <span class="text-[12px] text-gray-500 mr-1">1-10 of 500</span>
+      <button class="join-item btn btn-xs bg-transparent border-0 shadow-none text-base text-gray-500">‹</button>
+      <button class="join-item btn btn-xs bg-transparent border-0 shadow-none text-base text-gray-700">›</button>
+    </div>
+  </div>
+
+</div>

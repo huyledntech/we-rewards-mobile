@@ -19,17 +19,16 @@
 // =============================================================================
 
 import en from '../locales/en.json';
-import vi from '../locales/vi.json';
-import ja from '../locales/ja.json';
+import zh from '../locales/zh.json';
 
 // ── Configuration ─────────────────────────────────────────────────────────────
 
 const DEFAULT_LANG    = 'en';                  // Change to 'vi' or 'ja' to shift the default
-const SUPPORTED_LANGS = ['en', 'vi', 'ja'];
+const SUPPORTED_LANGS = ['en', 'zh'];
 const STORAGE_KEY     = 'preferred_lang';
 
 /** All locale dictionaries keyed by language code. */
-const LOCALES = { en, vi, ja };
+const LOCALES = { en, zh };
 
 // ── Language Resolution ───────────────────────────────────────────────────────
 
@@ -39,8 +38,8 @@ const LOCALES = { en, vi, ja };
  * @returns {string} A supported language code.
  */
 function resolveLanguage() {
-    // 1. URL path prefix: /en/, /vi/, /ja/
-    const pathMatch = window.location.pathname.match(/^\/(en|vi|ja)(\/|$)/);
+    // 1. URL path prefix: /en/, /zh/
+    const pathMatch = window.location.pathname.match(/^\/(en|zh)(\/|$)/);
     if (pathMatch && SUPPORTED_LANGS.includes(pathMatch[1])) {
         return pathMatch[1];
     }

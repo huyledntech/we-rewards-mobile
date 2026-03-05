@@ -1,8 +1,21 @@
 {{#> layout pageTitle="WE Tournaments" subPage=true activePage="predict"}}
 
-<!-- Content Area: Empty as requested -->
-<div class="empty-content">
-  we-tournaments.html
+<div class="p-4">
+
+  <!-- ══ HERO BANNER ══ -->
+  {{> we-tournaments/banner}}
+
+  <!-- ══ TABS (DaisyUI) ══ -->
+  <div role="tablist" class="tabs tabs-we">
+    <button role="tab" data-ttab="leaderboard" class="tab tab-active">Leaderboard</button>
+    <button role="tab" data-ttab="games" class="tab">Tournamens Games</button>
+    <button role="tab" data-ttab="rules" class="tab">Rules &amp; FAQs</button>
+  </div>
+
+  {{> we-tournaments/tabs/leaderboard}}
+  {{> we-tournaments/tabs/games}}
+  {{> we-tournaments/tabs/rules-faqs}}
+
 </div>
 
 {{/layout}}
