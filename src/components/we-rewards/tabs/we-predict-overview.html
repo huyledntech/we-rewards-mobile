@@ -1,27 +1,5 @@
 <!-- user ranking bar -->
-<div class="mx-3 mb-3 bg-[#E3E4E5] rounded-xl p-3">
-  <div class="flex items-center gap-3 text-xs text-gray-600 justify-between">
-    <a href="/we-rewards.html?tab=we-predict&ptab=leaderboard" class="flex items-center gap-1">
-      <span>My Ranking:</span>
-      <span><strong>13</strong>/500</span>
-      <i class="fa-solid fa-circle-chevron-right"></i>
-    </a>
-    <div>
-      <button class="bg-gray-800 text-white text-[11px] font-bold px-3 py-1 rounded-full" onclick="document.getElementById('my-record-modal').showModal()">Records</button>
-      <button class="bg-gray-500 text-white text-[11px] font-bold px-3 py-1 rounded-full whitespace-nowrap" onclick="document.getElementById('share-modal').showModal()">
-        Share to Friend <i class="fa-regular fa-share-from-square"></i>
-      </button>
-    </div>
-  </div>
-  <div>
-    <span class="font-bold text-gray-900 text-sm">Brown23</span>
-  </div>
-  <div class="flex items-center gap-3 mt-1.5 text-[12px] text-gray-400">
-    <span class="flex flex-nowrap border-r border-gray-400 pr-4">W/L Points: <strong class="text-black">5,300</strong></span>
-    <button class="flex flex-nowrap border-r border-gray-400 pr-4" onclick="document.getElementById('currency-conversion-modal').showModal()">Prizes (USD): <strong class="text-black">88.00 <i class="fa-solid fa-circle-info"></i></strong></button>
-    <button class="flex flex-nowrap" onclick="document.getElementById('boosters-modal').showModal()">Booster: <strong class="text-black">5 <i class="fa-solid fa-circle-info"></i></strong></button>
-  </div>
-</div>
+{{>we-rewards/user-ranking-bar}}
 
 <!-- promo banner -->
 <div class="mx-3 mb-3 rounded-xl overflow-hidden h-28 relative flex items-center">
