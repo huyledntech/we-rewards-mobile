@@ -7,8 +7,10 @@
       <i class="fa-solid fa-circle-chevron-right"></i>
     </a>
     <div>
-      <button class="bg-gray-800 text-white text-[11px] font-bold px-3 py-1 rounded-full" onclick="document.getElementById('my-record-modal').showModal()">Records</button>
-      <button class="bg-gray-500 text-white text-[11px] font-bold px-3 py-1 rounded-full whitespace-nowrap" onclick="document.getElementById('share-modal').showModal()">
+      <button class="bg-gray-800 text-white text-[11px] font-bold px-3 py-1 rounded-full"
+        onclick="document.getElementById('my-record-modal').showModal()">Records</button>
+      <button class="bg-gray-500 text-white text-[11px] font-bold px-3 py-1 rounded-full whitespace-nowrap"
+        onclick="document.getElementById('share-modal').showModal()">
         Share to Friend <i class="fa-regular fa-share-from-square"></i>
       </button>
     </div>
@@ -17,9 +19,13 @@
     <span class="font-bold text-gray-900 text-sm">Brown23</span>
   </div>
   <div class="flex items-center gap-3 mt-1.5 text-[12px] text-gray-400">
-    <span class="flex flex-nowrap border-r border-gray-400 pr-4">W/L Points: <strong class="text-black">5,300</strong></span>
-    <button class="flex flex-nowrap border-r border-gray-400 pr-4" onclick="document.getElementById('currency-conversion-modal').showModal()">Prizes (USD): <strong class="text-black">88.00 <i class="fa-solid fa-circle-info"></i></strong></button>
-    <button class="flex flex-nowrap" onclick="document.getElementById('boosters-modal').showModal()">Booster: <strong class="text-black">5 <i class="fa-solid fa-circle-info"></i></strong></button>
+    <span class="flex flex-nowrap border-r border-gray-400 pr-4">W/L Points: <strong
+        class="text-black">5,300</strong></span>
+    <button class="flex flex-nowrap border-r border-gray-400 pr-4"
+      onclick="document.getElementById('currency-conversion-modal').showModal()">Prizes (USD): <strong
+        class="text-black">88.00 <i class="fa-solid fa-circle-info"></i></strong></button>
+    <button class="flex flex-nowrap" onclick="document.getElementById('boosters-modal').showModal()">Booster: <strong
+        class="text-black">5 <i class="fa-solid fa-circle-info"></i></strong></button>
   </div>
 </div>
 
@@ -36,7 +42,7 @@
 </div>
 
 <!-- records date filter -->
-<div class="flex items-center justify-between px-3 mb-2">
+<div class="flex items-center justify-end gap-2 px-3 mb-2">
   <span class="text-[13px] font-semibold text-gray-700" data-i18n="we_rewards.records"></span>
   <button
     class="flex items-center gap-1.5 border border-gray-200 rounded-lg px-3 py-1.5 text-[12px] text-gray-700 font-medium">
@@ -45,132 +51,212 @@
 </div>
 
 <!-- leaderboard table -->
-<div class="mx-3 mb-4 rounded-xl overflow-hidden border border-gray-100">
-  <!-- header -->
-  <div class="grid text-[11px] font-bold text-yellow-500 bg-white px-3 py-2 border-b border-gray-100"
-    style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-    <span data-i18n="we_rewards.col_rank"></span><span data-i18n="we_rewards.col_tipster"></span><span data-i18n="we_rewards.col_wl_point"></span><span data-i18n="we_rewards.col_prize"></span><span data-i18n="we_rewards.col_pool_share"></span><span
-      class="text-right" data-i18n="we_rewards.col_action"></span>
-  </div>
 
-  <!-- highlighted user row -->
-  <div class="grid items-center px-3 py-2 text-[11px] bg-yellow-50 border-b border-yellow-100"
-    style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-    <span class="font-bold text-gray-900">12</span>
-    <div class="flex items-center gap-1.5">
-      <span class="text-base">🇲🇾</span>
-      <span class="font-bold text-gray-900">Stevie G</span>
-    </div>
-    <span class="font-bold text-gray-900">8,300</span>
-    <span class="font-bold text-gray-900">168</span>
-    <span class="font-bold text-gray-900">1%</span>
-    <span class="text-right text-yellow-600 font-semibold underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-  </div>
+<div class="overflow-x-auto p-4">
+  <table class="table leaderboard-table table-sm w-full bg-base-100 !text-xs">
 
-  <!-- rows 1-10 -->
-  <div id="lb-rows">
-    <!-- row template repeated -->
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">1</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">21,500</span><span class="text-gray-700">2,188</span><span
-        class="text-gray-700">8%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">2</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇹🇭</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">21,500</span><span class="text-gray-700">1,688</span><span
-        class="text-gray-700">5%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">3</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇺🇸</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">20,000</span><span class="text-gray-700">1,088</span><span
-        class="text-gray-700">3%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">4</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">19,500</span><span class="text-gray-700">688</span><span
-        class="text-gray-700">2%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">5</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇻🇳</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">19,500</span><span class="text-gray-700">688</span><span
-        class="text-gray-700">2%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">6</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">15,500</span><span class="text-gray-700">388</span><span
-        class="text-gray-700">1%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">7</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇻🇳</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">15,100</span><span class="text-gray-700">388</span><span
-        class="text-gray-700">1%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">8</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">14,500</span><span class="text-gray-700">388</span><span
-        class="text-gray-700">1%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">9</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇺🇸</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">13,100</span><span class="text-gray-700">388</span><span
-        class="text-gray-700">1%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <div class="grid items-center px-3 py-2 text-[11px] border-b border-gray-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="text-gray-900">10</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇲🇾</span><span
-          class="text-gray-700">***o84</span></div>
-      <span class="text-gray-700">9,500</span><span class="text-gray-700">388</span><span
-        class="text-gray-700">1%</span>
-      <span class="text-right text-yellow-600 underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-    <!-- current user pinned -->
-    <div class="grid items-center px-3 py-2 text-[11px] bg-yellow-50"
-      style="grid-template-columns:36px 1fr 60px 44px 72px 60px">
-      <span class="font-bold text-gray-900">13</span>
-      <div class="flex items-center gap-1.5"><span class="text-base">🇺🇸</span><span
-          class="font-bold text-gray-900">Brown23</span></div>
-      <span class="font-bold text-gray-900">5,300</span><span class="font-bold text-gray-900">88</span><span
-        class="font-bold text-gray-900">1%</span>
-      <span class="text-right text-yellow-600 font-semibold underline cursor-pointer" data-i18n="we_rewards.view_tips"></span>
-    </div>
-  </div>
+    <!-- Header -->
+    <thead>
+      <tr class="bg-primary text-base-content text-xs font-black">
+        <th class="font-black !px-1">Rank</th>
+        <th class="font-black !px-1">Tipster</th>
+        <th class="font-black !px-1">W/L Point</th>
+        <th class="font-black !px-1">Prize</th>
+        <th class="font-black !px-1">Pool Share</th>
+        <th class="font-black !px-1">Action</th>
+      </tr>
+    </thead>
+
+    <tbody class="">
+
+      <!-- Highlighted: My rank (top) -->
+      <tr class="bg-warning/20 font-bold border-b-2 border-warning">
+        <td class="font-black">12</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <div class="avatar">
+              <div class="w-8 rounded-full bg-orange-400 flex items-center justify-center text-white text-xs font-bold">
+                <span>SG</span>
+              </div>
+            </div>
+            <span class="font-black">Stevie G</span>
+          </div>
+        </td>
+        <td class="font-black">8,300</td>
+        <td class="font-black">168</td>
+        <td class="font-black">1%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline font-semibold text-base-content/60">View Tips</a>
+        </td>
+      </tr>
+
+      <!-- Rank 1 -->
+      <tr class="border-b border-base-200">
+        <td>1</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇮🇩</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>21,500</td>
+        <td>2,188</td>
+        <td>8%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 2 -->
+      <tr class="bg-base-200/40 border-b border-base-200">
+        <td>2</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇹🇭</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>21,500</td>
+        <td>1,688</td>
+        <td>5%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 3 -->
+      <tr class="border-b border-base-200">
+        <td>3</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇲🇾</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>20,000</td>
+        <td>1,088</td>
+        <td>3%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 4 -->
+      <tr class="bg-base-200/40 border-b border-base-200">
+        <td>4</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇮🇩</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>19,500</td>
+        <td>688</td>
+        <td>2%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 5 -->
+      <tr class="border-b border-base-200">
+        <td>5</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇻🇳</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>19,500</td>
+        <td>688</td>
+        <td>2%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 6 -->
+      <tr class="bg-base-200/40 border-b border-base-200">
+        <td>6</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇮🇩</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>15,500</td>
+        <td>388</td>
+        <td>1%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 7 -->
+      <tr class="border-b border-base-200">
+        <td>7</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇻🇳</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>15,100</td>
+        <td>388</td>
+        <td>1%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 8 -->
+      <tr class="bg-base-200/40 border-b border-base-200">
+        <td>8</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇮🇩</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>14,500</td>
+        <td>388</td>
+        <td>1%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 9 -->
+      <tr class="border-b border-base-200">
+        <td>9</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇲🇾</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>13,100</td>
+        <td>388</td>
+        <td>1%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Rank 10 -->
+      <tr class="bg-base-200/40 border-b border-base-200">
+        <td>10</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇮🇩</span>
+            <span>***o84</span>
+          </div>
+        </td>
+        <td>9,500</td>
+        <td>388</td>
+        <td>1%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+      </tr>
+
+      <!-- Highlighted: My rank (bottom) -->
+      <tr class="bg-warning/20 font-bold border-t-2 border-warning">
+        <td class="font-black">13</td>
+        <td>
+          <div class="flex items-center gap-2">
+            <span class="text-base">🇲🇾</span>
+            <span class="font-black">Brown23</span>
+          </div>
+        </td>
+        <td class="font-black">5,300</td>
+        <td class="font-black">88</td>
+        <td class="font-black">1%</td>
+        <td><a href="#" class="link link-hover !text-[10px] underline font-semibold text-base-content/60">View Tips</a>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
 </div>
 
 <!-- pagination -->
@@ -185,9 +271,11 @@
   </div>
   <div class="flex items-center gap-2 text-[12px] text-gray-500">
     <span>1-10 of 500</span>
-    <button
-      class="w-7 h-7 rounded-full border border-gray-200 flex items-center justify-center text-gray-400">‹</button>
-    <button
-      class="w-7 h-7 rounded-full border border-gray-200 flex items-center justify-center text-gray-700">›</button>
+    <button id="btn-prev" class="btn btn-ghost btn-xs btn-circle" onclick="changePage(-1)">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+    <button id="btn-next" class="btn btn-ghost btn-xs btn-circle" onclick="changePage(1)">
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
   </div>
 </div>

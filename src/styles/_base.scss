@@ -296,3 +296,10 @@
 .modal::backdrop {
   background-color: #0009 !important;
 }
+
+.leaderboard-table {
+  td {
+    font-size: 12px;
+    padding: 0.5rem 0.25rem !important;
+  }
+}
