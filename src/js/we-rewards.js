@@ -124,30 +124,90 @@ showLessBtn && showLessBtn.addEventListener('click', () => {
   collapsed.style.flexDirection = 'column';
 });
 
+const activatePTab = (target) => {
+  const btn = document.querySelector(`[data-ptab="${target}"]`);
+  if (!btn) return;
+
+  document.querySelectorAll('[data-ptab]').forEach(b => {
+    b.classList.remove('ptab-active');
+    b.classList.add(tabActive);
+  });
+  btn.classList.add('ptab-active');
+  btn.classList.remove(tabActive);
+
+  document.querySelectorAll('.ppanel').forEach(p => p.classList.add('hidden'));
+  const pPanel = document.getElementById('ppanel-' + target);
+  if (pPanel) {
+    pPanel.classList.remove('hidden');
+    pPanel.style.animation = 'none'; pPanel.offsetHeight; pPanel.style.animation = '';
+  }
+
+  // update URL query param if tab is we-predict
+  const url = new URL(window.location);
+  if (url.searchParams.get('tab') === 'we-predict') {
+    url.searchParams.set('ptab', target);
+    window.history.replaceState({}, '', url);
+  }
+};
+
+// ── WE Predict sub-tabs ───────────────────────────
+document.querySelectorAll('[data-ptab]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    activatePTab(btn.dataset.ptab);
+  });
+});
+
 // ── DaisyUI Tab switching ─────────────────────────
 const tabBtns = document.querySelectorAll('[role="tablist"] [data-tab]');
 const panels = document.querySelectorAll('.tab-panel');
 
+const activateTab = (target) => {
+  const btn = document.querySelector(`[role="tablist"] [data-tab="${target}"]`);
+  if (!btn) return;
+
+  // update tab styles
+  tabBtns.forEach(b => {
+    b.classList.remove('tab-active');
+    b.setAttribute('aria-selected', 'false');
+  });
+  btn.classList.add('tab-active');
+  btn.setAttribute('aria-selected', 'true');
+
+  // switch panels
+  panels.forEach(p => p.classList.add('hidden'));
+  const active = document.getElementById('panel-' + target);
+  if (active) {
+    active.classList.remove('hidden');
+    active.style.animation = 'none';
+    active.offsetHeight; // reflow
+    active.style.animation = '';
+  }
+
+  // update URL query param
+  const url = new URL(window.location);
+  url.searchParams.set('tab', target);
+  if (target !== 'we-predict') {
+    url.searchParams.delete('ptab');
+  }
+  window.history.replaceState({}, '', url);
+};
+
 tabBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    const target = btn.dataset.tab;
-
-    // update tab styles
-    tabBtns.forEach(b => {
-      b.classList.remove('tab-active');
-      b.setAttribute('aria-selected', 'false');
-    });
-    btn.classList.add('tab-active');
-    btn.setAttribute('aria-selected', 'true');
-
-    // switch panels
-    panels.forEach(p => p.classList.add('hidden'));
-    const active = document.getElementById('panel-' + target);
-    if (active) {
-      active.classList.remove('hidden');
-      active.style.animation = 'none';
-      active.offsetHeight; // reflow
-      active.style.animation = '';
-    }
+    activateTab(btn.dataset.tab);
   });
+});
+
+// Check URL for active tab on load
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const tab = params.get('tab');
+  const ptab = params.get('ptab');
+
+  if (tab) {
+    activateTab(tab);
+    if (tab === 'we-predict' && ptab) {
+      activatePTab(ptab);
+    }
+  }
 });

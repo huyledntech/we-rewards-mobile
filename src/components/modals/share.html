@@ -1,0 +1,99 @@
+<!-- ── modals/share-modal.html ── -->
+<dialog id="share-modal" class="modal modal-bottom sm:modal-middle">
+
+  <div class="relative w-full max-w-md mx-auto">
+
+    <!-- Close — outside box -->
+    <form method="dialog">
+      <button class="border-none absolute -top-4 right-4 z-20">
+        <img src="/assets/icons/close-btn.png" width="50px" />
+      </button>
+    </form>
+
+    <div class="modal-box rounded-2xl px-8 py-8 flex flex-col gap-5">
+
+      <h2 class="text-xl font-extrabold text-center">
+        🚀 Join the WE Tournament &amp; Win Big!
+      </h2>
+
+      <p class="text-center text-sm text-base-content/75 leading-relaxed -mt-2">
+        I'm inviting you to predict and win with me! The prize pool starts from a massive
+        <strong class="text-base-content">USD $8,888.</strong> 💰
+      </p>
+
+      <p class="text-sm text-base-content/80 -mt-1">
+        Let's climb the leaderboard together and grab those rewards!
+      </p>
+
+      <!-- Social Grid -->
+      <div class="grid grid-cols-3 gap-3">
+
+        <button class="btn btn-ghost bg-[#D9D9D9] flex-col h-auto py-4 gap-2 rounded-xl"
+          onclick="handleShare('facebook')">
+          <div class="avatar placeholder">
+            <div class="rounded-full w-12 text-white text-xl" style="background:#1877F2">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+          <span class="text-xs font-semibold normal-case">Facebook</span>
+        </button>
+
+        <button class="btn btn-ghost bg-[#D9D9D9] flex-col h-auto py-4 gap-2 rounded-xl"
+          onclick="handleShare('whatsapp')">
+          <div class="avatar placeholder">
+            <div class="rounded-full w-12 text-white text-xl" style="background:#25D366">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+          <span class="text-xs font-semibold normal-case">WhatsApp</span>
+        </button>
+
+        <button class="btn btn-ghost bg-[#D9D9D9] flex-col h-auto py-4 gap-2 rounded-xl"
+          onclick="handleShare('telegram')">
+          <div class="avatar placeholder">
+            <div class="rounded-full w-12 text-white text-xl" style="background:#229ED9">
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+          </div>
+          <span class="text-xs font-semibold normal-case">Telegram</span>
+        </button>
+
+        <button class="btn btn-ghost bg-[#D9D9D9] flex-col h-auto py-4 gap-2 rounded-xl"
+          onclick="handleShare('twitter')">
+          <div class="avatar placeholder">
+            <div class="rounded-full w-12 text-white text-xl" style="background:#000">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+          <span class="text-xs font-semibold normal-case">X (Twitter)</span>
+        </button>
+
+        <button class="btn btn-ghost bg-[#D9D9D9] flex-col h-auto py-4 gap-2 rounded-xl" onclick="handleShare('line')">
+          <div class="avatar placeholder">
+            <div class="rounded-full w-12 text-white text-xl" style="background:#06C755">
+              <i class="fa-brands fa-line"></i>
+            </div>
+          </div>
+          <span class="text-xs font-semibold normal-case">Line</span>
+        </button>
+
+        <button class="btn btn-ghost bg-[#D9D9D9] flex-col h-auto py-4 gap-2 rounded-xl" onclick="handleShare('link')">
+          <div class="avatar placeholder">
+            <div class="rounded-full w-12 text-white text-xl"
+              style="background:linear-gradient(135deg,#f5a623,#e8850a)">
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+          <span class="text-xs font-semibold normal-case">Share Link</span>
+        </button>
+
+      </div>
+
+      <p class="text-center text-xs text-base-content/45 italic leading-relaxed -mt-1">
+        Share with a friend on your social media platform, and both of you will receive rewards.
+      </p>
+
+    </div>
+  </div>
+
+</dialog>

@@ -1,0 +1,150 @@
+<!-- ── modals/share-modal.html ── -->
+{{> modals/share}}
+
+
+<!-- ── modals/scoring-modal.html ── -->
+<dialog id="scoring-modal" class="modal items-start">
+
+  <div class="relative w-full max-w-sm mx-auto">
+
+    <!-- Close -->
+    <form method="dialog">
+      <button class="absolute -right-2 -top-4 text-white text-4xl z-20">
+        <img src="/assets/icons/close-btn.png" width="50px" />
+      </button>
+    </form>
+
+    <div class="modal-box p-0 rounded-2xl overflow-hidden mx-auto">
+
+      <!-- Yellow header -->
+      <div class="bg-primary px-6 py-5">
+        <h2 class="text-2xl font-black text-center">How Scoring Works</h2>
+      </div>
+
+      <!-- Body -->
+      <div class="px-6 py-5 flex flex-col gap-4">
+
+        <p class="text-center text-sm text-base-content/75 leading-relaxed">
+          Your score is based on your highest win multiplier.
+        </p>
+
+        <!-- Win multiplier -->
+        <div class="flex flex-col gap-1">
+          <p class="text-sm font-semibold text-base-content">Calculate Win multiplier:</p>
+          <div class="bg-base-200 rounded-xl px-4 py-3 text-center">
+            <span class="font-black text-base">Win Amount ÷ Bet Amount</span>
+          </div>
+          <p class="text-xs text-base-content/50 italic">Example: Bet MYR1 &amp; Win MYR 50. Multiplier = 50x</p>
+        </div>
+
+        <!-- Score -->
+        <div class="flex flex-col gap-1">
+          <p class="text-sm font-semibold text-base-content">Calculate Score:</p>
+          <div class="bg-base-200 rounded-xl px-4 py-3 text-center">
+            <span class="font-black text-base">Total win multiplier x 100</span>
+          </div>
+          <p class="text-xs text-base-content/50 italic">Example: Win Multiplier is 50, 50x100 = 5,000 score</p>
+        </div>
+
+        <p class="text-center text-sm text-base-content/75 leading-relaxed">
+          The bigger your wins compared to your bet, the higher you score!
+        </p>
+
+        <a href="#" class="text-center text-sm font-semibold underline underline-offset-2 text-base-content">
+          *Terms &amp; Conditions Apply
+        </a>
+
+        <form method="dialog">
+          <button class="btn bg-primary w-full rounded-full font-black text-base normal-case">Play Now</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>
+
+
+<!-- ── modals/prize-modal.html ── -->
+<dialog id="prize-modal" class="modal items-start">
+
+  <div class="relative w-full max-w-sm mx-auto">
+
+    <!-- Close -->
+    <form method="dialog">
+      <button class="absolute -right-2 -top-4 text-white text-4xl z-20">
+        <img src="/assets/icons/close-btn.png" width="50px" />
+      </button>
+    </form>
+
+    <div class="modal-box p-0 rounded-2xl overflow-hidden mx-auto">
+
+      <!-- Yellow header -->
+      <div class="bg-primary px-6 py-5">
+        <h2 class="text-2xl font-black text-center">Prize Pool Structure</h2>
+      </div>
+
+      <!-- Body -->
+      <div class="px-6 py-5 flex flex-col gap-4">
+
+        <!-- Table -->
+        <div class="overflow-hidden rounded-xl bg-base-200">
+          <table class="table table-sm w-full">
+            <thead>
+              <tr class="bg-base-200 border-b !border-gray-300">
+                <th class="font-black text-sm text-base-content">Rank</th>
+                <th class="font-black text-sm text-base-content">Prize (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b !border-gray-300">
+                <td class="text-sm">1<sup>st</sup></td>
+                <td class="text-sm">$888.00</td>
+              </tr>
+              <tr class="border-b !border-gray-300">
+                <td class="text-sm">2<sup>nd</sup></td>
+                <td class="text-sm">$588.00</td>
+              </tr>
+              <tr class="border-b !border-gray-300">
+                <td class="text-sm">3<sup>rd</sup></td>
+                <td class="text-sm">$388.00</td>
+              </tr>
+              <tr class="border-b !border-gray-300">
+                <td class="text-sm">4<sup>th</sup></td>
+                <td class="text-sm">$288.00</td>
+              </tr>
+              <tr class="border-b !border-gray-300">
+                <td class="text-sm">5<sup>th</sup></td>
+                <td class="text-sm">$188.00</td>
+              </tr>
+              <tr class="border-b !border-gray-300">
+                <td class="text-sm">6<sup>th</sup> - 10<sup>th</sup></td>
+                <td class="text-sm">$88.00</td>
+              </tr>
+              <tr class="border-b !border-gray-300">
+                <td class="text-sm">11<sup>th</sup> - 50<sup>th</sup></td>
+                <td class="text-sm">$38.00</td>
+              </tr>
+              <tr>
+                <td class="text-sm">51<sup>st</sup> - 100<sup>th</sup></td>
+                <td class="text-sm">$18.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Info note -->
+        <div class="flex items-start gap-2 py-3 text-gray-500">
+          <i class="fa-solid fa-circle-info"></i>
+          <p class="text-xs text-base-content/60 italic">
+            The prize pool will be automatically credited after the leaderboard resets every Monday at 12:00 AM (GMT+8).
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>

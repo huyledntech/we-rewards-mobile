@@ -23,7 +23,7 @@ function activateTab(tabKey, pushState = true) {
     activeBtn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
   }
 
-  Object.values(panels).forEach(p => p.classList.add('hidden'));
+  Object.values(panels).forEach(p => p?.classList?.add('hidden'));
   const panel = panels[key];
   if (panel) {
     panel.classList.remove('hidden');

@@ -291,3 +291,8 @@
 .table :where(thead tr, tbody tr:not(:last-child), tbody tr:first-child:last-child) {
   border-bottom-color: transparent !important;
 }
+
+.modal:not(dialog:not(.modal-open)),
+.modal::backdrop {
+  background-color: #0009 !important;
+}

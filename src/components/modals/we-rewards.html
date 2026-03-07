@@ -1,0 +1,690 @@
+<!-- ── modals/share-modal.html ── -->
+{{> modals/share}}
+
+<!-- ── modals/congratulations.html ── -->
+<dialog id="congratulations-modal" class="modal">
+  <div class="modal-box p-0 border-0">
+    <form method="dialog">
+      <button class="absolute right-2 top-2 text-white text-4xl">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+    </form>
+    <img src="/assets/images/congratulations-banner.png" class="w-full h-full object-cover" />
+    <div class="p-4 flex flex-col gap-3">
+      <h3 class="text-xl font-bold">Congratulations!</h3>
+      <div class="italic">
+        You have successfully redeemed your <strong>MYR8 Free Bonus</strong>, a mystery gift from WE88.
+      </div>
+      <div class="opacity-50">
+        <strong>Note:</strong> The Funds have been added to your <strong class="underline">Main Wallet.</strong>
+      </div>
+      <form class="" method="dialog">
+        <button class="btn bg-primary rounded-full w-full">
+          Continue
+        </button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- ── modals/reward-claimed.html ── -->
+<dialog id="reward-claimed-modal" class="modal">
+  <div class="modal-box p-0 border-0">
+    <form method="dialog">
+      <button class="absolute right-2 top-2 text-white text-4xl">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+    </form>
+    <img src="/assets/images/reward-claimed-banner.png" class="w-full h-full object-cover" />
+    <div class="p-4 flex flex-col gap-3">
+      <h3 class="text-xl font-bold">Reward Claimed!</h3>
+      <div class="italic">
+        You have successfully claimed your <strong>MYR 88 Free Credit</strong> for completing the <strong>[Casino Free
+          Credit]</strong> mission.
+      </div>
+      <div class="opacity-50">
+        <strong>Note:</strong> The Funds have been added to your <strong class="underline">Main Wallet.</strong>
+      </div>
+      <form class="" method="dialog">
+        <button class="btn bg-primary rounded-full w-full">
+          OK
+        </button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- ── modals/opt-in.html ── -->
+<dialog id="opt-in-modal" class="modal">
+  <div class="modal-box p-0 border-0">
+    <form method="dialog">
+      <button class="absolute right-2 top-2 text-white text-4xl">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+    </form>
+    <img src="/assets/images/opt-in-banner.png" class="w-full h-full object-cover" />
+    <div class="p-4 flex flex-col items-start gap-3">
+      <h3 class="text-xl font-bold">Weekly Baccarat Quest</h3>
+      <span class="inline-flex items-center gap-1 bg-yellow-400 text-black px-3 py-1 rounded-full mb-2">
+        <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
+      </span>
+      <div class="flex gap-2 mb-2.5">
+        <div class="flex-1 border-r border-gray-500 pr-4">
+          <p class="mb-3 font-bold" data-i18n="we_rewards.missions_label"></p>
+          <p class="italic text-xs">Complete Wager MYR 5,000 on any <strong class="underline">Evolution Live.</strong>
+          </p>
+        </div>
+        <div class="flex-1">
+          <p class="mb-3 font-bold" data-i18n="we_rewards.rewards_label"></p>
+          <p class="italic text-xs">Free MYR 38</p>
+        </div>
+      </div>
+      <form class="w-full" method="dialog">
+        <button class="btn bg-primary rounded-full w-full">
+          Opt In >
+        </button>
+      </form>
+    </div>
+  </div>
+</dialog>
+</dialog>
+
+<!-- ── modals/my-record.html ── -->
+<dialog id="my-record-modal" class="modal">
+  <div class="modal-box p-0 w-full overflow-hidden !bg-transparent !pt-6 relative rounded-none">
+    <div class="bg-white rounded-xl">
+      <!-- Close -->
+      <form method="dialog">
+        <button class="absolute right-2 top-2 text-white text-4xl">
+          <img src="/assets/icons/close-btn.png" width="50px" />
+        </button>
+      </form>
+
+      <!-- Title -->
+      <h3 class="text-center font-extrabold text-lg pt-6 pb-4 px-4">My Record</h3>
+
+      <div class="pb-4 flex flex-col gap-4">
+
+        <div class="p-4">
+          <!-- Stats card -->
+          <div class="bg-[#3C3C3C] text-neutral-content rounded-xl flex items-center px-4 py-3 gap-3">
+            <div class="flex-1">
+              <div class="text-xs">My Ranking:</div>
+              <div class="text-2xl font-extrabold">13</div>
+            </div>
+            <div class="divider divider-horizontal m-0 after:!bg-gray-200 before:!bg-gray-200"></div>
+            <div class="flex-1">
+              <div class="text-xs">W/L Points:</div>
+              <div class="text-2xl font-extrabold">5,300</div>
+            </div>
+            <button class="btn bg-primary border-0 btn-sm font-bold px-5 rounded-full text-black">Predict Now</button>
+          </div>
+
+          <!-- Recent Form -->
+          <div class="mt-4">
+            <div class="font-bold mb-2">Recent Form</div>
+            <div class="flex gap-2">
+              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Win 25 (62.5%)</div>
+              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Draw 5 (12.5%)</div>
+              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Lose 10 (25%)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="rounded-none border border-base-300 overflow-hidden flex flex-col">
+          <div class="overflow-x-auto">
+            <table class="table table-xs w-full">
+              <thead class="sticky top-0 z-10">
+                <tr class="bg-primary text-black text-xs">
+                  <th class="font-bold py-2">Match</th>
+                  <th class="font-bold py-2">Time</th>
+                  <th class="font-bold py-2">Bet</th>
+                  <th class="font-bold py-2">W/L Point</th>
+                  <th class="font-bold py-2">Form</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="overflow-y-auto" style="max-height: 50vh;">
+            <table class="table table-xs w-full">
+              <tbody class="!text-xs">
+
+                <!-- Row 1: Kick off (no result) -->
+                <tr class="border-b border-base-200">
+                  <td>
+                    <div class="text-[10px] text-gray-400">Bundes</div>
+                    <div class="font-semibold leading-tight">Leverkusen vs<br>St. Pauli</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>14 February 26</div>
+                    <div>16:08:21</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>Leverkusen<br><span class="text-gray-500">(Handicap -1.25)</span></td>
+                  <td>
+                    <div class="badge badge-neutral text-white text-[10px] px-2 py-2">03:52:59</div>
+                    <div class="text-[10px] text-warning mt-1">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <span class="text-[10px] text-gray-400 font-medium">Kick off in</span>
+                  </td>
+                </tr>
+
+                <!-- Row 2: L -->
+                <tr class="border-b border-base-200">
+                  <td>
+                    <div class="text-[10px] text-gray-400">EPL</div>
+                    <div class="font-semibold leading-tight">Brentford vs Arsenal</div>
+                    <div class="text-[10px] text-gray-400">[FT 1:1]</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>13 February 26</div>
+                    <div>03:30:41</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>Arsenal<br><span class="text-gray-500">(Handicap -0.75)</span></td>
+                  <td>
+                    <div class="font-bold text-black">-200</div>
+                    <div class="text-[10px] text-warning">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="badge badge-error text-white font-bold w-7 h-7 flex items-center justify-center rounded-md text-sm">
+                      L</div>
+                  </td>
+                </tr>
+
+                <!-- Row 3: HW -->
+                <tr class="border-b border-base-200">
+                  <td>
+                    <div class="text-[10px] text-gray-400">Bundes</div>
+                    <div class="font-semibold leading-tight">Bayern vs RB Leipzig</div>
+                    <div class="text-[10px] text-gray-400">[FT 2:0]</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>14 February 26</div>
+                    <div>03:12:44</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>Leverkusen<br><span class="text-gray-500">(Handicap -1.25)</span></td>
+                  <td>
+                    <div class="font-bold text-black">+200</div>
+                    <div class="text-[10px] text-warning">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="badge badge-success text-white font-bold w-7 h-7 flex items-center justify-center rounded-md text-xs">
+                      HW</div>
+                  </td>
+                </tr>
+
+                <!-- Row 4: W -->
+                <tr class="border-b border-base-200">
+                  <td>
+                    <div class="text-[10px] text-gray-400">EPL</div>
+                    <div class="font-semibold leading-tight">Manchester City vs Fulham</div>
+                    <div class="text-[10px] text-gray-400">[FT 3:0]</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>10 February 26</div>
+                    <div>00:33:41</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>Manchester City<br><span class="text-gray-500">(Handicap -1.50)</span></td>
+                  <td>
+                    <div class="font-bold text-black">+400</div>
+                    <div class="text-[10px] text-warning">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="badge badge-success text-white font-bold w-7 h-7 flex items-center justify-center rounded-md text-sm">
+                      W</div>
+                  </td>
+                </tr>
+
+                <!-- Row 5: L -->
+                <tr class="border-b border-base-200">
+                  <td>
+                    <div class="text-[10px] text-gray-400">EPL</div>
+                    <div class="font-semibold leading-tight">Crystal Palace vs Burnley</div>
+                    <div class="text-[10px] text-gray-400">[FT 2:3]</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>12 February 26</div>
+                    <div>01:40:51</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>Crystal Palace<br><span class="text-gray-500">(Handicap -0.75)</span></td>
+                  <td>
+                    <div class="font-bold text-black">-200</div>
+                    <div class="text-[10px] text-warning">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="badge badge-error text-white font-bold w-7 h-7 flex items-center justify-center rounded-md text-sm">
+                      L</div>
+                  </td>
+                </tr>
+
+                <!-- Row 6: L -->
+                <tr class="border-b border-base-200">
+                  <td>
+                    <div class="text-[10px] text-gray-400">EPL</div>
+                    <div class="font-semibold leading-tight">West Ham vs Manchester United</div>
+                    <div class="text-[10px] text-gray-400">[FT 1:1]</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>13 February 26</div>
+                    <div>01:45:33</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>Manchester United<br><span class="text-gray-500">(Handicap -0.50)</span></td>
+                  <td>
+                    <div class="font-bold text-black">-200</div>
+                    <div class="text-[10px] text-warning">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="badge badge-error text-white font-bold w-7 h-7 flex items-center justify-center rounded-md text-sm">
+                      L</div>
+                  </td>
+                </tr>
+
+                <!-- Row 7: W -->
+                <tr class="border-b border-base-200">
+                  <td>
+                    <div class="text-[10px] text-gray-400">—</div>
+                    <div class="font-semibold leading-tight">Valencia vs Real Madrid</div>
+                    <div class="text-[10px] text-gray-400">[FT 0:2]</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>09 February 26</div>
+                    <div>03:12:44</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>Real Madrid<br><span class="text-gray-500">(Handicap -1.00)</span></td>
+                  <td>
+                    <div class="font-bold text-black">+400</div>
+                    <div class="text-[10px] text-warning">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="badge badge-success text-white font-bold w-7 h-7 flex items-center justify-center rounded-md text-sm">
+                      W</div>
+                  </td>
+                </tr>
+
+                <!-- Row 8: W -->
+                <tr class="border-b border-base-200">
+                  <td>
+                    <div class="text-[10px] text-gray-400">Ligue 1</div>
+                    <div class="font-semibold leading-tight">PSG vs Marseille</div>
+                    <div class="text-[10px] text-gray-400">[FT 5:0]</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>09 February 26</div>
+                    <div>03:03:29</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>PSG<br><span class="text-gray-500">(Handicap -1.25)</span></td>
+                  <td>
+                    <div class="font-bold text-black">+400</div>
+                    <div class="text-[10px] text-warning">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="badge badge-success text-white font-bold w-7 h-7 flex items-center justify-center rounded-md text-sm">
+                      W</div>
+                  </td>
+                </tr>
+
+                <!-- Row 9: W -->
+                <tr>
+                  <td>
+                    <div class="text-[10px] text-gray-400">Bundes</div>
+                    <div class="font-semibold leading-tight">Bayern vs Hoffenheim</div>
+                    <div class="text-[10px] text-gray-400">[FT 5:1]</div>
+                  </td>
+                  <td class="whitespace-nowrap">
+                    <div>08 February 26</div>
+                    <div>21:47:25</div>
+                    <div class="text-gray-400">(+8 GMT)</div>
+                  </td>
+                  <td>Bayern<br><span class="text-gray-500">(Handicap -1.75)</span></td>
+                  <td>
+                    <div class="font-bold text-black">+200</div>
+                    <div class="text-[10px] text-warning">
+                      <img src="/assets/icons/booster-icon.png" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="badge badge-success text-white font-bold w-7 h-7 flex items-center justify-center rounded-md text-sm">
+                      W</div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Table Footer -->
+          <div class="flex items-center justify-between px-3 py-2 border-t border-base-300 bg-base-100">
+            <div class="flex items-center gap-2 text-sm">
+              <span class="text-base-content/70">Show Rows</span>
+              <select id="page-size" class="select select-bordered select-xs w-16">
+                <option value="10" selected>10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+              </select>
+            </div>
+            <div class="flex items-center gap-1 text-sm">
+              <span id="page-info" class="text-base-content/70 mr-1">1-10 of 500</span>
+              <button id="btn-prev" class="btn btn-ghost btn-xs btn-circle" onclick="changePage(-1)">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button id="btn-next" class="btn btn-ghost btn-xs btn-circle" onclick="changePage(1)">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- ── modals/currency-conversion.html ── -->
+
+<dialog id="currency-conversion-modal" class="modal items-start">
+
+  <div class="relative w-full max-w-sm mx-auto">
+
+    <!-- Close -->
+    <form method="dialog">
+      <button class="absolute -right-2 -top-4 text-white text-4xl z-20">
+        <img src="/assets/icons/close-btn.png" width="50px" />
+      </button>
+    </form>
+
+    <div class="modal-box p-0 rounded-2xl overflow-hidden mx-auto">
+
+      <!-- Yellow header -->
+      <div class="bg-primary px-6 py-5">
+        <h2 class="text-xl font-black text-center text-base-content">Currency Conversion</h2>
+      </div>
+
+      <!-- Body -->
+      <div class="px-8 py-6 flex flex-col gap-4">
+
+        <p class="text-center text-sm text-base-content/75">
+          Prizes are automatically converted to your local currency.
+        </p>
+
+        <div class="flex flex-col gap-2">
+          <p class="text-center text-sm font-semibold text-base-content">Current Conversion Rate:</p>
+          <div class="bg-base-200 rounded-xl px-4 py-3 text-center">
+            <span class="text-lg font-black tracking-wide">1 USD = 4.2 MYR</span>
+          </div>
+        </div>
+
+        <p class="text-xs text-base-content/50 italic leading-relaxed">
+          Example: If your total prizes is USD 388, your prize will be USD 388 x 4.2 = MYR 1,629.60.
+        </p>
+
+        <a href="#" class="text-center text-sm font-semibold underline underline-offset-2 text-base-content">
+          *Terms &amp; Conditions Apply
+        </a>
+
+        <form method="dialog">
+          <button class="btn bg-primary w-full rounded-full font-black text-base">Play Now</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>
+
+
+<!-- ── modals/how-to-earn-boosters.html ── -->
+<dialog id="boosters-modal" class="modal items-start">
+
+  <div class="relative w-full max-w-sm mx-auto">
+
+    <!-- Close -->
+    <form method="dialog">
+      <button class="absolute -right-2 -top-4 text-white text-4xl z-20">
+        <img src="/assets/icons/close-btn.png" width="50px" />
+      </button>
+    </form>
+
+    <div class="modal-box p-0 rounded-2xl overflow-hidden mx-auto">
+
+      <!-- Yellow header -->
+      <div class="bg-primary px-6 py-5">
+        <h2 class="text-xl font-black text-center text-base-content">How to Earn Boosters</h2>
+      </div>
+
+      <!-- Body -->
+      <div class="px-6 py-5 flex flex-col gap-4">
+
+        <p class="text-sm text-base-content/75 leading-relaxed">
+          Earn boosters by depositing or sharing, then apply them to your predictions to double your winnings.
+        </p>
+
+        <!-- Steps -->
+        <div class="flex flex-col gap-3">
+
+          <!-- Step 1 -->
+          <div class="flex items-center gap-3 bg-base-200 rounded-xl p-3">
+            <div class="avatar placeholder shrink-0">
+              <div class="bg-neutral rounded-xl w-14 h-14 text-3xl flex items-center justify-center">
+                <img src="/assets/icons/boostrers-1.png" width="70px" />
+              </div>
+            </div>
+            <div>
+              <p class="font-bold text-sm">Step 1</p>
+              <p class="text-xs text-base-content/70 leading-snug">Deposit or share with a friend to earn one (1)
+                Booster per action.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex items-center gap-3 bg-base-200 rounded-xl p-3">
+            <div class="avatar placeholder shrink-0">
+              <div class="bg-neutral rounded-xl w-14 h-14 text-3xl flex items-center justify-center">
+                <img src="/assets/icons/boostrers-2.png" width="70px" />
+              </div>
+            </div>
+            <div>
+              <p class="font-bold text-sm">Step 2</p>
+              <p class="text-xs text-base-content/70 leading-snug">Use Boosters when making predictions.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex items-center gap-3 bg-base-200 rounded-xl p-3">
+            <div class="avatar placeholder shrink-0">
+              <div class="bg-neutral rounded-xl w-14 h-14 text-3xl flex items-center justify-center">
+                <img src="/assets/icons/boostrers-3.png" width="70px" />
+              </div>
+            </div>
+            <div>
+              <p class="font-bold text-sm">Step 3</p>
+              <p class="text-xs text-base-content/70 leading-snug">Successful predictions result in double the winning
+                points!</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="text-xs text-base-content/60 text-center">*Terms &amp; Conditions Apply.</p>
+
+        <!-- Deposit Now -->
+        <button class="btn bg-primary w-full rounded-full flex flex-col h-auto py-3 gap-0">
+          <span class="font-black text-base normal-case">Deposit Now</span>
+          <span class="text-xs font-medium normal-case opacity-75">to get (1) Booster, Max. 10 Boosters</span>
+        </button>
+
+        <!-- Share to Friends -->
+        <button class="btn bg-secondary text-white w-full rounded-full flex flex-col h-auto py-3 gap-0 -mt-1">
+          <span class="font-black text-base normal-case">Share to Friends</span>
+          <span class="text-xs font-medium normal-case opacity-60">to get (1) Booster, Max. 2 Boosters</span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>
+
+
+<!-- ── modals/winloss.html ── -->
+<dialog id="winloss-modal" class="modal items-start">
+
+  <div class="relative w-full max-w-sm mx-auto">
+
+    <!-- Close -->
+    <form method="dialog">
+      <button class="absolute -right-2 -top-4 text-white text-4xl z-20">
+        <img src="/assets/icons/close-btn.png" width="50px" />
+      </button>
+    </form>
+
+    <div class="modal-box p-0 rounded-2xl overflow-hidden mx-auto">
+
+      <!-- Yellow header -->
+      <div class="bg-primary px-6 py-5">
+        <h2 class="text-2xl font-black text-center">Win/Loss Scenarios</h2>
+      </div>
+
+      <!-- Body -->
+      <div class="px-6 py-5 flex flex-col gap-4">
+
+        <p class="text-sm text-base-content/70 leading-relaxed">
+          View how different match results affect your bet outcome based on the current handicap.
+        </p>
+
+        <!-- Table -->
+        <div class="overflow-hidden">
+          <table class="table table-sm w-full">
+            <thead>
+              <tr class="border-b border-base-200">
+                <th class="font-black text-base-content text-sm bg-base-100">Bet</th>
+                <th class="font-black text-base-content text-sm bg-base-100">HDP</th>
+                <th class="font-black text-base-content text-sm bg-base-100">Result</th>
+                <th class="font-black text-base-content text-sm bg-base-100">Outcome</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Group 1: Team A -0.5 -->
+              <tr class="bg-base-200">
+                <td class="font-semibold text-sm align-top pt-3">Team A</td>
+                <td class="font-semibold text-sm align-top pt-3">-0.5</td>
+                <td class="text-sm">2 - 0</td>
+                <td class="font-black text-sm text-base-content">Win</td>
+              </tr>
+              <tr class="bg-base-200">
+                <td></td>
+                <td></td>
+                <td class="text-sm">2 - 1</td>
+                <td class="font-black text-sm text-base-content">Win</td>
+              </tr>
+              <tr class="bg-base-200">
+                <td></td>
+                <td></td>
+                <td class="text-sm">1 - 1</td>
+                <td class="text-sm text-base-content/40 font-semibold">Lose</td>
+              </tr>
+              <tr class="bg-base-200">
+                <td></td>
+                <td></td>
+                <td class="text-sm">0 - 1</td>
+                <td class="text-sm text-base-content/40 font-semibold">Lose</td>
+              </tr>
+
+              <!-- Group 2: Team A +0.5 -->
+              <tr class="bg-base-100 border-t-2 border-base-300">
+                <td class="font-semibold text-sm align-top pt-3">Team A</td>
+                <td class="font-semibold text-sm align-top pt-3">+0.5</td>
+                <td class="text-sm">2 - 0</td>
+                <td class="text-sm text-base-content/40 font-semibold">Lose</td>
+              </tr>
+              <tr class="bg-base-100">
+                <td></td>
+                <td></td>
+                <td class="text-sm">2 - 1</td>
+                <td class="text-sm text-base-content/40 font-semibold">Lose</td>
+              </tr>
+              <tr class="bg-base-100">
+                <td></td>
+                <td></td>
+                <td class="text-sm">1 - 1</td>
+                <td class="font-black text-sm text-base-content">Win</td>
+              </tr>
+              <tr class="bg-base-100">
+                <td></td>
+                <td></td>
+                <td class="text-sm">0 - 1</td>
+                <td class="font-black text-sm text-base-content">Win</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Close button -->
+        <form method="dialog">
+          <button class="btn bg-primary w-full rounded-full font-black text-base normal-case">Close</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>
+
+
+<!-- ── modals/live.html ── -->
+<dialog id="live-modal" class="modal items-start">
+
+  <div class="relative w-full max-w-sm mx-auto">
+
+    <!-- Close -->
+    <form method="dialog" class="absolute inset-x-0 -bottom-16 z-20 flex items-center justify-center">
+      <button class="text-white text-4xl">
+        <img src="/assets/icons/close-btn.png" width="50px" />
+      </button>
+    </form>
+
+    <div class="modal-box p-0 rounded-none overflow-hidden mx-auto">
+      <!-- Body -->
+      <div class="px-6 py-5 flex flex-col gap-4 min-h-52">
+        LIVE CONTENT
+      </div>
+    </div>
+  </div>
+
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>
