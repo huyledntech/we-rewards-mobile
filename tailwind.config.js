@@ -2,6 +2,7 @@ import daisyui from 'daisyui';
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: false,
   content: [
     './src/**/*.html',
     './src/**/*.js',
@@ -30,7 +31,7 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ['light', 'dark', 'cupcake'],
+    themes: ['light'],
     defaultTheme: 'light',
     logs: false,
   },

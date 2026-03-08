@@ -22,6 +22,10 @@
 // Custom Global Utilities
 // =============================================================================
 
+:root {
+  color-scheme: light !important;
+}
+
 .desktop-stage {
   // Ensure the body has the neutral backdrop color from variables
   background-color: $desktop-bg-color !important;

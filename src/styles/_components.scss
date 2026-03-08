@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  color-scheme: light !important;
+}
+
 body {
   margin: 0;
   padding: 0;
