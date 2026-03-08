@@ -1,8 +1,34 @@
 <!-- panel: overview ─────────────── -->
 <div id="panel-overview" class="tab-panel">
 
+  <!-- overview-banner.html -->
+  <section class="p-4">
+    <div
+      class="card w-full max-w-xl overflow-hidden rounded-2xl shadow-xl bg-[url('/assets/images/we-rewards/overview-banner.png')] bg-cover bg-center">
+      <div class="card-body p-0 flex-row items-stretch min-h-40">
+        <!-- Left: text content -->
+        <div class="flex flex-col justify-between p-6 flex-1 gap-3">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-xl font-black leading-tight uppercase text-primary">
+              Random Surprise<br>Mystery Drops!
+            </h2>
+            <p class="text-sm text-white/85 leading-snug">
+              Check in daily for exclusive<br>rewards and surprises!
+            </p>
+          </div>
+          <div class="flex items-end justify-between gap-2">
+            <a href="/we-rewards.html?tab=free"
+              class="btn bg-primary border-0 btn-sm rounded-lg font-black normal-case px-6 min-w-[120px]">More</a>
+            <span class="text-white/70 text-[10px] italic">#WE88 Extra rewards Extra Surprise</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- mystery-gift.html -->
-  <section>
+  <!-- <section>
     <div class="flex items-center px-3 pt-4 pb-2">
       <h2 class="font-heading font-bold text-base text-gray-900 flex items-center gap-2">
         <img src="/assets/icons/mystery-free-gift.png" class="w-7 -mt-3" />
@@ -16,14 +42,14 @@
       <h3 class="font-bold text-base text-gray-800 mb-1.5 w-full" data-i18n="we_rewards.more_surprises_coming"></h3>
       <p class="text-xs text-gray-400 leading-relaxed" data-i18n="we_rewards.mystery_restocking"></p>
     </div>
-  </section>
+  </section> -->
 
   <!-- latest-missions.html -->
   <section>
     <div class="flex items-center justify-between px-3 pt-2 pb-2">
       <h2 class="font-bold text-base text-gray-900" data-i18n="we_rewards.latest_missions"></h2>
       <div class="flex items-center gap-2">
-        <span class="text-xs text-gray-400" data-i18n="we_rewards.view_all"></span>
+        <a href="/we-rewards.html?tab=missions" class="text-xs text-gray-400" data-i18n="we_rewards.view_all"></a>
         <button data-scroll-left="scroll-missions" class="flex items-center justify-center text-base text-gray-400">
           <i class="fa-solid fa-angle-left"></i>
         </button>
@@ -33,168 +59,8 @@
       </div>
     </div>
     <div id="scroll-missions" class="flex gap-2.5 overflow-x-auto px-3 pb-2 scrollbar-hide scroll-smooth">
-
-      <!-- mission card 1 -->
-      <div class="shrink-0 w-48 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/latest-missions/1.png" class="w-full h-full object-cover" />
-          <span
-            class="absolute right-2 top-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md shadow" data-i18n="we_rewards.completed"></span>
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Daily Slots Quest
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Wager MYR 1,500 on any Slots.</p>
-            </div>
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">Free MYR 8</p>
-            </div>
-          </div>
-          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg" data-i18n="we_rewards.claim"></button>
-        </div>
-      </div>
-
-      <!-- mission card 2 -->
-      <div class="shrink-0 w-48 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/latest-missions/2.png" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Weekly Baccarat Quest
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Wager MYR 5,000 on any Evolution Live.</p>
-            </div>
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">Free MYR 38</p>
-            </div>
-          </div>
-          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover" data-i18n="we_rewards.opt_in"></button>
-        </div>
-      </div>
-
-      <!-- mission card 3 -->
-      <div class="shrink-0 w-48 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/latest-missions/3.png" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Weekly Check-in
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Complete a daily deposit of MYR100.00 to Collect a check</p>
-            </div>
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">Free Credit MYR188</p>
-            </div>
-          </div>
-          <div class="flex items-center justify-start gap-1 text-lg pt-2 text-gray-600">
-            <i class="fa-solid fa-circle-check text-primary"></i>
-            <i class="fa-solid fa-circle-check text-primary"></i>
-            <i class="fa-solid fa-circle-check text-primary"></i>
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- mission card 4 -->
-      <div class="shrink-0 w-48 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/latest-missions/4.png" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Daily Deposit Quest
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Daily make a min. of MYR100 deposit</p>
-            </div>
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">Earn (1) Free WE Spin</p>
-            </div>
-          </div>
-          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover" data-i18n="we_rewards.deposit"></button>
-        </div>
-      </div>
-
-      <!-- mission card 5 -->
-      <div class="shrink-0 w-48 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/latest-missions/5.png" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Anniversary Free Gift
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">Free (1) WESpin Gold coin</p>
-              <p class="text-gray-500 italic leading-3" data-i18n="we_rewards.exclusive_bonus"></p>
-            </div>
-          </div>
-          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover" data-i18n="we_rewards.claim_now"></button>
-        </div>
-      </div>
+      
+      {{> we-rewards/items/latest-missions-items}}
 
     </div>
   </section>
@@ -204,7 +70,7 @@
     <div class="flex items-center justify-between px-3 pt-2 pb-2">
       <h2 class="font-bold text-base text-gray-900" data-i18n="we_rewards.latest_tournaments"></h2>
       <div class="flex items-center gap-2">
-        <span class="text-xs text-gray-400" data-i18n="we_rewards.view_all"></span>
+        <a href="/we-rewards.html?tab=tournaments" class="text-xs text-gray-400" data-i18n="we_rewards.view_all"></a>
         <button data-scroll-left="scroll-tournaments" class="flex items-center justify-center text-base text-gray-500">
           <i class="fa-solid fa-angle-left"></i>
         </button>
@@ -231,7 +97,8 @@
           <div class="relative h-36 flex items-center justify-center overflow-hidden">
             <img src="/assets/images/we-rewards/latest-tournaments/1.png" class="w-full h-full object-cover" />
             <span
-              class="absolute top-2.5 right-2.5 bg-yellow-400 text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full" data-i18n="we_rewards.started"></span>
+              class="absolute top-2.5 right-2.5 bg-primary text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full"
+              data-i18n="we_rewards.started"></span>
           </div>
           <div class="p-4 flex flex-col gap-2">
             <div class="text-xs text-gray-200 flex items-center justify-between">
@@ -251,7 +118,9 @@
             </div>
           </div>
           <div class="flex items-center gap-2">
-            <a href="/we-tournaments.html?tab=games" class="flex-1 bg-yellow-400 text-black text-center font-heading font-bold text-base py-2.5 glow-hover" data-i18n="we_rewards.participate"></a>
+            <a href="/we-tournaments.html?tab=games"
+              class="flex-1 bg-primary text-black text-center font-heading font-bold text-base py-2.5 glow-hover"
+              data-i18n="we_rewards.participate"></a>
           </div>
         </div>
       </div>
@@ -272,7 +141,8 @@
           <div class="relative h-36 flex items-center justify-center overflow-hidden">
             <img src="/assets/images/we-rewards/latest-tournaments/1.png" class="w-full h-full object-cover" />
             <span
-              class="absolute top-2.5 right-2.5 bg-yellow-400 text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full" data-i18n="we_rewards.started"></span>
+              class="absolute top-2.5 right-2.5 bg-primary text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full"
+              data-i18n="we_rewards.started"></span>
           </div>
           <div class="p-4 flex flex-col gap-2">
             <div class="text-xs text-gray-200 flex items-center justify-between">
@@ -292,7 +162,9 @@
             </div>
           </div>
           <div class="flex items-center gap-2">
-            <a href="/we-tournaments.html?tab=games" class="flex-1 bg-yellow-400 text-black text-center font-heading font-bold text-base py-2.5 glow-hover" data-i18n="we_rewards.participate"></a>
+            <a href="/we-tournaments.html?tab=games"
+              class="flex-1 bg-primary text-black text-center font-heading font-bold text-base py-2.5 glow-hover"
+              data-i18n="we_rewards.participate"></a>
           </div>
         </div>
       </div>
@@ -320,7 +192,8 @@
           <div class="relative h-36 flex items-center justify-center overflow-hidden">
             <img src="/assets/images/we-rewards/we-prediction/1.png" class="w-full h-full object-cover" />
             <span
-              class="absolute top-2.5 right-2.5 bg-[#646464] text-gray-200 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full" data-i18n="we_rewards.finished"></span>
+              class="absolute top-2.5 right-2.5 bg-[#646464] text-gray-200 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full"
+              data-i18n="we_rewards.finished"></span>
           </div>
           <div class="p-4 flex flex-col gap-2">
             <div class="text-xs text-gray-200 flex items-center justify-between">
@@ -340,7 +213,9 @@
             </div>
           </div>
           <div class="flex items-center gap-2">
-            <a href="/we-tournaments.html?tab=games" class="flex-1 bg-yellow-400 text-black text-center font-heading font-bold text-base py-2.5 glow-hover" data-i18n="we_rewards.participate"></a>
+            <a href="/we-tournaments.html?tab=games"
+              class="flex-1 bg-primary text-black text-center font-heading font-bold text-base py-2.5 glow-hover"
+              data-i18n="we_rewards.participate"></a>
           </div>
         </div>
       </div>

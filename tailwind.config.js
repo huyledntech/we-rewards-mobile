@@ -22,6 +22,10 @@ export default {
         secondary: '#3C3C3C',
         accent: '#E3E4E580',
       },
+      fontSize: {
+        "2xs": "10px",
+        "1xs": "11px",
+      },
     },
   },
   plugins: [daisyui],

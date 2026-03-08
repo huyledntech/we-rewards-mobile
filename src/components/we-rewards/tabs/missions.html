@@ -2,164 +2,36 @@
 
   <!-- ── missions-filter.html ── -->
   <div class="flex gap-2 px-3 pt-4 pb-3">
-    <button data-mfilter="all" class="mission-filter tfilter-active shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500" data-i18n="global.filter_all"></button>
-    <button data-mfilter="available"
-      class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500" data-i18n="global.filter_available"></button>
-    <button data-mfilter="claimed"
-      class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500" data-i18n="global.filter_claimed"></button>
-    <button data-mfilter="expired"
-      class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500" data-i18n="global.filter_expired"></button>
+    <button data-mfilter="all"
+      class="mission-filter tfilter-active shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500"
+      data-i18n="global.filter_all"></button>
+    <button data-mfilter="available" class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500"
+      data-i18n="global.filter_available"></button>
+    <button data-mfilter="claimed" class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500"
+      data-i18n="global.filter_claimed"></button>
+    <button data-mfilter="expired" class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500"
+      data-i18n="global.filter_expired"></button>
   </div>
 
   <!-- ── missions-live-casino.html ── -->
   <section class="mb-4">
     <h2 class="font-heading font-bold text-base text-gray-900 px-3 mb-2" data-i18n="we_rewards.live_casino"></h2>
-    <div class="grid grid-cols-2 gap-2.5 px-3">
+    <div id="scroll-missions-live-casino" class="flex gap-2.5 overflow-x-auto px-3 pb-2 scrollbar-hide scroll-smooth">
 
       <!-- Casino Free Credit – Completed -->
-      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+      <div class="shrink-0 w-56 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
         <div
           class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
           <img src="/assets/images/we-rewards/live-casino-2.png" class="w-full h-full object-cover" />
           <span
-            class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md" data-i18n="we_rewards.completed"></span>
+            class="absolute right-2 top-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md shadow"
+            data-i18n="we_rewards.completed"></span>
+          <span
+            class="text-white font-bold text-2xs bg-blue-400 px-2 pt-6 pb-1 w-20 text-center absolute -left-[30px] -top-[10px] -rotate-45">Daily</span>
         </div>
         <div class="p-2.5">
           <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Casino Free Credit
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px] min-h-[55px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">MYR 188.00 Free bonus</p>
-              <p class="text-gray-500 italic leading-3" data-i18n="we_rewards.exclusive_bonus"></p>
-            </div>
-          </div>
-          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover" data-i18n="we_rewards.claim_now" onclick="document.getElementById('reward-claimed-modal').showModal()"></button>
-        </div>
-      </div>
-
-      <!-- Weekly Baccarat Quest – Opt In -->
-      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/live-casino-3.png" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Weekly Baccarat Quest
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Wager MYR 5,000 on any Evolution Live.</p>
-            </div>
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">Free MYR 38</p>
-            </div>
-          </div>
-          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover" data-i18n="we_rewards.opt_in" onclick="document.getElementById('opt-in-modal').showModal()"></button>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ── missions-slots.html ── -->
-  <section class="mb-4">
-    <h2 class="font-heading font-bold text-base text-gray-900 px-3 mb-2" data-i18n="we_rewards.slots"></h2>
-    <div class="grid grid-cols-2 gap-2.5 px-3">
-
-      <!-- Daily Slots Quest – Completed -->
-      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/slots-2.png" class="w-full h-full object-cover" />
-          <span
-            class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md" data-i18n="we_rewards.completed"></span>
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Daily Slots Quest
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Wager MYR 5,000 on any Evolution Live.</p>
-            </div>
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">Free MYR 38</p>
-            </div>
-          </div>
-          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover" data-i18n="we_rewards.claim_now" onclick="document.getElementById('reward-claimed-modal').showModal()"></button>
-        </div>
-      </div>
-
-      <!-- Daily Scatter Quest -->
-      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/slots-3.png" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Daily Scatter Quest
-            <button class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </p>
-          <span
-            class="inline-flex items-center gap-1 bg-gray-200 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
-            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
-          </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Hits scatter &amp; win additional prizes</p>
-            </div>
-            <div class="flex-1 text-[10px]">
-              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">3 get MYR18</p>
-              <p class="text-gray-500 italic leading-3">4 get MYR38</p>
-              <p class="text-gray-500 italic leading-3">5 get MYR88</p>
-            </div>
-          </div>
-          <button class="w-full bg-gray-600 text-gray-300 py-1 font-bold rounded-lg glow-hover" disabled data-i18n="we_rewards.coming_soon"></button>
-        </div>
-      </div>
-
-      <!-- Weekly Turnover Quest -->
-      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
-        <div
-          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/slots-3.png" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-2.5">
-          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Weekly Turnover Quest
+            Daily Casino (I)
             <button class="">
               <i class="fa-solid fa-circle-info"></i>
             </button>
@@ -168,95 +40,183 @@
             class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
             <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
           </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
+          <div class="flex gap-1 mb-2.5">
+            <div class="flex-1 text-1xs border-r border-gray-500 pr-1">
               <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Play &amp; reach weekly turnover target to unlock rewards</p>
+              <p class="text-gray-500 italic line-clamp-2">
+                <span class="text-primary">Evolution:</span> Hit MYR 5,000 turnover daily...
+              </p>
             </div>
-            <div class="flex-1 text-[10px]">
+            <div class="flex-1 text-1xs">
               <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">138 Free Spin on pragmaticplay</p>
+              <p class="text-white font-bold">Free MYR 88</p>
             </div>
           </div>
-          <div class="mb-2">
-            <div class="h-2 bg-[#FFFFFF26] rounded-full overflow-hidden">
-              <div class="h-full bg-yellow-400 rounded-full" style="width:10%"></div>
-            </div>
-            <p class="text-[9px] text-gray-500 mt-1 text-center">
-              <span class="text-primary">MYR 100.35</span> / 30,000.00 (0.33%)
-            </p>
-          </div>
+          <button class="w-full bg-primary text-black py-1 font-bold rounded-lg glow-hover"
+            data-i18n="we_rewards.claim_now"
+            onclick="document.getElementById('reward-claimed-modal').showModal()"></button>
         </div>
       </div>
 
-      <!-- Weekly Slots Quest – Coming Soon -->
-      <div class="shrink-0 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+      <!-- Weekly Baccarat Quest – Opt In -->
+      <div class="shrink-0 w-56 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
         <div
           class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
-          <img src="/assets/images/we-rewards/slots-4.png" class="w-full h-full object-cover" />
+          <img src="/assets/images/we-rewards/latest-missions/4.png" class="w-full h-full object-cover" />
+          <span
+            class="text-white font-bold text-2xs bg-[#9B59B6] px-2 pt-6 pb-1 w-20 text-center absolute -left-[30px] -top-[10px] -rotate-45">Weekly</span>
         </div>
         <div class="p-2.5">
           <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Weekly Slots Quest
+            Weekly Baccarat (I)
             <button class="">
               <i class="fa-solid fa-circle-info"></i>
             </button>
           </p>
           <span
-            class="inline-flex items-center gap-1 bg-gray-200 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
             <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
           </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
+          <div class="flex gap-1 mb-2.5">
+            <div class="flex-1 text-1xs border-r border-gray-500 pr-1">
               <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Play &amp; reach weekly turnover target to unlock rewards</p>
+              <p class="text-gray-500 italic line-clamp-2">
+                <span class="text-primary">Evolution:</span> Hit MYR 30,000 turnover ...
+              </p>
             </div>
-            <div class="flex-1 text-[10px]">
+            <div class="flex-1 text-1xs">
               <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">138 Free Spin on pragmaticplay</p>
+              <p class="text-white font-bold">Free MYR 38</p>
             </div>
           </div>
-          <button class="w-full bg-gray-600 text-gray-300 py-1 font-bold rounded-lg glow-hover" disabled data-i18n="we_rewards.coming_soon"></button>
+          <button class="w-full bg-primary text-black py-1 font-bold rounded-lg glow-hover"
+            data-i18n="we_rewards.opt_in" onclick="document.getElementById('opt-in-modal').showModal()"></button>
         </div>
       </div>
 
+      <!-- Weekly Baccarat Quest – Opt In -->
+      <div class="shrink-0 w-56 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/latest-missions/4.png" class="w-full h-full object-cover" />
+          <span
+            class="text-white font-bold text-2xs bg-[#9B59B6] px-2 pt-6 pb-1 w-20 text-center absolute -left-[30px] -top-[10px] -rotate-45">Weekly</span>
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Weekly Baccarat (I)
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
+          </span>
+          <div class="flex gap-1 mb-2.5">
+            <div class="flex-1 text-1xs border-r border-gray-500 pr-1">
+              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
+              <p class="text-gray-500 italic line-clamp-2">
+                <span class="text-primary">Evolution:</span> Hit MYR 30,000 turnover ...
+              </p>
+            </div>
+            <div class="flex-1 text-1xs">
+              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
+              <p class="text-white font-bold">Free MYR 38</p>
+            </div>
+          </div>
+          <button class="w-full bg-[#5A5A5A] text-gray-300 py-1 font-bold rounded-lg glow-hover"
+            disabled>Claimed</button>
+        </div>
+      </div>
 
+      <!-- Weekly Baccarat Quest – Opt In -->
+      <div class="shrink-0 w-56 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/latest-missions/4.png" class="w-full h-full object-cover" />
+          <span
+            class="text-white font-bold text-2xs bg-[#9B59B6] px-2 pt-6 pb-1 w-20 text-center absolute -left-[30px] -top-[10px] -rotate-45">Weekly</span>
+          <span
+            class="absolute right-2 top-2 bg-[#5A5A5A] text-white text-[10px] font-bold px-2 py-0.5 rounded-md shadow">Expired</span>
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Weekly Baccarat (I)
+            <button class="">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
+          </span>
+          <div class="flex gap-1 mb-2.5">
+            <div class="flex-1 text-1xs border-r border-gray-500 pr-1">
+              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
+              <p class="text-gray-500 italic line-clamp-2">
+                <span class="text-primary">Evolution:</span> Hit MYR 30,000 turnover ...
+              </p>
+            </div>
+            <div class="flex-1 text-1xs">
+              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
+              <p class="text-white font-bold">Free MYR 38</p>
+            </div>
+          </div>
+          <button class="w-full bg-[#5A5A5A] text-gray-300 py-1 font-bold rounded-lg glow-hover"
+            disabled>Expired</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── missions-slots.html ── -->
+  <section class="mb-4">
+    <h2 class="font-heading font-bold text-base text-gray-900 px-3 mb-2">Slot Missions</h2>
+    <div id="scroll-missions-slots" class="flex gap-2.5 overflow-x-auto px-3 pb-2 scrollbar-hide scroll-smooth">
+      {{> we-rewards/items/latest-missions-items}}
     </div>
   </section>
 
   <!-- ── missions-sportsbook.html ── -->
   <section class="mb-4">
     <h2 class="font-heading font-bold text-base text-gray-900 px-3 mb-2" data-i18n="we_rewards.sportsbook"></h2>
-    <div class="grid grid-cols-2 gap-2.5 px-3">
+    <div id="scroll-missions-sportsbook" class="flex gap-2.5 overflow-x-auto px-3 pb-2 scrollbar-hide scroll-smooth">
 
       <!-- Sport Weekly Quest -->
-      <div class="shrink-0 w-48 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+      <div class="shrink-0 w-56 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
         <div
           class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
           <img src="/assets/images/we-rewards/sportbook1.png" class="w-full h-full object-cover" />
+          <span
+            class="text-white font-bold text-2xs bg-blue-400 px-2 pt-6 pb-1 w-20 text-center absolute -left-[30px] -top-[10px] -rotate-45">Daily</span>
         </div>
         <div class="p-2.5">
           <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
-            Sport Weekly Quest
+            Daily Sports (I)
             <button class="">
               <i class="fa-solid fa-circle-info"></i>
             </button>
           </p>
           <span
-            class="inline-flex items-center gap-1 bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
             <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
           </span>
-          <div class="flex gap-2 mb-2.5">
-            <div class="flex-1 text-[10px]">
+          <div class="flex gap-1 mb-2.5">
+            <div class="flex-1 text-1xs border-r border-gray-500 pr-1">
               <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
-              <p class="text-gray-500 italic leading-3">Reach turnover MYR 5,000 in saba sports.</p>
+              <p class="text-gray-500 italic line-clamp-2">
+                <span class="text-primary">Saba Sport:</span> Hit MYR 5,000 turnover daily...
+              </p>
             </div>
-            <div class="flex-1 text-[10px]">
+            <div class="flex-1 text-1xs">
               <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
-              <p class="text-gray-500 italic leading-3">Free MYR 38 bonus</p>
+              <p class="text-white font-bold">Free MYR 38 Bonus</p>
             </div>
           </div>
-          <button class="w-full bg-yellow-400 text-black py-1 font-bold rounded-lg glow-hover" data-i18n="we_rewards.opt_in" onclick="document.getElementById('opt-in-modal').showModal()"></button>
+          <button class="w-full bg-primary text-black py-1 font-bold rounded-lg glow-hover"
+            data-i18n="we_rewards.opt_in" onclick="document.getElementById('opt-in-modal').showModal()"></button>
         </div>
       </div>
 

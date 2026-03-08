@@ -61,7 +61,7 @@
 .we-tabs .tab[aria-selected="true"] {
   color: #000 !important;
   font-weight: bold !important;
-  border-bottom-color: #facc15 !important;
+  border-bottom-color: #FFD800 !important;
   background: transparent !important;
 }
 
@@ -76,9 +76,9 @@
 }
 
 .ptab-active {
-  background: #facc15 !important;
+  background: #FFD800 !important;
   color: #000 !important;
-  border-color: #facc15 !important;
+  border-color: #FFD800 !important;
   font-weight: 700 !important;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .day-active {
-  background: #facc15 !important;
+  background: #FFD800 !important;
   color: #000 !important;
   border: none !important;
   font-weight: 700 !important;
@@ -109,7 +109,7 @@
 }
 
 .tfilter-active {
-  background: #facc15 !important;
+  background: #FFD800 !important;
   color: #000 !important;
   border: none !important;
   font-weight: 700 !important;
@@ -121,7 +121,7 @@
 }
 
 .spin-filter-active {
-  background: #facc15 !important;
+  background: #FFD800 !important;
   color: #000 !important;
   border: none !important;
   font-weight: 700 !important;
@@ -137,7 +137,7 @@
 }
 
 .mission-filter-active {
-  background: #facc15 !important;
+  background: #FFD800 !important;
   color: #000 !important;
   border: none !important;
 }
@@ -148,9 +148,9 @@
 }
 
 .free-filter-active {
-  background: #facc15 !important;
+  background: #FFD800 !important;
   color: #000 !important;
-  border-color: #facc15 !important;
+  border-color: #FFD800 !important;
 }
 
 /* ─── _animations.scss ─────────────────── */
@@ -245,7 +245,7 @@
 .tabs-we .tab-active,
 .tabs-we .tab[aria-selected="true"] {
   color: #111827 !important;
-  border-bottom-color: #facc15 !important;
+  border-bottom-color: #FFD800 !important;
 }
 
 /* game thumb */
@@ -292,14 +292,27 @@
   border-bottom-color: transparent !important;
 }
 
-.modal:not(dialog:not(.modal-open)),
-.modal::backdrop {
-  background-color: #0009 !important;
-}
-
 .leaderboard-table {
   td {
     font-size: 12px;
     padding: 0.5rem 0.25rem !important;
   }
+}
+
+.we-predict-filter {
+  .tfilter {
+    min-width: 120px;
+    background-color: transparent !important;
+    border-bottom: 3px solid transparent !important;
+    border-radius: 0 !important;
+
+    &.tfilter-active {
+      border-bottom-color: #FFD800 !important;
+    }
+  }
+}
+
+.modal:not(dialog:not(.modal-open)),
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
