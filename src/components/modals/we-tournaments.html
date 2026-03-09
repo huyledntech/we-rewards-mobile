@@ -148,3 +148,64 @@
 
   <form method="dialog" class="modal-backdrop"><button>close</button></form>
 </dialog>
+
+
+<!-- ── modals/game-modal.html ── -->
+<dialog id="game-modal"  class="modal items-start">
+
+  <div class="relative w-full max-w-sm mx-auto">
+
+    <!-- Close -->
+    <form method="dialog">
+      <button class="absolute -right-2 -top-4 text-white text-4xl z-20">
+        <img src="/assets/icons/close-btn.png" width="50px" />
+      </button>
+    </form>
+
+    <div class="modal-box rounded-2xl px-5 py-6 flex flex-col gap-4 mx-auto">
+
+      <!-- Top: image + title -->
+      <div class="flex gap-4 items-start">
+        <img src="/assets/images/we-tournaments/games/1.png" class="rounded-xl w-36 h-36 object-cover shrink-0" alt="Sweet Bonanza 1000" />
+        <div class="flex flex-col gap-3 flex-1 pt-1">
+          <div>
+            <h2 class="font-black text-sm leading-snug">Sweet Bonanza 1000</h2>
+            <p class="">Pragmatic Play</p>
+          </div>
+          <!-- RTP + Line inline -->
+          <div class="flex flex-col gap-2">
+            <div class="bg-base-200 rounded-xl px-3 py-2 flex justify-between items-center">
+              <span class="text-sm font-semibold">RTP</span>
+              <span class="text-sm font-bold">97.5%</span>
+            </div>
+            <div class="bg-base-200 rounded-xl px-3 py-2 flex justify-between items-center">
+              <span class="text-sm font-semibold">Line</span>
+              <span class="text-sm text-base-content/50">-</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volatility + Cascade Win -->
+      <div class="flex flex-col gap-2">
+        <div class="bg-base-200 rounded-xl px-4 py-3 flex justify-between items-center">
+          <span class="text-sm font-semibold">Volatility</span>
+          <span class="text-sm text-base-content/50">-</span>
+        </div>
+        <div class="bg-base-200 rounded-xl px-4 py-3 flex justify-between items-center">
+          <span class="text-sm font-semibold">Cascade WIn</span>
+          <span class="text-sm text-base-content/50">-</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-3">
+        <button class="btn bg-secondary border-none flex-1 rounded-xl font-black normal-case text-white">Demo</button>
+        <button class="btn bg-primary border-none flex-1 rounded-xl font-black normal-case">Play Now</button>
+      </div>
+
+    </div>
+  </div>
+
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>

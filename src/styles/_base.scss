@@ -251,7 +251,7 @@
 /* game thumb */
 .game-thumb {
   aspect-ratio: 1;
-  overflow: hidden;
+  // overflow: hidden;
   // border-radius: 8px;
   position: relative;
   cursor: pointer;
@@ -301,7 +301,11 @@
 
 .we-predict-filter {
   .tfilter {
-    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     background-color: transparent !important;
     border-bottom: 3px solid transparent !important;
     border-radius: 0 !important;
@@ -315,4 +319,12 @@
 .modal:not(dialog:not(.modal-open)),
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.modal {
+  form[method="dialog"] {
+    button {
+      outline: none !important;
+    }
+  }
 }

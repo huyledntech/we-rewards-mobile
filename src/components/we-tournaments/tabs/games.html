@@ -6,7 +6,8 @@
 
   <!-- search input (DaisyUI input) -->
   <div class="mb-3">
-    <label class="w-2/3 ml-auto input input-sm input-bordered flex items-center gap-2 rounded-full bg-gray-50 border-gray-200 focus-within:border-primary focus-within:outline-none text-[13px]">
+    <label
+      class="w-2/3 ml-auto input input-sm input-bordered flex items-center gap-2 rounded-full bg-gray-50 border-gray-200 focus-within:border-primary focus-within:outline-none text-[13px]">
       <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
       <input type="text" class="grow bg-transparent outline-none text-[13px] text-gray-600 placeholder:text-gray-400"
         placeholder="Search your favorites games" />
@@ -16,71 +17,115 @@
   <!-- game grid (Tailwind grid) -->
   <div class="grid grid-cols-3 gap-2 mb-4 relative">
 
-    <div class="game-thumb">
+    <div class="game-thumb" onclick="document.getElementById('game-modal').showModal()">
       <img src="/assets/images/we-tournaments/games/1.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Bonanza Gold</div>
     </div>
-    <div class="game-thumb">
+    <div class="game-thumb" onclick="document.getElementById('game-modal').showModal()">
       <img src="/assets/images/we-tournaments/games/2.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Sweet Bonanza</div>
     </div>
-    <div class="game-thumb">
+    <div class="game-thumb" onclick="document.getElementById('game-modal').showModal()">
       <img src="/assets/images/we-tournaments/games/3.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Vampy Party</div>
     </div>
-    <div class="game-thumb">
+    <div class="game-thumb" onclick="document.getElementById('game-modal').showModal()">
       <img src="/assets/images/we-tournaments/games/4.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Wild West Gold</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/5.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Triple Pot Gold</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/6.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">5 Lions Megaways</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/7.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">777 Fire Strike</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/8.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">8 Dragons</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/9.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Wild Wildbeest Wins</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/10.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Mustang Trail</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/11.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Buffalo King Megaways</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/12.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Great Rhino Megaways</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/13.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Mahjong Wins</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/14.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Santa’s Xmas Rush</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/15.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Gates of Gatotkaca 1000</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/16.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Bonanza Gold</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/17.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Sweet Bonanza 1000</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/18.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Vampy Party</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/19.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Vampy Party</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/20.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Vampy Party</div>
     </div>
     <div class="game-thumb">
       <img src="/assets/images/we-tournaments/games/21.png" alt="" class="w-full h-full object-cover" />
+      <div class="p-1 flex items-center justify-center bg-primary !leading-[20px] font-bold">RTP 96.5%</div>
+      <div class="p-1 flex items-center justify-center bg-white !leading-[20px]">Vampy Party</div>
     </div>
 
-    <div class="absolute left-0 bottom-0 right-0 bg-white pointer-events-none -mt-6 flex h-36 w-full [mask-image:linear-gradient(transparent,#fff)]"></div>
+    <div
+      class="absolute left-0 bottom-0 right-0 bg-white pointer-events-none -mt-6 flex h-36 w-full [mask-image:linear-gradient(transparent,#fff)]">
+    </div>
 
   </div>
 

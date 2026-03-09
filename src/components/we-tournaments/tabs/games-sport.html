@@ -1,0 +1,217 @@
+<!-- ══════════════════ PANEL: Tournament Games ══════════════════ -->
+<div id="tpanel-games" class="hidden fade-in pb-24">
+
+  <!-- records row -->
+  {{> we-tournaments/records-row}}
+
+  <!-- GAME CATEGORY -->
+  <div class="grid grid-cols-2 gap-2 my-4 relative">
+    <div class="col-span-1">
+      <img src="/assets/images/we-tournaments/tournaments-sport-game-1.png" alt="" class="w-full h-full object-cover" />
+    </div>
+    <div class="col-span-1">
+      <img src="/assets/images/we-tournaments/tournaments-sport-game-2.png" alt="" class="w-full h-full object-cover" />
+    </div>
+    <div class="col-span-1">
+      <img src="/assets/images/we-tournaments/tournaments-sport-game-3.png" alt="" class="w-full h-full object-cover" />
+    </div>
+  </div>
+
+  <!-- game grid (Tailwind grid) -->
+  <section>
+    <div class="flex items-center justify-between py-2">
+      <h2 class="font-bold text-base text-gray-900">Trending Matches</h2>
+      <div class="flex items-center gap-2">
+        <a href="/we-rewards.html?tab=tournaments" class="text-xs text-gray-400" data-i18n="we_rewards.view_all"></a>
+        <button data-scroll-left="scroll-tournaments" class="flex items-center justify-center text-base text-gray-500">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button data-scroll-right="scroll-tournaments" class="flex items-center justify-center text-base text-gray-500">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <div id="scroll-tournaments" class="flex gap-3 overflow-x-auto py-2 scrollbar-hide scroll-smooth">
+
+      <!-- Card 1: Barcelona vs Juventus (LIVE with score) -->
+      <div class="card bg-[#3C3C3C] rounded-xl w-full flex-shrink-0">
+        <div class="card-body p-4 gap-3">
+
+          <!-- Header -->
+          <div class="flex items-center justify-between text-1xs text-base-content/60">
+            <span class="text-gray-500">Soccer • Premium League</span>
+            <div class="flex items-center gap-2">
+              <a href="#" class="link link-hover text-gray-500 underline">Click to Watch</a>
+              <span class="">
+                <img src="/assets/icons/live-icon.gif" class="h-4" />
+              </span>
+            </div>
+          </div>
+
+          <!-- Teams + Score -->
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex flex-col items-center gap-1 w-20">
+              <div class="avatar placeholder">
+                <img src="/assets/images/we-tournaments/team-1.png" alt="" class="w-full h-full object-cover" />
+              </div>
+              <span class="text-xs text-center text-white">Barcelona FC</span>
+            </div>
+
+            <div class="flex flex-col items-center justify-between gap-1 h-full">
+              <div class="flex items-center gap-2">
+                <div class="badge badge-lg bg-[#E3E4E51A] text-white border-none font-black text-base w-9 h-9 rounded-lg">1</div>
+                <div class="badge badge-lg bg-[#E3E4E51A] text-white border-none font-black text-base w-9 h-9 rounded-lg">2</div>
+              </div>
+              <span class="text-xs text-gray-400">30:02:10 <i class="fa-solid fa-tower-broadcast text-red-500"></i></span>
+            </div>
+
+            <div class="flex flex-col items-center gap-1 w-20">
+              <div class="avatar placeholder">
+                <img src="/assets/images/we-tournaments/team-2.png" alt="" class="w-full h-full object-cover" />
+              </div>
+              <span class="text-xs text-center text-white">Juventus FC</span>
+            </div>
+          </div>
+
+          <!-- Odds -->
+          <div class="flex gap-2">
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">1</span>
+              <span class="text-warning font-black">1.32</span>
+            </button>
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">draw</span>
+              <span class="text-warning font-black">4.0</span>
+            </button>
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">2</span>
+              <span class="text-warning font-black">10.0</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 1: Barcelona vs Juventus (LIVE with score) -->
+      <div class="card bg-[#3C3C3C] rounded-xl w-full flex-shrink-0">
+        <div class="card-body p-4 gap-3">
+
+          <!-- Header -->
+          <div class="flex items-center justify-between text-1xs text-base-content/60">
+            <span class="text-gray-500">Soccer • Premium League</span>
+            <div class="flex items-center gap-2">
+              <a href="#" class="link link-hover text-gray-500 underline">Click to Watch</a>
+              <span class="">
+                <img src="/assets/icons/live-gray-icon.png" class="h-4" />
+              </span>
+            </div>
+          </div>
+
+          <!-- Teams + Score -->
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex flex-col items-center gap-1 w-20">
+              <div class="avatar placeholder">
+                <img src="/assets/images/we-tournaments/team-1.png" alt="" class="w-full h-full object-cover" />
+              </div>
+              <span class="text-xs text-center text-white">Barcelona FC</span>
+            </div>
+
+            <div class="flex flex-col items-center justify-between gap-1 h-full">
+              <div class="flex items-center gap-2">
+                <div class="badge badge-lg bg-[#E3E4E51A] text-white border-none font-black text-base w-9 h-9 rounded-lg">-</div>
+                <div class="badge badge-lg bg-[#E3E4E51A] text-white border-none font-black text-base w-9 h-9 rounded-lg">-</div>
+              </div>
+              <span class="text-xs text-gray-400">30:02:10 <i class="fa-solid fa-tower-broadcast text-red-500"></i></span>
+            </div>
+
+            <div class="flex flex-col items-center gap-1 w-20">
+              <div class="avatar placeholder">
+                <img src="/assets/images/we-tournaments/team-2.png" alt="" class="w-full h-full object-cover" />
+              </div>
+              <span class="text-xs text-center text-white">Juventus FC</span>
+            </div>
+          </div>
+
+          <!-- Odds -->
+          <div class="flex gap-2">
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">1</span>
+              <span class="text-warning font-black">1.32</span>
+            </button>
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">draw</span>
+              <span class="text-warning font-black">4.0</span>
+            </button>
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">2</span>
+              <span class="text-warning font-black">10.0</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 1: Barcelona vs Juventus (LIVE with score) -->
+      <div class="card bg-[#3C3C3C] rounded-xl w-full flex-shrink-0">
+        <div class="card-body p-4 gap-3">
+
+          <!-- Header -->
+          <div class="flex items-center justify-between text-1xs text-base-content/60">
+            <span class="text-gray-500">Soccer • Premium League</span>
+            <div class="flex items-center gap-2">
+              <a href="#" class="link link-hover text-gray-500 underline">Click to Watch</a>
+              <span class="">
+                <img src="/assets/icons/live-gray-icon.png" class="h-4" />
+              </span>
+            </div>
+          </div>
+
+          <!-- Teams + Score -->
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex flex-col items-center gap-1 w-20">
+              <div class="avatar placeholder">
+                <img src="/assets/images/we-tournaments/team-1.png" alt="" class="w-full h-full object-cover" />
+              </div>
+              <span class="text-xs text-center text-white">Barcelona FC</span>
+            </div>
+
+            <div class="flex flex-col items-center justify-between gap-1 h-full">
+              <div class="flex items-center gap-2">
+                <div class="badge badge-lg bg-[#E3E4E51A] text-white border-none font-black text-base w-9 h-9 rounded-lg">-</div>
+                <div class="badge badge-lg bg-[#E3E4E51A] text-white border-none font-black text-base w-9 h-9 rounded-lg">-</div>
+              </div>
+              <span class="text-xs text-gray-400">30:02:10 <i class="fa-solid fa-tower-broadcast text-red-500"></i></span>
+            </div>
+
+            <div class="flex flex-col items-center gap-1 w-20">
+              <div class="avatar placeholder">
+                <img src="/assets/images/we-tournaments/team-2.png" alt="" class="w-full h-full object-cover" />
+              </div>
+              <span class="text-xs text-center text-white">Juventus FC</span>
+            </div>
+          </div>
+
+          <!-- Odds -->
+          <div class="flex gap-2">
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">1</span>
+              <span class="text-warning font-black">1.32</span>
+            </button>
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">draw</span>
+              <span class="text-warning font-black">4.0</span>
+            </button>
+            <button class="btn btn-sm flex-1 bg-[#E3E4E533] border-none normal-case rounded-lg h-auto py-2">
+              <span class="text-white">2</span>
+              <span class="text-warning font-black">10.0</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div><!-- /scroll-tournaments -->
+  </section>
+
+</div>
