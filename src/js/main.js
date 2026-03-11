@@ -86,3 +86,65 @@ $(document).ready(function () {
 
 });
 
+
+// ── Countdown Timer Logic ────────────────────────
+function initCountdown() {
+    const timers = document.querySelectorAll(".countdown-timer");
+
+    timers.forEach(timer => {
+        const expireDays = parseInt(timer.dataset.expire, 10) || 0;
+
+        let totalSeconds = expireDays * 24 * 60 * 60;
+
+        const daysEl = timer.querySelector(".days");
+        const hoursEl = timer.querySelector(".hours");
+        const minutesEl = timer.querySelector(".minutes");
+        const secondsEl = timer.querySelector(".seconds");
+
+        const interval = setInterval(() => {
+            if (totalSeconds <= 0) {
+                clearInterval(interval);
+                return;
+            }
+
+            totalSeconds--;
+
+            const days = Math.floor(totalSeconds / 86400);
+            const hours = Math.floor((totalSeconds % 86400) / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+
+            if (daysEl) daysEl.style.setProperty("--value", days);
+            if (hoursEl) hoursEl.style.setProperty("--value", hours);
+            if (minutesEl) minutesEl.style.setProperty("--value", minutes);
+            if (secondsEl) secondsEl.style.setProperty("--value", seconds);
+
+        }, 1000);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initCountdown();
+})
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});

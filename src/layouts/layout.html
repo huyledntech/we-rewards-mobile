@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
@@ -23,6 +24,11 @@
 
   <!-- jQuery from CDN -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
 </head>
 
 <body class="desktop-stage">
@@ -31,9 +37,9 @@
 
     <!-- Header logic: Default to home header, use sub-header if specified -->
     {{#if subPage}}
-      {{> header-sub pageTitle=pageTitle}}
+    {{> header-sub pageTitle=pageTitle}}
     {{else}}
-      {{> header-home}}
+    {{> header-home}}
     {{/if}}
 
     <main>
@@ -48,4 +54,5 @@
   <script type="module" src="/js/main.js"></script>
 
 </body>
+
 </html>

@@ -39,7 +39,7 @@ document.querySelectorAll('.faq-toggle').forEach(btn => {
     const icon = item.querySelector('.faq-icon');
     const isOpen = !body.classList.contains('hidden');
     body.classList.toggle('hidden', isOpen);
-    icon.innerHTML = isOpen ? '<i class="fa-solid fa-angle-up"></i>' : '<i class="fa-solid fa-angle-down"></i>';
+    icon.innerHTML = isOpen ? '<i class="fa-solid fa-angle-down"></i>' : '<i class="fa-solid fa-angle-up"></i>';
   });
 });
 

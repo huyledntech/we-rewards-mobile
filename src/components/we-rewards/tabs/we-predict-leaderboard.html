@@ -2,24 +2,12 @@
 {{>we-rewards/user-ranking-bar}}
 
 <!-- promo banner -->
-<div class="mx-3 mb-3 rounded-xl overflow-hidden h-28 relative flex items-center">
-  <img src="/assets/images/we-rewards/we-predict-slide-1.png" class="w-full h-full object-contain" />
-</div>
-<!-- banner dots -->
-<div class="flex justify-center gap-1.5 mb-3">
-  <span class="w-2 h-2 rounded-full bg-gray-800"></span>
-  <span class="w-2 h-2 rounded-full bg-gray-300"></span>
-  <span class="w-2 h-2 rounded-full bg-gray-300"></span>
-  <span class="w-2 h-2 rounded-full bg-gray-300"></span>
-</div>
+{{>we-rewards/items/slide}}
 
 <!-- records date filter -->
 <div class="flex items-center justify-end gap-2 px-3 mb-2">
   <span class="text-[13px] font-semibold text-gray-700" data-i18n="we_rewards.records"></span>
-  <button
-    class="flex items-center gap-1.5 border border-gray-200 rounded-lg px-3 py-1.5 text-[12px] text-gray-700 font-medium">
-    29 Sept 2026 <span class="text-gray-400">▼</span>
-  </button>
+  <button onclick="document.getElementById('tipster-overview-modal').showModal()" class="flex items-center gap-1.5 border border-gray-200 rounded-lg px-3 py-1.5 text-[12px] text-gray-700 font-medium">29 Sept 2026 <span class="text-gray-400">▼</span></button>
 </div>
 
 <!-- leaderboard table -->
@@ -48,7 +36,7 @@
           <div class="flex items-center gap-2">
             <div class="avatar">
               <div class="w-8 rounded-full bg-orange-400 flex items-center justify-center text-white text-xs font-bold">
-                <span>SG</span>
+                <img src="/assets/icons/avatar.png" class="w-full h-full object-contain" />
               </div>
             </div>
             <span class="font-black">Stevie G</span>
@@ -57,7 +45,7 @@
         <td class="font-black">8,300</td>
         <td class="font-black">168</td>
         <td class="font-black">1%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline font-semibold text-base-content/60">View Tips</a>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline font-semibold text-base-content/60">View Tips</button>
         </td>
       </tr>
 
@@ -73,7 +61,7 @@
         <td>21,500</td>
         <td>2,188</td>
         <td>8%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 2 -->
@@ -88,7 +76,7 @@
         <td>21,500</td>
         <td>1,688</td>
         <td>5%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 3 -->
@@ -103,7 +91,7 @@
         <td>20,000</td>
         <td>1,088</td>
         <td>3%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 4 -->
@@ -118,7 +106,7 @@
         <td>19,500</td>
         <td>688</td>
         <td>2%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 5 -->
@@ -133,7 +121,7 @@
         <td>19,500</td>
         <td>688</td>
         <td>2%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 6 -->
@@ -148,7 +136,7 @@
         <td>15,500</td>
         <td>388</td>
         <td>1%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 7 -->
@@ -163,7 +151,7 @@
         <td>15,100</td>
         <td>388</td>
         <td>1%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 8 -->
@@ -178,7 +166,7 @@
         <td>14,500</td>
         <td>388</td>
         <td>1%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 9 -->
@@ -193,7 +181,7 @@
         <td>13,100</td>
         <td>388</td>
         <td>1%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Rank 10 -->
@@ -208,7 +196,7 @@
         <td>9,500</td>
         <td>388</td>
         <td>1%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</a></td>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline text-base-content/60">View Tips</button></td>
       </tr>
 
       <!-- Highlighted: My rank (bottom) -->
@@ -223,7 +211,7 @@
         <td class="font-black">5,300</td>
         <td class="font-black">88</td>
         <td class="font-black">1%</td>
-        <td><a href="#" class="link link-hover !text-[10px] underline font-semibold text-base-content/60">View Tips</a>
+        <td><button onclick="document.getElementById('tipster-overview-modal').showModal()" class="link link-hover !text-[10px] underline font-semibold text-base-content/60">View Tips</button>
         </td>
       </tr>
 
