@@ -1,5 +1,5 @@
 const tabActive = ['bg-white', 'text-gray-500', 'border', 'border-gray-200'];
-const hasSubTabs = ['we-predict', 'free', 'missions'];
+const hasSubTabs = ['we-predict', 'free', 'missions', 'tournaments'];
 
 // ── WE Predict sub-tabs ───────────────────────────
 document.querySelectorAll('[data-ptab]').forEach(btn => {

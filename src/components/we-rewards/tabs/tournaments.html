@@ -1,202 +1,37 @@
 <div id="panel-tournaments" class="tab-panel hidden bg-white min-h-screen">
 
-  <!-- ── tournament-filter.html ── -->
-  <div class="flex gap-2 px-3 pt-4 pb-3">
-    <button data-tfilter="all" class="tfilter tfilter-active shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500"
-      data-i18n="global.filter_all"></button>
-    <button data-tfilter="available" class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500"
-      data-i18n="global.filter_available"></button>
-    <button data-tfilter="upcoming" class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500"
-      data-i18n="global.filter_upcoming"></button>
-    <button data-tfilter="finished" class="tfilter shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500"
-      data-i18n="global.filter_finished"></button>
+
+  <!-- ── predict-subtabs.html ── -->
+  <div class="flex gap-2 px-3 pt-3 pb-3 overflow-x-auto scrollbar-hide">
+    <button data-ptab="tournaments-all"
+      class="ptab ptab-active shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">All</button>
+    <button data-ptab="tournaments-available"
+      class="ptab shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Available</button>
+    <button data-ptab="tournaments-upcoming"
+      class="ptab shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Upcoming</button>
+    <button data-ptab="tournaments-expired"
+      class="ptab shrink-0 flex-1 p-1 rounded-md bg-gray-300 text-gray-500">Expired</button>
   </div>
 
-  <!-- ── tournament-cards.html ── -->
-  <div class="flex flex-col gap-3 px-3 pb-6">
+  <!-- ══ SUB-PANEL: tournaments all ══ -->
+  <div id="ppanel-tournaments-all" class="ppanel">
+    {{> we-rewards/items/tournaments-all}}
+  </div><!-- /ppanel-tournaments-all -->
 
-    <!-- Card 1: Pragmatic Slots Tournament – Started -->
-    <div class="bg-secondary rounded-2xl overflow-hidden">
-      <!-- image area -->
-      <div class="relative h-48 overflow-hidden">
-        <img src="/assets/images/we-rewards/tournaments-1.png" class="w-full h-full object-cover" />
-        <!-- Started badge -->
-        <span class="absolute top-3 right-3 bg-primary text-black text-[12px] font-extrabold px-3 py-1 rounded-full"
-          data-i18n="we_rewards.started"></span>
-      </div>
+  <!-- ══ SUB-PANEL: tournaments available ══ -->
+  <div id="ppanel-tournaments-available" class="ppanel hidden">
+    {{> we-rewards/items/tournaments-all}}
+  </div><!-- /ppanel-tournaments-available -->
 
-      <!-- card body -->
-      <div class="p-4">
-        <div class="flex items-start justify-between mb-1.5">
-          <h3 class="font-heading font-bold text-white text-base leading-tight flex-1 pr-2">
-            Pragmatic Slots Tournament
-          </h3>
-          <div class="flex items-center gap-2 text-base text-gray-400">
-            <a href="/we-tournaments.html?tab=leaderboard" class="">
-              <i class="fa-solid fa-chart-simple"></i>
-            </a>
-            <a href="/we-tournaments.html?tab=rules" class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </a>
-          </div>
-        </div>
-        <!-- timer -->
-        <span
-          class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-3">
-          <span data-i18n="we_rewards.time_remaining"></span> <span>23:24:12</span>
-        </span>
+  <!-- ══ SUB-PANEL: tournaments upcoming ══ -->
+  <div id="ppanel-tournaments-upcoming" class="ppanel hidden">
+    {{> we-rewards/items/tournaments-all}}
+  </div>
 
-        <div class="flex gap-4 mb-3">
-          <!-- how to join -->
-          <div class="flex-1">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.how_to_join"></p>
-            <p class="text-[11px] text-gray-500 leading-snug">
-              Play and stake
-              <span class="text-primary underline cursor-pointer">Selective Slots Game</span>
-              to participate.
-            </p>
-          </div>
-          <!-- participant -->
-          <div class="shrink-0 text-right">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.participant"></p>
-            <div class="flex items-center justify-end gap-1 text-[12px] text-gray-500">
-              <i class="fa-solid fa-user"></i>
-              <span class="font-bold">25</span>
-            </div>
-          </div>
-        </div>
+  <!-- ══ SUB-PANEL: tournaments expired ══ -->
+  <div id="ppanel-tournaments-expired" class="ppanel hidden">
+    {{> we-rewards/items/tournaments-expired}}
+  </div><!-- /ppanel-tournaments-expired -->
 
-        <div class="mb-4">
-          <p class="text-[11px] text-gray-200 font-semibold mb-0.5" data-i18n="we_rewards.rewards_label"></p>
-          <p class="text-[11px] text-gray-500">Share prize pool start from USD $ 1,888</p>
-        </div>
-
-        <a href="/we-tournaments.html?tab=games"
-          class="w-full bg-primary text-black font-heading font-bold text-[16px] py-3 rounded-xl glow-hover flex items-center justify-center gap-1"
-          data-i18n="we_rewards.read_more"></a>
-      </div>
-    </div>
-
-    <!-- Card 2: World Cup 2026 Sport Tournament – Upcoming -->
-    <div class="bg-secondary rounded-2xl overflow-hidden">
-      <div class="relative h-48 overflow-hidden">
-        <img src="/assets/images/we-rewards/tournaments-2.png" class="w-full h-full object-cover" />
-        <!-- Upcoming badge -->
-        <span class="absolute top-3 right-3 bg-green-500 text-white text-[12px] font-extrabold px-3 py-1 rounded-full"
-          data-i18n="we_rewards.upcoming"></span>
-      </div>
-
-      <div class="p-4">
-        <div class="flex items-start justify-between mb-1.5">
-          <h3 class="font-heading font-bold text-white text-base leading-tight flex-1 pr-2">
-            World Cup 2026 Sport Tournament
-          </h3>
-          <div class="flex items-center gap-2 text-base text-gray-400">
-            <a href="/we-tournaments.html?tab=leaderboard" class="">
-              <i class="fa-solid fa-chart-simple"></i>
-            </a>
-            <a href="/we-tournaments.html?tab=rules" class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </a>
-          </div>
-        </div>
-        <span
-          class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-3">
-          <span data-i18n="we_rewards.time_remaining"></span> <span>23:24:12</span>
-        </span>
-
-        <div class="flex gap-4 mb-3">
-          <div class="flex-1">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.how_to_join"></p>
-            <p class="text-[11px] text-gray-500 leading-snug">
-              Play and stake
-              <span class="text-primary underline cursor-pointer">CMD368</span> |
-              <span class="text-primary underline cursor-pointer">Saba Sports</span> |
-              <span class="text-primary underline cursor-pointer">SBOBET</span>
-              to participate.
-            </p>
-          </div>
-          <div class="shrink-0 text-right">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.participant"></p>
-            <div class="flex items-center justify-end gap-1 text-[12px] text-gray-500">
-              <i class="fa-solid fa-user"></i>
-              <span class="font-bold">N/A</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-4">
-          <p class="text-[11px] text-gray-200 font-semibold mb-0.5" data-i18n="we_rewards.rewards_label"></p>
-          <p class="text-[11px] text-gray-500">Share prize pool start from USD $ 8,888</p>
-        </div>
-
-        <a href="/we-tournaments-sport.html?tab=games"
-          class="w-full bg-primary text-black font-heading font-bold text-[16px] py-3 rounded-xl glow-hover flex items-center justify-center gap-1"
-          data-i18n="we_rewards.read_more"></a>
-      </div>
-    </div>
-
-    <!-- Card 1: Pragmatic Slots Tournament – Started -->
-    <div class="bg-secondary rounded-2xl overflow-hidden">
-      <!-- image area -->
-      <div class="relative h-48 overflow-hidden">
-        <img src="/assets/images/we-rewards/tournaments-1.png" class="w-full h-full object-cover grayscale" />
-        <!-- Started badge -->
-        <span class="absolute top-3 right-3 bg-[#646464] text-white text-[12px] font-extrabold px-3 py-1 rounded-full">Finished</span>
-      </div>
-
-      <!-- card body -->
-      <div class="p-4">
-        <div class="flex items-start justify-between mb-1.5">
-          <h3 class="font-heading font-bold text-white text-base leading-tight flex-1 pr-2">
-            Pragmatic Slots Tournament
-          </h3>
-          <div class="flex items-center gap-2 text-base text-gray-400">
-            <a href="/we-tournaments.html?tab=leaderboard" class="">
-              <i class="fa-solid fa-chart-simple"></i>
-            </a>
-            <a href="/we-tournaments.html?tab=rules" class="">
-              <i class="fa-solid fa-circle-info"></i>
-            </a>
-          </div>
-        </div>
-        <!-- timer -->
-        <span
-          class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-3">
-          <span data-i18n="we_rewards.time_remaining"></span> <span>23:24:12</span>
-        </span>
-
-        <div class="flex gap-4 mb-3">
-          <!-- how to join -->
-          <div class="flex-1">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.how_to_join"></p>
-            <p class="text-[11px] text-gray-500 leading-snug">
-              Play and stake
-              <span class="text-primary underline cursor-pointer">Selective Slots Game</span>
-              to participate.
-            </p>
-          </div>
-          <!-- participant -->
-          <div class="shrink-0 text-right">
-            <p class="text-[11px] text-gray-200 font-semibold mb-1" data-i18n="we_rewards.participant"></p>
-            <div class="flex items-center justify-end gap-1 text-[12px] text-gray-500">
-              <i class="fa-solid fa-user"></i>
-              <span class="font-bold">25</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-4">
-          <p class="text-[11px] text-gray-200 font-semibold mb-0.5" data-i18n="we_rewards.rewards_label"></p>
-          <p class="text-[11px] text-gray-500">Share prize pool start from USD $ 1,888</p>
-        </div>
-
-        <a href="/we-tournaments.html?tab=games"
-          class="w-full bg-primary text-black font-heading font-bold text-[16px] py-3 rounded-xl glow-hover flex items-center justify-center gap-1"
-          data-i18n="we_rewards.read_more"></a>
-      </div>
-    </div>
-
-  </div><!-- /tournament-cards -->
 
 </div>
