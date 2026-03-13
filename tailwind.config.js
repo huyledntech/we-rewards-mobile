@@ -22,6 +22,7 @@ export default {
         primary: '#FFD800',
         secondary: '#3C3C3C',
         accent: '#E3E4E580',
+        expired: '#646464',
       },
       fontSize: {
         "2xs": "10px",

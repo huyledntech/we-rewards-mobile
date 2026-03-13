@@ -1,4 +1,5 @@
 const tabActive = ['bg-white', 'text-gray-500', 'border', 'border-gray-200'];
+const hasSubTabs = ['we-predict', 'free', 'missions'];
 
 // ── WE Predict sub-tabs ───────────────────────────
 document.querySelectorAll('[data-ptab]').forEach(btn => {
@@ -144,7 +145,7 @@ const activatePTab = (target) => {
 
   // update URL query param if tab is we-predict
   const url = new URL(window.location);
-  if (url.searchParams.get('tab') === 'we-predict') {
+  if (hasSubTabs.includes(url.searchParams.get('tab'))) {
     url.searchParams.set('ptab', target);
     window.history.replaceState({}, '', url);
   }
@@ -181,15 +182,39 @@ const activateTab = (target) => {
     active.style.animation = 'none';
     active.offsetHeight; // reflow
     active.style.animation = '';
+    
   }
 
   // update URL query param
   const url = new URL(window.location);
   url.searchParams.set('tab', target);
-  if (target !== 'we-predict') {
+  
+  let ptabToActivate = null;
+
+  if (!hasSubTabs.includes(target)) {
     url.searchParams.delete('ptab');
+  } else {
+    let ptab = url.searchParams.get('ptab');
+    const ptabExistsInPanel = active ? active.querySelector(`[data-ptab="${ptab}"]`) : null;
+    
+    if (!ptabExistsInPanel && active) {
+      const firstPtab = active.querySelector('[data-ptab]');
+      if (firstPtab) {
+        ptab = firstPtab.dataset.ptab;
+      }
+    }
+    
+    if (ptab) {
+      url.searchParams.set('ptab', ptab);
+      ptabToActivate = ptab;
+    }
   }
+
   window.history.replaceState({}, '', url);
+
+  if (ptabToActivate) {
+    activatePTab(ptabToActivate);
+  }
 };
 
 tabBtns.forEach(btn => {
@@ -202,12 +227,8 @@ tabBtns.forEach(btn => {
 document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   const tab = params.get('tab');
-  const ptab = params.get('ptab');
 
   if (tab) {
     activateTab(tab);
-    if (tab === 'we-predict' && ptab) {
-      activatePTab(ptab);
-    }
   }
 });
