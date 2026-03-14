@@ -322,9 +322,18 @@
 }
 
 .modal {
+  .text-xs {
+    font-size: 14px !important;
+  }
+
   form[method="dialog"] {
     button {
       outline: none !important;
+    }
+
+    .btn {
+      font-weight: 900 !important;
+      font-size: 18px !important;
     }
   }
 }

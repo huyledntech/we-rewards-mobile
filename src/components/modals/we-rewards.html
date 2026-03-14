@@ -40,7 +40,8 @@
         YoYou have successfully redeemed your <strong>iPhone 17 Pro Max</strong>, a mystery gift from WE88.
       </div>
       <div class="opacity-50">
-        <strong>Note:</strong>  Please contact our<strong> Live Support team</strong> to arrange your delivery and complete the claiming process.
+        <strong>Note:</strong> Please contact our<strong> Live Support team</strong> to arrange your delivery and
+        complete the claiming process.
       </div>
       <form class="" method="dialog">
         <button class="btn bg-primary rounded-full w-full">
@@ -61,7 +62,8 @@
     <div class="p-4 flex flex-col gap-3">
       <h3 class="text-xl font-bold">8.8 Free Bonus</h3>
       <div class="">
-        A little something extra to keep the streak going. We’ve dropped a MYR 8.00 bonus into your account—use it to fuel your next big win!
+        A little something extra to keep the streak going. We’ve dropped a MYR 8.00 bonus into your account—use it to
+        fuel your next big win!
       </div>
       <div class="opacity-50">
         <strong>Note:</strong> Reward must be claimed before the timer hits zero.
@@ -161,9 +163,9 @@
 </dialog>
 
 <!-- ── modals/my-record.html ── -->
-<dialog id="my-record-modal" class="modal">
+<dialog id="my-record-modal" class="modal !items-end">
   <div class="modal-box p-0 w-full overflow-hidden !bg-transparent !pt-6 relative rounded-none">
-    <div class="bg-white rounded-xl">
+    <div class="bg-white rounded-t-xl">
       <!-- Close -->
       <form method="dialog">
         <button class="absolute right-2 top-2 text-white text-4xl">
@@ -194,10 +196,13 @@
           <!-- Recent Form -->
           <div class="mt-4">
             <div class="font-bold mb-2">Recent Form</div>
-            <div class="flex gap-2">
-              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Win 25 (62.5%)</div>
-              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Draw 5 (12.5%)</div>
-              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Lose 10 (25%)</div>
+            <div class="flex gap-2 flex-nowrap overflow-x-auto">
+              <button data-mfilter="available"
+                class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-200">Win 25 (62.5%)</button>
+              <button data-mfilter="claimed"
+                class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-200">Draw 5 (12.5%)</button>
+              <button data-mfilter="expired"
+                class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-200">Lose 10 (25%)</button>
             </div>
           </div>
         </div>
@@ -761,9 +766,9 @@
 </dialog>
 
 <!-- ── modals/tipster-overview.html ── -->
-<dialog id="tipster-overview-modal" class="modal">
+<dialog id="tipster-overview-modal" class="modal !items-end">
   <div class="modal-box p-0 w-full overflow-hidden !bg-transparent !pt-6 relative rounded-none">
-    <div class="bg-white rounded-xl">
+    <div class="bg-white rounded-t-xl">
       <!-- Close -->
       <form method="dialog">
         <button class="absolute right-2 top-2 text-white text-4xl">
@@ -794,10 +799,13 @@
           <!-- Recent Form -->
           <div class="mt-4">
             <div class="font-bold mb-2">Recent Form</div>
-            <div class="flex gap-2">
-              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Win 25 (62.5%)</div>
-              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Draw 5 (12.5%)</div>
-              <div class="btn btn-sm bg-gray-200 flex-1 font-semibold text-xs normal-case">Lose 10 (25%)</div>
+            <div class="flex gap-2 flex-nowrap overflow-x-auto">
+              <button data-mfilter="available"
+                class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-200">Win 25 (62.5%)</button>
+              <button data-mfilter="claimed"
+                class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-200">Draw 5 (12.5%)</button>
+              <button data-mfilter="expired"
+                class="mission-filter shrink-0 flex-1 p-1 rounded-md bg-gray-200">Lose 10 (25%)</button>
             </div>
           </div>
         </div>

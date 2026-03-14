@@ -65,6 +65,10 @@ document.querySelectorAll('[data-tfilter]').forEach(btn => {
     });
     btn.classList.add('tfilter-active');
     btn.classList.remove(tabActive);
+
+    document.querySelectorAll('.tfilter-content').forEach(p => p.classList.add('hidden'));
+    const t = document.getElementById('tfilter-' + btn.dataset.tfilter);
+    if (t) { t.classList.remove('hidden'); t.style.animation = 'none'; t.offsetHeight; t.style.animation = ''; }
   });
 });
 
@@ -182,13 +186,13 @@ const activateTab = (target) => {
     active.style.animation = 'none';
     active.offsetHeight; // reflow
     active.style.animation = '';
-    
+
   }
 
   // update URL query param
   const url = new URL(window.location);
   url.searchParams.set('tab', target);
-  
+
   let ptabToActivate = null;
 
   if (!hasSubTabs.includes(target)) {
@@ -196,14 +200,14 @@ const activateTab = (target) => {
   } else {
     let ptab = url.searchParams.get('ptab');
     const ptabExistsInPanel = active ? active.querySelector(`[data-ptab="${ptab}"]`) : null;
-    
+
     if (!ptabExistsInPanel && active) {
       const firstPtab = active.querySelector('[data-ptab]');
       if (firstPtab) {
         ptab = firstPtab.dataset.ptab;
       }
     }
-    
+
     if (ptab) {
       url.searchParams.set('ptab', ptab);
       ptabToActivate = ptab;
@@ -231,4 +235,35 @@ document.addEventListener('DOMContentLoaded', () => {
   if (tab) {
     activateTab(tab);
   }
+});
+
+
+// ── Match card ───────────────────────────
+const matchCards = document.querySelectorAll('.match-card');
+
+document.addEventListener('change', (e) => {
+  const radio = e.target;
+
+  if (!radio.matches('input[type="radio"][name="match_select"]')) return;
+
+  const card = radio.closest('.match-card');
+  const submitBtn = card.querySelector('.match-submit-btn');
+  const errorAlert = card.querySelector('.match-error-alert');
+  if (radio.checked) {
+    errorAlert.classList.add('hidden');
+    submitBtn.classList.remove('bg-[#646464]', 'text-white');
+    submitBtn.classList.add('bg-primary', 'text-black');
+  }
+});
+
+matchCards.forEach(card => {
+  const submitBtn = card.querySelector('.match-submit-btn');
+  const errorAlert = card.querySelector('.match-error-alert');
+  const radio = card.querySelector('input[type="radio"][name="match_select"]');
+
+  submitBtn.addEventListener('click', () => {
+    if (!radio.checked) {
+      errorAlert.classList.remove('hidden');
+    }
+  });
 });

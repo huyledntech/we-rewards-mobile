@@ -43,7 +43,112 @@
     </div>
     <div id="scroll-missions" class="flex gap-2.5 overflow-x-auto px-3 pb-2 scrollbar-hide scroll-smooth">
 
-      {{> we-rewards/items/latest-missions-items}}
+      <!-- mission card 2 -->
+      <div class="shrink-0 w-56 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/latest-missions/11.png" class="w-full h-full object-cover" />
+          <!-- <span class="absolute right-2 top-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md shadow" data-i18n="we_rewards.completed"></span> -->
+          <span
+            class="text-white font-bold text-2xs bg-blue-400 px-2 pt-6 pb-1 w-20 text-center absolute -left-[30px] -top-[10px] -rotate-45">Daily</span>
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Daily Slots Mission (1)
+            <button class="" onclick="document.getElementById('daily-slots-mission-1-opt-in-modal').showModal()">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            <span data-i18n="we_rewards.ends_in"></span>
+            <span class="countdown-timer" data-expire="1">
+              <span class="countdown">
+                <span class="hours" style="--value:0"></span>:
+              </span>
+              <span class="countdown">
+                <span class="minutes" style="--value:0"></span>:
+              </span>
+              <span class="countdown">
+                <span class="seconds" style="--value:0"></span>
+              </span>
+            </span>
+          </span>
+          <div class="flex gap-1 mb-2.5">
+            <div class="flex-1 text-xs border-r border-gray-500 pr-1">
+              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
+              <p class="text-gray-300 italic line-clamp-2">
+                <span class="text-primary">Pragmatic:</span> Hit MYR 10,000 turnover daily...
+              </p>
+            </div>
+            <div class="flex-1 text-1xs">
+              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
+              <p class="text-white font-bold">38x Free Spins</p>
+            </div>
+          </div>
+          <button class="w-full bg-primary text-black py-1 font-bold rounded-lg glow-hover"
+            data-i18n="we_rewards.opt_in"
+            onclick="document.getElementById('daily-slots-mission-1-info-modal').showModal()"></button>
+        </div>
+      </div>
+
+
+      <!-- mission card 1 -->
+      <div class="shrink-0 w-56 bg-secondary rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+        <div
+          class="relative h-24 bg-gradient-to-br from-green-900 via-green-700 to-green-900 flex items-center justify-center">
+          <img src="/assets/images/we-rewards/latest-missions/11.png" class="w-full h-full object-cover" />
+          <span
+            class="text-white font-bold text-2xs bg-blue-400 px-2 pt-6 pb-1 w-20 text-center absolute -left-[30px] -top-[10px] -rotate-45">Daily</span>
+        </div>
+        <div class="p-2.5">
+          <p class="font-heading font-bold text-xs text-gray-100 mb-1.5 flex items-center justify-between">
+            Daily Slots Mission (1)
+            <button class="" onclick="document.getElementById('daily-slots-mission-1-info-modal').showModal()">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </p>
+          <span
+            class="inline-flex items-center gap-1 bg-primary text-black text-[10px] font-bold px-2 py-0.5 rounded-lg mb-2">
+            <span data-i18n="we_rewards.ends_in"></span>
+            <span class="countdown-timer" data-expire="26">
+              <span class="countdown">
+                <span class="days" style="--value:0"></span>D
+              </span>
+              <span class="countdown">
+                <span class="hours" style="--value:0"></span>:
+              </span>
+              <span class="countdown">
+                <span class="minutes" style="--value:0"></span>:
+              </span>
+              <span class="countdown">
+                <span class="seconds" style="--value:0"></span>
+              </span>
+            </span>
+          </span>
+          <div class="flex gap-1 mb-2.5">
+            <div class="flex-1 text-xs border-r border-gray-500 pr-1">
+              <p class="text-gray-100 mb-1" data-i18n="we_rewards.missions_label"></p>
+              <p class="text-gray-300 italic line-clamp-2">
+                <span class="text-primary">Pragmatic:</span> Hit MYR 1,500 turnover daily...
+              </p>
+            </div>
+            <div class="flex-1 text-1xs">
+              <p class="text-gray-100 mb-1" data-i18n="we_rewards.rewards_label"></p>
+              <p class="text-white font-bold">18x Free Spins</p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="h-2 bg-[#FFFFFF26] rounded-full overflow-hidden">
+              <div class="h-full bg-primary rounded-full" style="width:10%"></div>
+            </div>
+            <p class="text-[9px] text-gray-400 mt-1 text-center">
+              <span class="text-primary">MYR 100.35</span> / 3,000.00 (3.345%)
+            </p>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </section>
@@ -182,12 +287,12 @@
             <div class="text-xs text-gray-200 flex items-center justify-between">
               <div data-i18n="we_rewards.share_prize_pool_from"></div>
               <div class="flex items-center gap-2 text-base text-gray-400">
-                <button class="">
+                <a href="/we-rewards.html?tab=we-predict&ptab=leaderboard" class="">
                   <i class="fa-solid fa-chart-simple"></i>
-                </button>
-                <button class="">
+                </a>
+                <a href="/we-rewards.html?tab=we-predict&ptab=faqs" class="">
                   <i class="fa-solid fa-circle-info"></i>
-                </button>
+                </a>
               </div>
             </div>
             <p class="font-heading font-extrabold text-3xl text-primary">$ USD 8,888</p>
@@ -196,7 +301,7 @@
             </div>
           </div>
           <div class="flex items-center gap-2">
-            <a href="/we-tournaments.html?tab=games"
+            <a href="/we-rewards.html?tab=we-predict&ptab=we-predict-main"
               class="flex-1 bg-primary text-black text-center font-heading font-bold text-base py-2.5 glow-hover"
               data-i18n="we_rewards.participate"></a>
           </div>
@@ -207,3 +312,81 @@
   </section>
 
 </div><!-- /panel-overview -->
+
+
+
+
+<!-- ── modals/daily-slots-mission-1-info-modal.html ── -->
+<dialog id="daily-slots-mission-1-info-modal" class="modal">
+  <div class="modal-box p-0 border-0">
+    <form method="dialog">
+      <button class="absolute right-2 top-2 text-white text-4xl">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+    </form>
+    <img src="/assets/images/we-rewards/latest-missions/11.png" class="w-full h-full object-cover bg-black" />
+    <div class="p-4 flex flex-col items-start gap-3">
+      <h3 class="text-xl font-bold">Daily Slots Mission (1)</h3>
+      <span class="inline-flex items-center gap-1 bg-primary text-black px-3 py-1 rounded-full mb-2">
+        <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
+      </span>
+      <div class="flex gap-2 mb-2.5">
+        <div class="flex-1 border-r border-gray-500 pr-4">
+          <p class="mb-3 font-bold" data-i18n="we_rewards.missions_label"></p>
+          <p class="text-xs"><strong>Pragmatic:</strong> Hit MYR 1,500 turnover daily to unlock rewards</p>
+        </div>
+        <div class="flex-1">
+          <p class="mb-3 font-bold" data-i18n="we_rewards.rewards_label"></p>
+          <p class="font-semibold text-xs">18x Free Spins (per spin MYR5)</p>
+        </div>
+      </div>
+      <div class="my-4 w-full">
+        <div class="h-5 bg-[#EEEEEE] rounded-full overflow-hidden">
+          <div class="h-full bg-primary rounded-full" style="width:46%"></div>
+        </div>
+        <p class="text-1xs mt-2 text-center">
+          <span class="font-bold">MYR 700.00</span> / 1,500.00 (46%)
+        </p>
+      </div>
+      <form class="w-full" method="dialog">
+        <a href="/we-rewards.html?tab=we"
+          class="btn bg-primary rounded-full w-full">
+          Play Now
+        </a>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- ── modals/daily-slots-mission-1-opt-in-modal.html ── -->
+<dialog id="daily-slots-mission-1-opt-in-modal" class="modal">
+  <div class="modal-box p-0 border-0">
+    <form method="dialog">
+      <button class="absolute right-2 top-2 text-white text-4xl">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+    </form>
+    <img src="/assets/images/we-rewards/latest-missions/11.png" class="w-full h-full object-cover bg-black" />
+    <div class="p-4 flex flex-col items-start gap-3">
+      <h3 class="text-xl font-bold">Daily Slots Mission (1)</h3>
+      <span class="inline-flex items-center gap-1 bg-primary text-black px-3 py-1 rounded-full mb-2">
+        <span data-i18n="we_rewards.ends_in"></span> <span>23:24:12</span>
+      </span>
+      <div class="flex gap-2 mb-2.5">
+        <div class="flex-1 border-r border-gray-500 pr-4">
+          <p class="mb-3 font-bold" data-i18n="we_rewards.missions_label"></p>
+          <p class="text-xs"><strong>Pragmatic:</strong> Hit MYR 1,500 turnover daily to unlock rewards</p>
+        </div>
+        <div class="flex-1">
+          <p class="mb-3 font-bold" data-i18n="we_rewards.rewards_label"></p>
+          <p class="text-xs font-semibold">x(18) Free Spin (per spin MYR5)</p>
+        </div>
+      </div>
+      <form class="w-full" method="dialog">
+        <button class="btn bg-primary rounded-full w-full" onclick="document.getElementById('daily-slots-mission-1-info-modal').showModal(); document.getElementById('daily-slots-mission-1-opt-in-modal').hideModal()">
+          Opt In >
+        </button>
+      </form>
+    </div>
+  </div>
+</dialog>
