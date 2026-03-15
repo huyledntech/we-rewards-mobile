@@ -1,9 +1,9 @@
-{{#> layout pageTitle="WEPredict Challenge" subPage=true activePage="predict" backUrl="we-predict.html"}}
+{{#> layout pageTitle="WEPredict Challenge" subPage=true activePage="predict" backUrl="we-predict-challenge.html"}}
 
 <div class="flex flex-col gap-4 p-4">
 
   <!-- === CARD 1: Winning Streak === -->
-  <div class="card bg-[#FBFBFB] rounded-2xl overflow-hidden shadow relative">
+  <div class="card bg-[#FBFBFB] rounded-2xl overflow-hidden shadow">
 
     <!-- Hero Banner -->
     <div class="relative h-36 overflow-hidden">
@@ -27,11 +27,13 @@
       <div class="flex flex-col gap-4">
 
         <ul class="steps">
-          <li class="step after:!w-[2.5rem] after:!h-[2.5rem] after:border-2 after:!bg-[#D9D9D9]">
-            <span class="step-icon !bg-white font-bold text-base">1</span>
+          <li
+            class="step after:!w-[2.5rem] after:!h-[2.5rem] after:border-2 after:!border-primary before:!bg-primary after:!bg-primary">
+            <span class="step-icon !bg-primary font-bold text-base">1</span>
           </li>
-          <li class="step after:!w-[2.5rem] after:!h-[2.5rem] after:border-2 after:!bg-[#D9D9D9]">
-            <span class="step-icon !bg-white font-bold text-base">2</span>
+          <li
+            class="step after:!w-[2.5rem] after:!h-[2.5rem] after:border-2 after:!border-primary before:!bg-primary after:!bg-primary">
+            <span class="step-icon !bg-primary font-bold text-base">2</span>
           </li>
           <li class="step after:!w-[2.5rem] after:!h-[2.5rem] after:border-2 after:!border-[#D9D9D9]">
             <span class="step-icon !bg-white font-bold text-base">3</span>
@@ -77,71 +79,50 @@
           <li>10 Consecutive Wins: Win an Exclusive England Jersey signed by Steven Gerrard (Limited Stock!)</li>
         </ul>
 
-      </div>
-
-      <!-- Show More -->
-      <a href="/we-predict-winning-streak-challenge.html"
-        class="btn btn-ghost btn-sm normal-case font-black w-full rounded-none">
-        Show More
-      </a>
-
-      <div
-        class="absolute left-0 bottom-14 right-0 bg-white pointer-events-none flex h-36 w-full [mask-image:linear-gradient(transparent,#fff)]">
-      </div>
-    </div>
-  </div>
-
-  <!-- === CARD 2: The Invincible Challenge === -->
-  <div class="card bg-[#FBFBFB] rounded-2xl overflow-hidden shadow">
-
-    <!-- Hero Banner -->
-    <div class="relative h-36 overflow-hidden">
-      <img src="/assets/images/we-predict-challenge/challenge-2.png" class="w-full h-full object-cover" />
-    </div>
-
-    <div class="card-body px-5 py-4 gap-4">
-
-      <!-- Section title -->
-      <div>
-        <h2 class="font-black text-base underline pb-1 inline-block mb-4">
-          The Invincible Challenge
-        </h2>
-        <p class="">
-          Inspired by Arsenal’s legendary 49-match unbeaten run? Step up and become the ultimate tipster! Predict 40
-          matches correctly in a row to drive home a BRAND-NEW FORD MUSTANG 5.0L GT.
-        </p>
-      </div>
-
-      <!-- Progress -->
-      <div>
-        <p class="font-black text-2xl mb-1">5/40</p>
-        <progress class="progress text-primary w-full" value="5" max="40"></progress>
-      </div>
-
-      <!-- Rewards -->
-      <div>
-        <p class="text-base font-bold mb-2">🎁 The Rewards</p>
+        <p class="text-base font-bold mb-2">🎯 How Your Streak Works</p>
         <ul class="list-decimal list-inside mb-4 flex flex-col gap-2">
-          <li>The Goal: Build a perfect record by getting a "Win" result on 40 consecutive matches.</li>
-          <li>No Skipping Allowed: You must predict every consecutive match. Skipping a match in between will break your
-            streak and void your run.</li>
-          <li>Keep Your Progress: Your winning streak carries forward to the next month, giving you plenty of time to
-            hit that perfect 40.</li>
+          <li>What counts as a win? Only bets that result in a "Win" or "Half-Win" will add to your streak.</li>
+          <li>What if I want a break? Skipping matches is perfectly fine. You don't have to bet on every single game to
+            keep
+            your streak alive.</li>
+          <li>What happens if it's a draw? If a match results in a "Draw" or is "Cancelled," don't worry! Your streak
+            simply
+            pauses. It won't add to your count, but you won't lose your streak either.</li>
+          <li>What happens if I lose? Any "Lose" result breaks your streak. You will need to start fresh from match
+            number
+            one.</li>
+          <li>Keep going! Once you hit 5 wins and claim your MYR 18, keep playing to reach the 10-win milestone for the
+            signed
+            jersey.</li>
+        </ul>
+
+        <p class="text-base font-bold mb-2">📜 Important Conditions</p>
+        <ul class="list-decimal list-inside mb-4 flex flex-col gap-2">
+          <li>Turnover Requirement: All bonus prizes require a 5x turnover in Sports games before you can make a
+            withdrawal.</li>
+          <li>
+            Excluded Games: Betting on the following will not count towards your streak and may forfeit your bonus:
+            <ul class="list-decimal list-inside pl-2 flex flex-col gap-2">
+              <li>Live Casino Games</li>
+              <li>Slots & Fishing Games</li>
+              <li>E-Sports Games</li>
+              <li>Sports Number Games & Virtual Sports</li>
+            </ul>
+          </li>
+          <li>Standard WE88 terms apply. WE88 reserves the right to modify, suspend, or cancel this promotion without
+            prior
+            notice.</li>
         </ul>
 
       </div>
 
       <!-- Show More -->
-      <a href="/we-predict-challenge-invincible.html"
-        class="btn btn-ghost btn-sm normal-case font-black w-full rounded-none">
-        Show More
+      <a href="/we-predict-challenge.html" class="btn btn-ghost btn-sm normal-case font-black w-full rounded-none">
+        Show Less
       </a>
-
-      <div
-        class="absolute left-0 bottom-14 right-0 bg-white pointer-events-none flex h-36 w-full [mask-image:linear-gradient(transparent,#fff)]">
-      </div>
     </div>
   </div>
+
 
 </div>
 

@@ -337,3 +337,23 @@
     }
   }
 }
+
+.steps .step>.step-icon,
+.steps .step:not(:has(.step-icon)):after {
+  --tw-content: counter(step);
+  content: var(--tw-content);
+  counter-increment: step;
+  z-index: 2;
+  color: var(--step-fg);
+  background-color: var(--step-bg);
+  border: 1px solid var(--step-bg);
+  border-radius: 3.40282e38px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  place-self: center;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  position: relative;
+}
