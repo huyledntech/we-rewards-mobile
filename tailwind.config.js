@@ -12,7 +12,10 @@ export default {
     // Setting screens to an empty object prevents Tailwind from generating
     // sm:, md:, lg:, xl:, 2xl: responsive variants.
     // Desktop layouts are explicitly forbidden in this project.
-    screens: {},
+    screens: {
+      xxs: { max: '369px' },
+      xs: { max: '399px' },
+    },
 
     extend: {
       fontFamily: {
